@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import hero from '@/public/Hero/hero.png'
+// import man from '@/public/Hero/man.jpg'
 
 function Hero () {
   return (
