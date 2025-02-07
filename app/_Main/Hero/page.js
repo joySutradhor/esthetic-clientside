@@ -3,6 +3,7 @@ import React from 'react'
 import hero from '@/public/Hero/hero.png'
 import HeroServiceBtn from '@/app/_components/HeroServicesBtn/page'
 import { MdArrowOutward } from 'react-icons/md'
+// import man from '@/public/Hero/man.jpg'
 
 function Hero () {
   return (
