@@ -2,49 +2,133 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer utilities {
-  /* default common styling */
+  /*-------  Base tag styles here --------  */
 
-  .header__footer__main__gapping{
-    @apply px-8 md:px-16 lg:px-20 xl:px-20 2xl:px-20  
+  h1 {
+    @apply text-gray-600 text-5xl font-bold  leading-tight;
+  }
+  h2 {
+    @apply text-gray-600 text-lg font-medium  leading-tight;
   }
 
-  
+  /*--------  Base tag styles End here -------- */
+  /*==================================================================================== */
 
-  /* all button styles here */
-  .e__header__btn{
-    @apply bg-white/80 hover:bg-white rounded-xl px-4 py-1 transition-colors duration-300 ease-in-out 
+  /*--------Base style here --------  */
+  .e__primary__color {
+    @apply text-gray-600;
   }
 
-  .e__header__btn__menu{
-    @apply bg-white rounded-xl px-2 py-2  
+  .e__secondary__color {
+    @apply text-gray-900;
   }
 
-  .e__bookBtn{
-    @apply bg-white/80 hover:bg-white rounded-xl px-4 py-1  transition-colors duration-300 ease-in-out 
-  
+  .e__para {
+    @apply text-gray-800;
+  }
+
+  .e__primary__bg {
+    @apply bg-gray-50;
+  }
+
+  .e__secondary__bg {
+    @apply bg-gray-200;
+  }
+
+  .e__tooltip__btn {
+    @apply;
+  }
+
+  .e__primary__btn {
+    @apply e__secondary__bg font-semibold rounded-xl text-base py-1 px-4 cursor-pointer hover:bg-black hover:text-white transition-colors duration-500 ease-in-out;
+  }
+
+  .e__section__gap {
+    @apply mt-24;
+  }
+
+  /*--------Base style end here -------- */
+  /*==================================================================================== */
+
+  /*-------- common global styling--------- */
+
+  /*------ button styles here ------- */
+  .e__header__btn {
+    @apply e__secondary__bg hover:bg-black hover:text-white rounded-xl px-4 py-1 transition-colors duration-700 ease-in-out;
   }
 
 
-  /* esthetic nav bar  */
-  .e__nav__wrapper{
-    @apply flex justify-between items-center
+  .e__bookBtn {
+    @apply e__secondary__bg hover:bg-black hover:text-white rounded-xl px-4 py-1  transition-colors duration-300 ease-in-out;
   }
-  .e__nav__item__parent{
-    @apply flex gap-x-2 font-normal  text-black/80 items-center
+
+  /*--------- button styles end here --------- */
+
+  .header__footer__main__gapping {
+    @apply 2xl:mx-20;
   }
-  .e__socail__icon{
-    @apply bg-white/80 p-2 rounded-full
+
+  /*-------- Common global styling end--------- */
+
+  /*==================================================================================== */
+
+  /* ----------------- esthetic nav bar -----------------  */
+  .e__nav__parent{
+    @apply absolute top-10 left-0 z-50 w-full
+  }
+  .e__nav__wrapper {
+    @apply flex justify-between items-center;
+  }
+  .e__nav__item__parent {
+    @apply flex gap-x-2 font-normal  text-black/80 items-center;
+  }
+  .e__socail__icon {
+    @apply e__secondary__bg p-2 rounded-full;
+  }
+
+  /* ----------------- esthetic nav bar -----------------  */
+
+  /*==================================================================================== */
+
+  /* ----------------- esthetic hero styles here -----------------  */
+
+  .e__hero__parent {
+    @apply h-screen w-full flex justify-center items-center overflow-hidden relative;
+  }
+
+  .e__hero__main__image {
+    @apply w-full object-cover object-center brightness-75 hover:scale-95 overflow-hidden transition-all ease-in-out duration-1000;
+  }
+
+  /* ------- */
+
+  .e__hero__contentArea__parent {
+    @apply absolute top-[30vh] left-[0] mx-20 grid grid-cols-3 items-center justify-between ;
+  }
+  .e__hero__content {
+    @apply grid grid-cols-1 gap-y-11 justify-end;
+  }
+
+  .e__hero__heading__text {
+    @apply mb-8;
+  }
+
+  .e__hero__heading__light__text {
+    @apply text-5xl font-light;
+  }
+
+  .e__hero__logo__area{
+    @apply size-20 bg-gray-400 border  animate-spin
+  }
+  /* -------- */
+
+  .e__hero__content__child {
+    @apply absolute bottom-20 left-20  e__primary__color grid grid-cols-4 gap-5;
   }
 
 
-  /* esthetic hero styles here  */
-  .e__hero__heading__text{
-    @apply text-5xl font-bold text-white/90 leading-tight mb-8
-  }
 
-  .e__hero__heading__light__text{
-    @apply text-5xl font-light text-white/80 
-  }
+  /* ----------------- esthetic hero styles ends here -----------------  */
+  /*==================================================================================== */
 }
