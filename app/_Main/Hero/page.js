@@ -76,6 +76,7 @@ function Hero () {
               serviceLink='/'
             />
             <HeroServiceBtn
+              className=' !bg-black !text-white animate-pulse'
               btnText='DERMAPLENING '
               Icon={MdArrowOutward}
               serviceLink='/'

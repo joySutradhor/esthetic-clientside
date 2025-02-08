@@ -1,0 +1,78 @@
+{
+    "workflow": [
+      {
+        "step": 1,
+        "title": "Appointment Booking & Walk-ins",
+        "details": [
+          "Clients book appointments online, via phone, or walk-in.",
+          "Collect client details (name, skin concerns, allergies, etc.).",
+          "Confirm appointment date and time."
+        ]
+      },
+      {
+        "step": 2,
+        "title": "Client Consultation & Skin Analysis",
+        "details": [
+          "Conduct one-on-one consultation to understand client’s skin type and concerns.",
+          "Use professional skin analysis tools if available.",
+          "Discuss client goals (hydration, anti-aging, acne treatment, etc.)."
+        ]
+      },
+      {
+        "step": 3,
+        "title": "Personalized Treatment Plan",
+        "details": [
+          "Recommend suitable skincare treatments based on analysis.",
+          "Explain the process, benefits, and expected results.",
+          "Get client consent before proceeding with treatments."
+        ]
+      },
+      {
+        "step": 4,
+        "title": "Skincare Treatment Session",
+        "details": [
+          "Cleanse the skin to prepare for treatment.",
+          "Perform selected skincare service (facial, exfoliation, microdermabrasion, etc.).",
+          "Use high-quality skincare products tailored to client’s needs.",
+          "Ensure a relaxing and comfortable experience."
+        ]
+      },
+      {
+        "step": 5,
+        "title": "Post-Treatment Care & Advice",
+        "details": [
+          "Gently cleanse and moisturize the skin after treatment.",
+          "Apply sunscreen if needed.",
+          "Provide aftercare instructions and recommend suitable skincare products."
+        ]
+      },
+      {
+        "step": 6,
+        "title": "Product Recommendations & Retail Sales",
+        "details": [
+          "Suggest home skincare products for maintenance.",
+          "Offer in-store skincare products that complement the treatment.",
+          "Educate clients on how to use the products correctly."
+        ]
+      },
+      {
+        "step": 7,
+        "title": "Payment & Loyalty Program",
+        "details": [
+          "Process payment via cash, card, or digital methods.",
+          "Offer discounts for repeat visits or membership programs.",
+          "Provide invoices or receipts."
+        ]
+      },
+      {
+        "step": 8,
+        "title": "Follow-up & Customer Retention",
+        "details": [
+          "Check in with clients after a few days for feedback.",
+          "Send appointment reminders for future treatments.",
+          "Offer promotions or seasonal skincare packages."
+        ]
+      }
+    ]
+  }
+  

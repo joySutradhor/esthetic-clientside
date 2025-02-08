@@ -9,7 +9,10 @@
     @apply text-gray-600 text-5xl font-bold  leading-tight;
   }
   h2 {
-    @apply text-gray-600 text-lg font-medium  leading-tight;
+    @apply text-gray-600 text-2xl font-bold  leading-tight;
+  }
+  h3 {
+    @apply text-gray-600 text-lg font-semibold  leading-tight;
   }
 
   /*--------  Base tag styles End here -------- */
@@ -33,11 +36,11 @@
   }
 
   .e__secondary__bg {
-    @apply bg-gray-200;
+    @apply bg-gray-50;
   }
 
   .e__tooltip__btn {
-    @apply;
+    @apply bg-black text-white text-sm font-medium py-1 px-4 rounded-xl ;
   }
 
   .e__primary__btn {
@@ -45,7 +48,7 @@
   }
 
   .e__section__gap {
-    @apply mt-24;
+    @apply mt-24 mx-20;
   }
 
   /*--------Base style end here -------- */
