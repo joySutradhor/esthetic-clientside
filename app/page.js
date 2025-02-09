@@ -13,7 +13,7 @@ export default function Home () {
         <Main></Main>
       </main>
       <section>
-        <Footer />
+        {/* <Footer /> */}
       </section>
     </>
   )

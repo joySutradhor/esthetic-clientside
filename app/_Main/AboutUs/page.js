@@ -33,9 +33,10 @@ function AboutUs () {
               PageMaker including versions of Lorem Ipsum{' '}
             </p>
 
-            <div className='mt-24 '>
-              <h2>Business Workflow</h2>
-              <div className='grid grid-cols-2 gap-4 mt-5 '>
+            <div className='mt-10 '>
+              <button className='e__tooltip__btn'>Business</button>
+              <h2 className='mt-3 mb-8'>Business Workflow</h2>
+              <div className='grid grid-cols-2 gap-4 '>
                 {skincareWorkflow?.workflow?.map(step => (
                   <div
                     key={step.step}

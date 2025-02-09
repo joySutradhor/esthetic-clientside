@@ -7,7 +7,7 @@ function Main() {
   return (
     <section>
       <Hero/>
-      <AboutUs/>
+      {/* <AboutUs/> */}
     </section>
   )
 }
