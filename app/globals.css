@@ -6,13 +6,17 @@
   /*-------  Base tag styles here --------  */
 
   h1 {
-    @apply text-gray-800 2xl:text-5xl text-2xl font-bold leading-tight;
+    @apply e__primary__color text-2xl md:text-3xl lg:text-4xl xl:text-4xl 2xl:text-5xl  font-bold leading-tight;
   }
   h2 {
-    @apply text-gray-800 2xl:text-2xl font-bold  leading-tight;
+    @apply e__primary__color text-xl  2xl:text-2xl font-bold  leading-tight;
   }
   h3 {
-    @apply text-gray-800  text-lg font-semibold  leading-tight;
+    @apply e__primary__color  text-lg font-semibold  leading-tight;
+  }
+
+  p{
+    @apply e__primary__color  text-sm 2xl:text-base font-medium
   }
 
   /*--------  Base tag styles End here -------- */
@@ -48,7 +52,7 @@
   }
 
   .e__section__gap {
-    @apply mt-24 mx-20;
+    @apply mt-10 md:mt-16 lg:mt-20 xl:mt-20 2xl:mt-24 mx-5 md:mx-16 lg:mx-16 xl:mx-16 2xl:mx-20;
   }
 
   /*--------Base style end here -------- */
@@ -62,13 +66,13 @@
   }
 
   .e__bookBtn {
-    @apply e__secondary__bg hover:bg-black hover:text-white rounded-xl px-4 py-1  transition-colors duration-300 ease-in-out;
+    @apply bg-black text-white text-sm font-medium py-1 px-4 lg:py-2 lg:px-6 rounded-xl animate-bounce;
   }
 
   /*--------- button styles end here --------- */
 
   .header__footer__main__gapping {
-    @apply mx-5 2xl:mx-20;
+    @apply mx-5 md:mx-16 lg:mx-16 xl:mx-16 2xl:mx-20;
   }
 
   /*-------- Common global styling end--------- */
@@ -76,20 +80,39 @@
   /*==================================================================================== */
 
   /* ----------------- esthetic nav bar -----------------  */
+  .e__nav__container {
+    @apply absolute top-0  left-0 z-50 w-full pt-3  md:pt-5 lg:pt-5 xl:pt-5 2xl:pt-10 ;
+  }
   .e__nav__parent {
-    @apply absolute top-10 left-0 z-50 w-full;
+    @apply py-4 rounded-lg;
   }
-  .e__nav__wrapper {
-    @apply flex justify-between items-center;
+  .e__nav__menuToggle__btn {
+    @apply lg:hidden text-xl focus:outline-none;
   }
-  .e__nav__item__parent {
-    @apply flex gap-x-2 font-normal  text-black/80 items-center;
+  .e__nav__navigation__parent {
+    @apply lg:flex items-center gap-x-4  font-normal text-black/80    transition-all duration-300;
   }
+
+  .e__nav__isOpen {
+    @apply e__primary__bg block absolute z-50 top-0  left-0 2xl:w-auto w-full h-[60vh]  2xl:h-auto   space-y-3 pt-5 md:pt-8  px-5 md:px-16  2xl:shadow-none  shadow-lg;
+  }
+
+  .e__nav__isClose {
+    @apply hidden lg:flex;
+  }
+
+  .e__nav__mobile__nav {
+    @apply flex justify-between items-center 2xl:border-none border-b pb-5 mb-8;
+  }
+  .e__nav__menuToggle {
+    @apply lg:hidden text-xl focus:outline-none bg-gray-300 p-2 rounded-full;
+  }
+
   .e__socail__icon {
     @apply e__secondary__bg p-2 rounded-full;
   }
 
-  /* ----------------- esthetic nav bar -----------------  */
+  /* ----------------- esthetic nav bar End -----------------  */
 
   /*==================================================================================== */
 
@@ -100,16 +123,16 @@
   }
 
   .e__hero__main__image {
-    @apply w-full h-[50vh] 2xl:h-auto object-cover object-center brightness-50 2xl:brightness-75  hover:scale-95 overflow-hidden transition-all ease-in-out duration-1000;
+    @apply w-full h-[60vh] md:h-[70vh] lg:h-[100vh] xl:h-[100vh] 2xl:h-auto object-cover object-center brightness-50 2xl:brightness-75  hover:scale-95 overflow-hidden transition-all ease-in-out duration-1000;
   }
 
   /* ------- */
 
   .e__hero__contentArea__parent {
-    @apply absolute top-[25vh] 2xl:top-[30vh] left-[0] 2xl:px-20 px-10 grid grid-cols-1 2xl:grid-cols-3 items-center justify-between;
+    @apply absolute top-[25vh] md:top-[30vh] lg:top-[35vh] 2xl:top-[30vh] left-[0] px-10 md:px-16 lg:px-16 xl:px-20 2xl:px-20  grid grid-cols-1 md:grid-cols-[55%__5%__40%] lg:grid-cols-[55%__10%__35%] xl:grid-cols-3 2xl:grid-cols-3 items-center justify-between;
   }
   .e__hero__content {
-    @apply grid grid-cols-1 gap-y-11 justify-end;
+    @apply grid grid-cols-1  gap-y-11 justify-end;
   }
 
   .e__hero__heading__text {
@@ -125,14 +148,58 @@
   }
 
   .e__quote {
-    @apply text-center text-white/80  2xl:text-2xl font-semibold hidden 2xl:block ;
+    @apply text-center text-white/80  2xl:text-2xl font-semibold hidden md:block 2xl:block;
   }
   /* -------- */
 
   .e__hero__content__child {
-    @apply 2xl:absolute bottom-20 2xl:left-20 left-5   e__primary__color  grid 2xl:grid-cols-4 gap-5;
+    @apply lg:absolute bottom-20 lg:bottom-10 left-5 lg:left-16 2xl:left-20    e__primary__color  grid lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-4 lg:gap-3 2xl:gap-5;
   }
 
   /* ----------------- esthetic hero styles ends here -----------------  */
+  /*==================================================================================== */
+
+
+
+  /* ----------------- esthetic about us styles start here -----------------  */
+  /*==================================================================================== */
+
+  .e__about__container{
+    @apply grid  xl:grid-cols-2 justify-between  gap-10  border p-5 lg:p-10
+  }
+
+  .e__about__workflow__container{
+    @apply grid  md:grid-cols-2 lg:grid-cols-4 w-full gap-4
+  }
+
+  .e__about__bussines__wrapper{
+    @apply mt-10 border p-5 lg:p-10
+  }
+
+
+
+  /* ----------------- esthetic about us styles ends here -----------------  */
+  /*==================================================================================== */
+
+
+
+  /* ----------------- esthetic CTA styles start here -----------------  */
+  /*==================================================================================== */
+
+  .e__cta__container{
+    @apply border w-full p-5 lg:p-10  lg:space-y-2
+  }
+  .e__cta__childParent{
+    @apply lg:flex lg:flex-col justify-center items-center
+  }
+  .e__cta__content__parent{
+    @apply my-5 lg:w-[40vw] w-full mx-auto lg:text-center
+  }
+  .e__cta__btnParent{
+    @apply lg:flex justify-center w-full
+  }
+
+
+  /* ----------------- esthetic Cta styles ends here -----------------  */
   /*==================================================================================== */
 }

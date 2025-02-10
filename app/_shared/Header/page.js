@@ -15,42 +15,42 @@ function Header () {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <header className='absolute top-0 2xl:pt-10 pt-3 left-0 z-50 w-full'>
-      <nav className='header__footer__main__gapping  py-4 rounded-lg'>
+    <header className='e__nav__container'>
+      <nav className='header__footer__main__gapping  e__nav__parent'>
         <div className='flex justify-between items-center'>
           {/* Mobile Menu Toggle */}
           <button
-            className='lg:hidden text-xl focus:outline-none'
+            className='e__nav__menuToggle__btn'
             onClick={() => setIsOpen(!isOpen)}
           >
             {isOpen ? (
               <IoClose />
             ) : (
-              <GiHamburgerMenu className='text-white/80' />
+              <GiHamburgerMenu className='text-white' />
             )}
           </button>
 
           {/* Navigation Links */}
           <ul
-            className={`lg:flex gap-x-4  font-normal text-black/80   items-center transition-all duration-300 
+            className={`e__nav__navigation__parent
               ${
                 isOpen
-                  ? 'block absolute z-50 top-0  left-0 2xl:w-auto w-full h-[100vh] 2xl:h-auto e__primary__bg 2xl:e__primary__bg space-y-3 pt-5  px-5 2xl:shadow-none  shadow-lg'
-                  : 'hidden lg:flex'
+                  ? 'e__nav__isOpen'
+                  : 'e__nav__isClose'
               }`}
           >
-            <div className='flex justify-between items-center 2xl:border-none border-b pb-5 mb-8'>
+            <div className='e__nav__mobile__nav'>
               <div>
                 <Image
                   src={logo}
                   alt='logo'
                   height={50}
                   width={50}
-                  className='rounded-full block 2xl:hidden'
+                  className='rounded-full block lg:hidden '
                 ></Image>
               </div>
               <button
-                className='lg:hidden text-xl focus:outline-none bg-gray-300 p-2 rounded-full'
+                className='e__nav__menuToggle'
                 onClick={() => setIsOpen(!isOpen)}
               >
                 {isOpen ? (
@@ -63,7 +63,7 @@ function Header () {
 
             <div>
               <NavButton
-                className='!bg-black !text-white'
+                className='!bg-black !text-white/80'
                 navButtonText='Home'
                 navButtonLink='/home'
                 icon={IoIosHome}
@@ -101,13 +101,13 @@ function Header () {
               +1 (813) 416-9628
             </p>
             <div className='flex gap-2'>
-              <div className='e__secondary__bg p-2 rounded-full'>
+              <div className='e__socail__icon'>
                 <FaFacebook />
               </div>
-              <div className='e__secondary__bg p-2 rounded-full'>
+              <div className='e__socail__icon'>
                 <FaInstagram />
               </div>
-              <div className='e__secondary__bg p-2 rounded-full'>
+              <div className='e__socail__icon'>
                 <FaLinkedinIn />
               </div>
             </div>

@@ -45,7 +45,7 @@ function Hero () {
                 <h4 className='e__quote'>
                   "Nurture your skin, and it will glow with the radiance of
                   self-care. Because healthy skin is the foundation of true
-                  beauty. - Neomi"
+                  beauty. - <span className='text-xl font-bold'>Neomi</span>"
                 </h4>
               </div>
             </div>
