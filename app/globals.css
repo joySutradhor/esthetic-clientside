@@ -69,6 +69,13 @@
     @apply bg-black text-white text-sm font-medium py-1 px-4 lg:py-2 lg:px-6 rounded-xl animate-bounce;
   }
 
+  .e__service__btn {
+    @apply bg-black text-white text-sm font-medium py-1 px-4 rounded-xl ;
+  }
+  .e__viewDetails__btn {
+    @apply  e__secondary__color  text-sm font-semibold py-1 px-4 rounded-xl ;
+  }
+
   /*--------- button styles end here --------- */
 
   .header__footer__main__gapping {
@@ -191,7 +198,7 @@
     @apply lg:flex lg:flex-col justify-center items-center
   }
   .e__cta__content__parent{
-    @apply my-5 lg:w-[40vw] w-full mx-auto lg:text-center
+    @apply mb-5 lg:w-[40vw] w-full mx-auto lg:text-center
   }
   .e__cta__btnParent{
     @apply lg:flex justify-center w-full
@@ -199,5 +206,35 @@
 
 
   /* ----------------- esthetic Cta styles ends here -----------------  */
+  /*==================================================================================== */
+
+
+
+  /* ----------------- esthetic Our services styles start here -----------------  */
+  /*==================================================================================== */
+  
+
+  .e__service__container{
+    @apply border p-5 lg:p-10
+  }
+
+  .e__service__heading{
+    @apply mt-3 mb-5
+  }
+
+  .e__service__parent{
+    @apply grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-4 gap-5 mt-10 
+  }
+  .e__showMore__btn__parent{
+    @apply mt-10 lg:mt-16 flex justify-center w-full
+  }
+
+
+
+
+
+
+
+  /* ----------------- esthetic Our services styles ends here -----------------  */
   /*==================================================================================== */
 }
