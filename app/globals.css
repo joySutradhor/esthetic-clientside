@@ -173,10 +173,8 @@
   }
 
   .e__about__bussines__wrapper{
-    @apply mt-10 border p-5 lg:p-10
+    @apply mt-10 md:mt-16 lg:mt-20 xl:mt-20 2xl:mt-24 border p-5 lg:p-10
   }
-
-
 
   /* ----------------- esthetic about us styles ends here -----------------  */
   /*==================================================================================== */
