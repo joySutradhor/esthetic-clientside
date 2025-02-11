@@ -1,0 +1,45 @@
+[
+    {
+      "reviewId": 1,
+      "name": "John Doe",
+      "rating": 5,
+      "comment": "The service was outstanding, and the team was highly professional. I am extremely satisfied with the results. Highly recommended!",
+      "date": "2025-02-11"
+    },
+    {
+      "reviewId": 2,
+      "name": "Jane Smith",
+      "rating": 4,
+      "comment": "Great experience overall! The website looks amazing, and the support team was very responsive. A few minor issues, but nothing major.",
+      "date": "2025-02-10"
+    },
+    {
+      "reviewId": 3,
+      "name": "Michael Johnson",
+      "rating": 4.5,
+      "comment": "Impressive work! The project was delivered on time, and communication was smooth. Definitely working with them again in the future.",
+      "date": "2025-02-09"
+    },
+    {
+      "reviewId": 4,
+      "name": "Emily Brown",
+      "rating": 5,
+      "comment": "Superb quality and attention to detail. The website is exactly what I wanted, and the process was seamless from start to finish.",
+      "date": "2025-02-08"
+    },
+    {
+      "reviewId": 5,
+      "name": "Daniel Lee",
+      "rating": 4.5,
+      "comment": "Very satisfied with the service. The team was patient, knowledgeable, and delivered a top-notch product. Highly recommend them for future projects!",
+      "date": "2025-02-07"
+    },
+    {
+      "reviewId": 6,
+      "name": "Sophia Martinez",
+      "rating": 5,
+      "comment": "Best experience ever! They understood my requirements perfectly and exceeded expectations. The website is stunning, fast, and user-friendly. Amazing work!",
+      "date": "2025-02-06"
+    }
+  ]
+  

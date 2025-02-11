@@ -229,12 +229,61 @@
     @apply mt-10 lg:mt-16 flex justify-center w-full
   }
 
-
-
-
-
-
-
   /* ----------------- esthetic Our services styles ends here -----------------  */
   /*==================================================================================== */
+
+
+
+  /* ----------------- esthetic Reviews styles start here -----------------  */
+  /*==================================================================================== */
+  .e__review__container {
+    @apply border p-5 lg:p-10
+  }
+
+  .e__review__heading{
+    @apply mt-3 mb-5
+  }
+
+  .e__review__card__parent{
+    @apply grid md:grid-cols-2 lg:grid-cols-3 gap-5
+  }
+
+
+  /* ----------------- esthetic Reviews styles ends here -----------------  */
+  /*==================================================================================== */
+
+
+  /* ----------------- esthetic faq styles start here -----------------  */
+  /*==================================================================================== */
+   .e__faq_heading{
+    @apply mt-3 mb-5 
+   }
+
+  /* ----------------- esthetic faq styles ends here -----------------  */
+  /*==================================================================================== */
+
+
+  /* ----------------- esthetic office styles start here -----------------  */
+  /*==================================================================================== */
+   .e__office__container{
+    @apply border p-5 lg:p-10
+   }
+   .e__office__containerParent{
+    @apply max-w-7xl mx-auto xl:px-10
+   }
+   .e__office__header__parent{
+    @apply  text-center mb-5 md:mb-10
+   }
+
+   .e__office__content__container{
+    @apply grid grid-cols-1 lg:grid-cols-2 gap-5  lg:gap-10 xl:gap-10
+   }
+
+   .e__office__bussiness__info{
+    @apply flex flex-col justify-center space-y-10
+   }
+
+  /* ----------------- esthetic office styles ends here -----------------  */
+  /*==================================================================================== */
+
 }
