@@ -1,4 +1,6 @@
 
+import MobileNav from "./_Main/MobilieNav/page";
+import Header from "./_shared/Header/page";
 import "./globals.css";
 
 
@@ -13,7 +15,10 @@ export default function RootLayout({ children }) {
       <body
         className=""
       >
+         <Header />
         {children}
+
+        <MobileNav />
       </body>
     </html>
   );

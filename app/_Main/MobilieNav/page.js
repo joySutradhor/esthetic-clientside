@@ -9,19 +9,19 @@ export default function MobileNav() {
           <FaHome size={20} />
           <span className="text-xs">Home</span>
         </Link>
-        <Link href="/" className="flex flex-col items-center text-gray-700 hover:e__secondary__color">
+        <Link href="/service" className="flex flex-col items-center text-gray-700 hover:e__secondary__color">
           <FaClipboardList size={20} />
           <span className="text-xs">Services</span>
         </Link>
-        <Link href="/" className="flex flex-col items-center text-gray-700 hover:e__secondary__color">
+        <Link href="/about" className="flex flex-col items-center text-gray-700 hover:e__secondary__color">
           <FaUser size={20} />
           <span className="text-xs">About Us</span>
         </Link>
-        <Link href="/" className="flex flex-col items-center text-gray-700 hover:e__secondary__color">
+        <Link href="/book" className="flex flex-col items-center text-gray-700 hover:e__secondary__color">
           <FaCalendarCheck size={20} />
           <span className="text-xs">Book Now</span>
         </Link>
-        <Link href="/" className="flex flex-col items-center text-gray-700 hover:e__secondary__color">
+        <Link href="/login" className="flex flex-col items-center text-gray-700 hover:e__secondary__color">
           <FaSignInAlt size={20} />
           <span className="text-xs">Login</span>
         </Link>

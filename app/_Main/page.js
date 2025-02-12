@@ -6,7 +6,7 @@ import OurServices from './OurServices/page'
 import Review from './Review/page'
 import Faq from './Faq/page'
 import OfficeLocation from './OfficeLocation/page'
-import MobileNav from './MobilieNav/page'
+
 
 function Main () {
   return (
@@ -21,7 +21,7 @@ function Main () {
         <Faq />
         <OfficeLocation />
       </section>
-      <MobileNav />
+      
     </>
   )
 }

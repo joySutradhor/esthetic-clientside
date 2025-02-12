@@ -86,6 +86,27 @@
 
   /*==================================================================================== */
 
+ /* ---------------------- components styles here ------------------ */
+ .e__c__header__parent{
+  @apply h-[40vh] lg:h-[50vh] xl:h-[60vh] 2xl:h-[60vh] overflow-hidden
+ }
+ .e__c__overlay{
+  @apply absolute inset-0 bg-black/40 h-[40vh] lg:h-[50vh] xl:h-[60vh] 2xl:h-[60vh]
+ }
+ .e__c__content__header{
+  @apply absolute top-24 lg:top-[25%] xl:top-[30%] 2xl:top-[30%] z-50 left-0  text-white text-center space-y-2 p-4 w-full mx-auto
+ }
+
+ .e__c__para{
+  @apply text-white/80 pb-10
+ }
+ /* ---------------------- components styles end here ------------------ */
+
+
+
+
+
+
   /* ----------------- esthetic nav bar -----------------  */
   .e__nav__container {
     @apply absolute top-0  left-0 z-50 w-full pt-3  md:pt-5 lg:pt-5 xl:pt-5 2xl:pt-10 ;
@@ -284,6 +305,20 @@
    }
 
   /* ----------------- esthetic office styles ends here -----------------  */
+  /*==================================================================================== */
+
+  /* ----------------- esthetic commitment styles start here -----------------  */
+  /*==================================================================================== */
+  .e__service__container{
+    @apply border p-5 lg:p-10
+  }
+  .e__commitment__parent{
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5
+  }
+  .e__commitment__child{
+    @apply flex flex-col items-center p-6 bg-white border text-center 
+  }
+  /* ----------------- esthetic commitment styles ends here -----------------  */
   /*==================================================================================== */
 
 }

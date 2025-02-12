@@ -26,7 +26,7 @@ const AccordionItem = ({ header, ...rest }) => (
   />
 )
 
-export default function App () {
+export default function Faq () {
   return (
     <div className='e__section__gap mb-20'>
       <div className=' border p-5 lg:p-10'>

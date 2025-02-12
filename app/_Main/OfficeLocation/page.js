@@ -26,7 +26,7 @@ function OfficeLocation () {
   }
 
   return (
-    <section className='e__section__gap '>
+    <section className='e__section__gap mb-24 md:mb-20'>
       <div className='e__office__container e__secondary__bg '>
         <div className='e__office__containerParent'>
           {/* Heading & Business Area */}
@@ -124,7 +124,7 @@ function OfficeLocation () {
                 </div>
 
                 {/* Social Icons */}
-                <div className='pb-24 md:pb-0'>
+                <div>
                   <h3 className='text-xl font-semibold text-gray-800'>
                     Follow Us
                   </h3>
