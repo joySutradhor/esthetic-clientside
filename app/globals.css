@@ -28,7 +28,7 @@
   }
 
   .e__secondary__color {
-    @apply text-gray-900;
+    @apply text-gray-800;
   }
 
   .e__para {
