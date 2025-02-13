@@ -65,7 +65,7 @@ function Header () {
                 <NavButton
                   className='!bg-black !text-white/80'
                   navButtonText='Home'
-                  navButtonLink='/home'
+                  navButtonLink='/'
                   icon={IoIosHome}
                 />
               </div>

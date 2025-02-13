@@ -172,8 +172,8 @@ function Book () {
   }
 
   return (
-    <div className='flex justify-center items-center lg:min-h-screen px-5 py-5 md:pt-10 md:px-16 lg:px-20 md:py-20 '>
-      <form onSubmit={handleSubmit} className='w-full max-w-6xl space-y-6 my-16'>
+    <div className='e__book__container '>
+      <form onSubmit={handleSubmit} className='e__book__form__parent'>
         <div className='mt-5'>
           <h3 className=''>Esthetic N. Del Rosario</h3>
           <p>Our Capital is Quality And Honesty - Neomi </p>
@@ -188,7 +188,7 @@ function Book () {
               >
                 Select Services*
               </label>
-              <div className=' grid md:grid-cols-2 lg:grid-cols-3 gap-2 lg:gap-5'>
+              <div className=' e__book__service__parent'>
                 {skincareServices.map(service => (
                   <div
                     key={service.id}
@@ -251,6 +251,7 @@ function Book () {
         {step === 2 && (
           <>
             <div className='mb-4'>
+          <p className=' my-2 text-red-400'>Please Fill Name , Data and Time</p>
               <label
                 htmlFor='customerName'
                 className='block text-sm font-medium text-gray-700'
@@ -265,7 +266,7 @@ function Book () {
                 value={customerName}
                 onChange={e => setCustomerName(e.target.value)}
                 required
-                className='w-full pl-2 py-1 mt-2 border border-gray-300 rounded-sm focus:outline-none text-sm font-medium'
+                className='e__book__input__feild'
               />
             </div>
 
@@ -283,7 +284,7 @@ function Book () {
                 value={date}
                 onChange={e => setDate(e.target.value)}
                 required
-                className='w-full px-2 py-1 mt-2 border border-gray-300 rounded-sm focus:outline-none text-sm font-medium'
+                className='e__book__input__feild'
               />
             </div>
 

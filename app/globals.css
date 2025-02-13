@@ -204,6 +204,10 @@
     @apply mt-10 md:mt-16 lg:mt-20 xl:mt-20 2xl:mt-24 border p-5 lg:p-10
   }
 
+  .e__about__expertise{
+    @apply grid grid-cols-2 gap-4 p-4 border rounded-md mt-10
+  }
+
   /* ----------------- esthetic about us styles ends here -----------------  */
   /*==================================================================================== */
 
@@ -319,6 +323,45 @@
     @apply flex flex-col items-center p-6 bg-white border text-center 
   }
   /* ----------------- esthetic commitment styles ends here -----------------  */
+  /*==================================================================================== */
+
+
+  /* ----------------- esthetic mission styles start here -----------------  */
+  /*==================================================================================== */
+
+    .e__mission__container{
+      @apply p-5 lg:p-10 border
+    }
+    .e__journey__parent{
+      @apply grid lg:grid-cols-2 gap-5 lg:gap-24 border p-5 lg:p-10
+    }
+    .e__journey__child__parent{
+      @apply flex flex-col-reverse md:flex-col
+    }
+    .e__founder__parent{
+      @apply mt-10 md:mt-16 lg:mt-16 xl:mt-20
+    }
+    .e__founder__child{
+      @apply bg-white rounded-lg border p-5 text-center lg:max-w-6xl lg:mx-auto
+    }
+  /* ----------------- esthetic mission styles ends here -----------------  */
+  /*==================================================================================== */
+
+  /* ----------------- esthetic Book styles start here -----------------  */
+  /*==================================================================================== */
+  .e__book__container{
+    @apply flex justify-center items-center lg:min-h-screen px-5 py-5 md:pt-10 md:px-16 lg:px-20 md:py-20
+  }
+  .e__book__form__parent{
+    @apply w-full max-w-6xl space-y-6 my-16
+  }
+  .e__book__service__parent{
+    @apply grid md:grid-cols-2 lg:grid-cols-3 gap-2 lg:gap-5
+  }
+  .e__book__input__feild{
+    @apply w-full px-2 py-1 mt-2 border border-gray-300 rounded-sm focus:outline-none text-sm font-medium
+  }
+  /* ----------------- esthetic Book styles ends here -----------------  */
   /*==================================================================================== */
 
 }

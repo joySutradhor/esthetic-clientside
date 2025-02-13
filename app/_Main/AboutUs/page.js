@@ -75,7 +75,7 @@ function AboutUs () {
               className='aspect-video  object-cover object-bottom rounded-md'
             ></Image>
           </div>
-          <div className='grid grid-cols-2 gap-4 p-4 border rounded-md mt-10'>
+          <div className='e__about__expertise'>
             <div className='e__secondary__bg p-4 rounded-md '>
               <div>
                 <p>Happy Customers</p>
