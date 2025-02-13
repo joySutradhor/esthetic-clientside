@@ -4,12 +4,15 @@ import NavButton from '@/app/_components/NavButton/page'
 import { IoIosHome } from 'react-icons/io'
 import { IoBriefcaseSharp } from 'react-icons/io5'
 import { MdOutlinePhotoLibrary, MdPeopleAlt } from 'react-icons/md'
-import { FaFacebook, FaInstagram, FaLinkedinIn } from 'react-icons/fa6'
+import { FaFacebook, FaInstagram } from 'react-icons/fa6'
+import { FaTiktok } from 'react-icons/fa6'
+
 import { SiWhatsapp } from 'react-icons/si'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { IoClose } from 'react-icons/io5'
 import Image from 'next/image'
 import logo from '@/public/logo.jpg'
+import Link from 'next/link'
 
 function Header () {
   const [isOpen, setIsOpen] = useState(false)
@@ -27,7 +30,7 @@ function Header () {
               {isOpen ? (
                 <IoClose />
               ) : (
-                <GiHamburgerMenu className='text-white' />
+                <GiHamburgerMenu className='text-black' />
               )}
             </button>
 
@@ -92,20 +95,43 @@ function Header () {
             {/* Contact & Social Links */}
             <div className='flex gap-5 items-center '>
               <p className='flex items-center gap-1 e__para text-sm'>
-                <span className='animate-bounce'>
-                  <SiWhatsapp />
-                </span>
-                +1 (813) 416-9628
+                <a
+                  href='https://wa.me/18134169628'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className='flex items-center gap-1'
+                >
+                  <span className='animate-bounce'>
+                    <SiWhatsapp />
+                  </span>
+                  +1 (813) 416-9628
+                </a>
               </p>
+
               <div className='flex gap-2'>
                 <div className='e__socail__icon'>
-                  <FaFacebook />
+                  <a
+                    href='https://www.facebook.com/profile.php?id=100063898472777'
+                    target='__blank'
+                  >
+                    <FaFacebook />
+                  </a>
                 </div>
                 <div className='e__socail__icon'>
-                  <FaInstagram />
+                  <a
+                    href='https://www.instagram.com/esthetic_n.delrosario/'
+                    target='__blank'
+                  >
+                    <FaInstagram />
+                  </a>
                 </div>
                 <div className='e__socail__icon'>
-                  <FaLinkedinIn />
+                  <a
+                    href='https://www.tiktok.com/@noemidelrosario03'
+                    target='_blank'
+                  >
+                    <FaTiktok />
+                  </a>
                 </div>
               </div>
             </div>
@@ -117,16 +143,20 @@ function Header () {
       <div className='absolute top-5 left-0 px-5 z-50 w-full md:hidden'>
         <div className='flex justify-between items-center'>
           <div>
-            <Image
-              src={logo}
-              alt='logo'
-              height={50}
-              width={50}
-              className='rounded-full block lg:hidden '
-            ></Image>
+            <Link href='/'>
+              <Image
+                src={logo}
+                alt='logo'
+                height={50}
+                width={50}
+                className='rounded-full block lg:hidden '
+              ></Image>
+            </Link>
           </div>
           <div>
-            <button className='e__service__btn'>Book Now</button>
+            <Link href='/book'>
+              <button className='e__service__btn'>Book Now</button>
+            </Link>
           </div>
         </div>
       </div>

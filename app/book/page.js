@@ -172,8 +172,8 @@ function Book () {
   }
 
   return (
-    <div className='flex justify-center items-center lg:min-h-screen p-5'>
-      <form onSubmit={handleSubmit} className='w-full max-w-lg space-y-6 my-16'>
+    <div className='flex justify-center items-center lg:min-h-screen px-5 py-5 md:pt-10 md:px-16 lg:px-20 md:py-20 '>
+      <form onSubmit={handleSubmit} className='w-full max-w-6xl space-y-6 my-16'>
         <div className='mt-5'>
           <h3 className=''>Esthetic N. Del Rosario</h3>
           <p>Our Capital is Quality And Honesty - Neomi </p>
@@ -188,7 +188,7 @@ function Book () {
               >
                 Select Services*
               </label>
-              <div className='space-y-2'>
+              <div className=' grid md:grid-cols-2 lg:grid-cols-3 gap-2 lg:gap-5'>
                 {skincareServices.map(service => (
                   <div
                     key={service.id}
@@ -241,7 +241,7 @@ function Book () {
             <button
               type='button'
               onClick={handleNextStep}
-              className='e__service__btn w-full'
+              className='e__service__btn w-full md:py-2'
             >
               Next
             </button>
@@ -359,7 +359,7 @@ function Book () {
               <button
                 type='button'
                 onClick={handlePreviousStep}
-                className='w-full bg-gray-200 text-sm font-medium rounded-xl '
+                className='w-full bg-gray-200 text-sm font-medium rounded-xl md:py-2'
               >
                 Previous
               </button>
@@ -367,7 +367,7 @@ function Book () {
                 type='button'
                 onClick={handleNextStep}
                 disabled={!customerName || !date || !time} // Disable "Next" if fields are empty
-                className={`w-full e__service__btn ${
+                className={`w-full e__service__btn md:py-2 ${
                   !customerName || !date || !time
                     ? 'opacity-50 cursor-not-allowed'
                     : ''
@@ -383,7 +383,7 @@ function Book () {
           <>
             <div className='mb-5 border border-dashed p-5'>
               <h3 className=' pb-2 font-medium border-b border-dashed'>
-                Order Summary for <br/> <span className='text-base font-semibold italic'>{customerName}</span>
+                ## Order Summary for <br/> <span className='text-base font-semibold italic'>{customerName}</span>
               </h3>
 
               {/* Booking Date and Time */}
@@ -441,17 +441,17 @@ function Book () {
               </div>
             </div>
 
-            <div className='flex justify-between'>
+            <div className='flex justify-between lg:gap-x-10'>
               <button
                 type='button'
                 onClick={handlePreviousStep}
-                className='w-full e__primary__btn'
+                className='w-full e__primary__btn md:py-2'
               >
                 Previous
               </button>
               <button
                 type='submit'
-                className='w-full e__service__btn'
+                className='w-full e__service__btn md:py-2'
               >
                 Confirm Booking
               </button>

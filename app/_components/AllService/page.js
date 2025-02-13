@@ -2,6 +2,7 @@
 import Image from 'next/image'
 import React, { useState } from 'react'
 import serviceList from '@/public/FakeDb/services.json'
+import Link from 'next/link'
 
 function AllService () {
   const { services } = serviceList
@@ -43,7 +44,7 @@ function AllService () {
               </div>
 
               <div className=''>
-                <button className='e__service__btn'>Book Now</button>
+                <Link href="/book"><button className='e__service__btn'>Book Now</button></Link>
               </div>
             </div>
           </div>

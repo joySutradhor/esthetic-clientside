@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 import { FaRegHandPointer } from 'react-icons/fa6'
 
@@ -15,12 +16,15 @@ function Cta () {
             </p>
           </div>
           <div className='e__cta__btnParent'>
-            <button className='e__bookBtn flex gap-x-2 items-center'>
-              Book Now{' '}
-              <span className='rotate-90'>
-                <FaRegHandPointer />
-              </span>
-            </button>
+            <Link href="/book">
+              {' '}
+              <button className='e__bookBtn flex gap-x-2 items-center'>
+                Book Now{' '}
+                <span className='rotate-90'>
+                  <FaRegHandPointer />
+                </span>
+              </button>
+            </Link>
           </div>
         </div>
       </div>

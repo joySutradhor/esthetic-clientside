@@ -4,7 +4,8 @@ import {
   FaFacebookF,
   FaTwitter,
   FaLinkedinIn,
-  FaInstagram
+  FaInstagram,
+  FaTiktok
 } from 'react-icons/fa'
 import esthetic from '@/public/office/esthetic.webp'
 import { useState } from 'react'
@@ -130,25 +131,19 @@ function OfficeLocation () {
                   </h3>
                   <div className='flex space-x-4 mt-3'>
                     <a
-                      href='#'
+                      href='https://www.facebook.com/profile.php?id=100063898472777' target='__blank'
                       className='text-white bg-blue-600 p-2 md:p-3 rounded-full shadow-lg hover:bg-blue-700'
                     >
                       <FaFacebookF />
                     </a>
                     <a
-                      href='#'
+                      href='https://www.tiktok.com/@noemidelrosario03' target='__blank'
                       className='text-white bg-blue-400 p-2 md:p-3 rounded-full shadow-lg hover:bg-blue-500'
                     >
-                      <FaTwitter />
+                      <FaTiktok />
                     </a>
                     <a
-                      href='#'
-                      className='text-white bg-blue-700 p-2 md:p-3 rounded-full shadow-lg hover:bg-blue-800'
-                    >
-                      <FaLinkedinIn />
-                    </a>
-                    <a
-                      href='#'
+                      href='https://www.instagram.com/esthetic_n.delrosario/' target='__blank'
                       className='text-white bg-pink-500 p-2 md:p-3 rounded-full shadow-lg hover:bg-pink-600'
                     >
                       <FaInstagram />
