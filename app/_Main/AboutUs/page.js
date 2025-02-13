@@ -1,8 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import founder from '@/public/founder/founderofestehtic.jpg'
-import { MdArrowOutward } from 'react-icons/md'
-import skincareWorkflow from '@/public/FakeDb/Workflow.json'
+import skincareWorkflow from '@/public/FakeDb/workflow.json'
 
 function AboutUs () {
   console.log(skincareWorkflow)

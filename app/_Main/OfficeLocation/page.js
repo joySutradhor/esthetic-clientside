@@ -2,12 +2,10 @@
 import Image from 'next/image'
 import {
   FaFacebookF,
-  FaTwitter,
-  FaLinkedinIn,
   FaInstagram,
   FaTiktok
 } from 'react-icons/fa'
-import esthetic from '@/public/office/esthetic.webp'
+import esthetic from '@/public/office/Esthetic.webp'
 import { useState } from 'react'
 import { FaCopy, FaEnvelope, FaPhone } from 'react-icons/fa6'
 import { FaLocationDot } from "react-icons/fa6";
