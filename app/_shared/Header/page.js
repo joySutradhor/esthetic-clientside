@@ -79,7 +79,7 @@ function Header () {
               <div>
                 <NavButton
                   navButtonText='Services'
-                  navButtonLink='/services'
+                  navButtonLink='/service'
                   icon={IoBriefcaseSharp}
                 />
               </div>
