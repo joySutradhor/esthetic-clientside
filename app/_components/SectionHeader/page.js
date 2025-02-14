@@ -10,7 +10,8 @@ function SectionHeader ({serviceHeader , heading , btnText , paraText}) {
         alt='service header'
         height={800}
         width={800}
-        className='h-full w-full object-cover object-top'
+        className='h-full w-full object-cover object-center'
+        layout="responsive"
       ></Image>
       <div className='e__c__overlay'></div>
       <div className='e__c__content__header'>

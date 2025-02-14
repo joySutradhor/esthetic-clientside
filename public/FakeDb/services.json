@@ -1,257 +1,100 @@
 {
-    "services": [
-      {
-        "id": 1,
-        "service_name": "Limpieza Facial",
-        "images" : "/service/Limpieza Facial.webp" ,
-        "short_description": "Elimina impurezas y revitaliza tu piel.",
-        "intro": "Nuestra limpieza facial elimina células muertas, puntos negros y exceso de grasa, dejando tu piel fresca y radiante.",
-        "why_need_it": "La limpieza facial es clave para mantener un cutis sano, libre de impurezas.",
-        "benefits": [
-          "Elimina impurezas",
-          "Mejora la oxigenación de la piel",
-          "Hidratación profunda",
-          "Piel más suave y luminosa"
-        ],
-        "expert_opinion": [
-          {
-            "name": "Dra. Carolina Méndez",
-            "opinion": "Una limpieza facial es esencial para mantener la piel saludable y prevenir imperfecciones.",
-            "src": "https://example.com/expert1.jpg"
-          }
-        ]
-      },
-      {
-        "id": 2,
-        "service_name": "Peeling",
-        "images" : "/service/Peeling.webp" ,
-        "short_description": "Tratamiento exfoliante para eliminar las capas superficiales de la piel.",
-        "intro": "El peeling elimina células muertas y promueve la regeneración celular, dejando la piel más suave y fresca.",
-        "why_need_it": "El peeling mejora la textura de la piel y combate el envejecimiento prematuro.",
-        "benefits": [
-          "Exfoliación profunda",
-          "Mejora la textura y tono",
-          "Elimina manchas y cicatrices",
-          "Estimula la regeneración celular"
-        ],
-        "expert_opinion": [
-          {
-            "name": "Dra. Laura Gómez",
-            "opinion": "El peeling es un tratamiento excelente para rejuvenecer la piel y mejorar su textura.",
-            "src": "https://example.com/expert2.jpg"
-          }
-        ]
-      },
-      {
-        "id": 3,
-        "service_name": "Hidratación Profunda",
-        "images" : "/service/Hidratación Profunda.webp" ,
-        "short_description": "Hidrata y rejuvenece la piel en profundidad.",
-        "intro": "La hidratación profunda nutre la piel desde adentro, manteniéndola suave y rejuvenecida.",
-        "why_need_it": "La piel deshidratada puede lucir opaca, por lo que es importante mantenerla hidratada para lucir saludable.",
-        "benefits": [
-          "Hidrata profundamente",
-          "Restaura la luminosidad",
-          "Atenúa líneas finas",
-          "Mejora la elasticidad"
-        ],
-        "expert_opinion": [
-          {
-            "name": "Dra. Pilar Sánchez",
-            "opinion": "La hidratación es fundamental para mantener la piel joven y saludable.",
-            "src": "https://example.com/expert3.jpg"
-          }
-        ]
-      },
-      {
-        "id": 4,
-        "service_name": "Rejuvenecimiento Facial",
-        "images" : "/service/Rejuvenecimiento Facial.webp" ,
-        "short_description": "Revitaliza la piel y reduce los signos del envejecimiento.",
-        "intro": "Este tratamiento combate las arrugas y la flacidez, restaurando la frescura y juventud de tu piel.",
-        "why_need_it": "El rejuvenecimiento facial es ideal para mantener un rostro firme y luminoso.",
-        "benefits": [
-          "Reduce arrugas",
-          "Estira y reafirma la piel",
-          "Mejora el contorno facial",
-          "Restaura la luminosidad"
-        ],
-        "expert_opinion": [
-          {
-            "name": "Dra. Clara Martín",
-            "opinion": "Este tratamiento es perfecto para quienes desean retrasar los signos de envejecimiento.",
-            "src": "https://example.com/expert4.jpg"
-          }
-        ]
-      },
-      {
-        "id": 5,
-        "service_name": "Mesoterapia de Vitaminas",
-        "images" : "/service/Mesoterapia de Vitaminas.webp" ,
-        "short_description": "Aplicación de vitaminas directamente en la piel.",
-        "intro": "La mesoterapia revitaliza la piel con vitaminas esenciales, mejorando su luminosidad y elasticidad.",
-        "why_need_it": "Ideal para pieles cansadas y deshidratadas que necesitan un impulso de vitalidad.",
-        "benefits": [
-          "Aporta vitaminas esenciales",
-          "Hidrata y rejuvenece",
-          "Estimula la regeneración celular",
-          "Mejora la textura de la piel"
-        ],
-        "expert_opinion": [
-          {
-            "name": "Dra. Carolina Méndez",
-            "opinion": "La mesoterapia de vitaminas es ideal para una piel más fresca y rejuvenecida.",
-            "src": "https://example.com/expert5.jpg"
-          }
-        ]
-      },
-      {
-        "id": 6,
-        "service_name": "Plasma Rico en Plaquetas",
-        "images" : "/service/Plasma Rico en Plaquetas.webp" ,
-        "short_description": "Tratamiento de regeneración celular con plasma propio.",
-        "intro": "Este tratamiento utiliza el plasma de tu propio cuerpo para regenerar la piel y reducir cicatrices.",
-        "why_need_it": "Es excelente para rejuvenecer la piel y mejorar la textura de manera natural.",
-        "benefits": [
-          "Regenera la piel",
-          "Reduce arrugas y cicatrices",
-          "Mejora la elasticidad",
-          "No invasivo y natural"
-        ],
-        "expert_opinion": [
-          {
-            "name": "Dra. Patricia Díaz",
-            "opinion": "El plasma rico en plaquetas es perfecto para rejuvenecer la piel de manera natural.",
-            "src": "https://example.com/expert6.jpg"
-          }
-        ]
-      },
-      {
-        "id": 7,
-        "service_name": "Microdermoabrasión",
-        "images" : "/service/Microdermoabrasión.webp" ,
-        "short_description": "Exfoliación suave para eliminar capas superficiales de la piel.",
-        "intro": "Este tratamiento elimina las células muertas y estimula la producción de colágeno, rejuveneciendo la piel.",
-        "why_need_it": "Ideal para pieles con manchas o cicatrices leves.",
-        "benefits": [
-          "Elimina células muertas",
-          "Reduce manchas y cicatrices",
-          "Estimula la producción de colágeno",
-          "Mejora la textura de la piel"
-        ],
-        "expert_opinion": [
-          {
-            "name": "Dr. Enrique Torres",
-            "opinion": "La microdermoabrasión es una excelente opción para mejorar la apariencia general de la piel.",
-            "src": "https://example.com/expert7.jpg"
-          }
-        ]
-      },
-      {
-        "id": 8,
-        "service_name": "Tratamiento Anticelulitis",
-        "images" : "/service/Tratamiento Anticelulitis.webp" ,
-        "short_description": "Reducción de la apariencia de la celulitis y mejora de la firmeza de la piel.",
-        "intro": "Con técnicas específicas, este tratamiento combate la celulitis y mejora la circulación.",
-        "why_need_it": "Ideal para quienes buscan reducir la apariencia de la celulitis y tonificar la piel.",
-        "benefits": [
-          "Reduce la celulitis",
-          "Mejora la circulación",
-          "Tonifica la piel",
-          "Atenúa la apariencia de la piel de naranja"
-        ],
-        "expert_opinion": [
-          {
-            "name": "Dra. Isabel Pérez",
-            "opinion": "Este tratamiento es ideal para mejorar la textura y firmeza de la piel en áreas afectadas por la celulitis.",
-            "src": "https://example.com/expert8.jpg"
-          }
-        ]
-      },
-      {
-        "id": 9,
-        "service_name": "Lifting Facial no Quirúrgico",
-        "images" : "/service/Lifting Facial no Quirúrgico.webp" ,
-        "short_description": "Reafirma la piel y reduce la flacidez sin cirugía.",
-        "intro": "Este tratamiento utiliza técnicas de estimulación para tensar la piel y mejorar su firmeza.",
-        "why_need_it": "Ideal para quienes buscan un rejuvenecimiento sin necesidad de cirugía invasiva.",
-        "benefits": [
-          "Reafirma la piel",
-          "Reduce la flacidez",
-          "Mejora el contorno facial",
-          "No invasivo"
-        ],
-        "expert_opinion": [
-          {
-            "name": "Dr. Alejandro Rivas",
-            "opinion": "El lifting no quirúrgico es una excelente opción para quienes desean resultados rápidos sin cirugía.",
-            "src": "https://example.com/expert9.jpg"
-          }
-        ]
-      },
-      {
-        "id": 10,
-        "service_name": "Tratamiento para Ojeras",
-        "images" : "/service/Tratamiento para Ojeras.webp" ,
-        "short_description": "Reducción de ojeras y bolsas debajo de los ojos.",
-        "intro": "Este tratamiento reduce las ojeras, mejorando la apariencia de la zona ocular.",
-        "why_need_it": "Ideal para quienes tienen ojeras o bolsas que afectan su apariencia.",
-        "benefits": [
-          "Reduce las ojeras",
-          "Mejora la circulación",
-          "Atenúa las bolsas",
-          "Da un aspecto descansado"
-        ],
-        "expert_opinion": [
-          {
-            "name": "Dra. Elena Rodríguez",
-            "opinion": "Este tratamiento es muy eficaz para reducir las ojeras y devolver la frescura a la mirada.",
-            "src": "https://example.com/expert10.jpg"
-          }
-        ]
-      },
-      {
-        "id": 11,
-        "service_name": "Tratamiento Antiacné",
-        "images" : "/service/Tratamiento Antiacné.webp" ,
-        "short_description": "Elimina el acné y previene brotes futuros.",
-        "intro": "Tratamiento diseñado para combatir el acné y las imperfecciones de la piel.",
-        "why_need_it": "Esencial para mantener una piel limpia y libre de acné.",
-        "benefits": [
-          "Reduce el acné",
-          "Preveniene futuros brotes",
-          "Mejora el tono de la piel",
-          "Disminuye las cicatrices del acné"
-        ],
-        "expert_opinion": [
-          {
-            "name": "Dr. Miguel Hernández",
-            "opinion": "Este tratamiento es ideal para quienes sufren de acné recurrente y desean una piel más clara.",
-            "src": "https://example.com/expert11.jpg"
-          }
-        ]
-      },
-      {
-        "id": 12,
-        "service_name": "Terapia de Luz LED",
-        "images" : "/service/Terapia de Luz LED.webp" ,
-        "short_description": "Estimula la piel con luz LED para mejorar su salud.",
-        "intro": "Esta terapia utiliza luz LED para tratar diversos problemas de la piel, como el acné y la falta de luminosidad.",
-        "why_need_it": "Perfecta para aquellos que buscan mejorar la salud y apariencia general de su piel.",
-        "benefits": [
-          "Reduce el acné",
-          "Atenúa las arrugas",
-          "Mejora la luminosidad",
-          "Estimula la regeneración celular"
-        ],
-        "expert_opinion": [
-          {
-            "name": "Dra. Marta García",
-            "opinion": "La terapia de luz LED es muy efectiva para tratar diversos problemas de la piel sin efectos secundarios.",
-            "src": "https://example.com/expert12.jpg"
-          }
-        ]
-      }
-    ]
-  }
-  
+  "services": [
+    {
+      "id": 1,
+      "service_name": "Facial Cleansing",
+      "slug": "facial-cleansing" , 
+      "images": "/service/facial cleansing - esthetic n. del rosario.jpg",
+      "short_description": "Facial cleansing is the best way to give your skin a fresh start. It thoroughly removes dirt, excess oil, and dead skin cells that can clog pores and lead to breakouts. This rejuvenating treatment helps your skin breathe easier, leaving it feeling clean, smooth, and balanced. It also brightens your complexion and gives your skin that healthy, glowing look you’ve always wanted. Whether you’re dealing with acne, dryness, or just need a reset, facial cleansing helps remove makeup, pollution, and impurities that can harm your skin. Plus, it prepares your skin for other treatments like moisturizing or serums, allowing them to work even better. A regular facial cleansing routine is essential for clear, healthy, and radiant skin, no matter your skin type. Get your facial cleansing today to start your skincare journey on the right foot.",
+      
+      "intro": "Facial cleansing is the process of washing your face to remove dirt, makeup, and other impurities. It's important to cleanse your face regularly to prevent acne, pimples .",
+      
+      "why_need_it": "Facial cleansing is crucial to preventing acne and maintaining skin that’s free of impurities. Throughout the day, your skin accumulates pollution, oil, and makeup residue that can clog pores and cause imperfections. By scheduling regular facial cleansing treatments, you’ll help your skin stay fresh and balanced. This treatment is suitable for all skin types and can be customized to meet your unique needs. Removing impurities makes your skin look brighter and revitalized while boosting the effectiveness of other skincare products. Regular facial cleansing also helps protect your skin from premature aging by eliminating harmful buildup that can damage your skin over time. Keep your skin looking youthful with facial cleansing, and discover the benefits of cleaner, clearer skin.",
+      
+      "benefits": [
+        {
+          "title": "Removal of Impurities",
+          "description": "Facial cleansing removes oil, dirt, and dead skin cells, preventing clogged pores and improving your skin's overall health and appearance."
+        },
+        {
+          "title": "Hydration and Revitalization",
+          "description": "This treatment provides deep hydration, leaving your skin feeling fresh and revitalized, and helps restore its natural balance."
+        },
+        {
+          "title": "Prevention of Premature Aging",
+          "description": "By removing impurities and pollutants, facial cleansing helps prevent premature aging, ensuring your skin stays youthful and vibrant."
+        }
+      ],
+      
+      "expert_opinion": [
+        {
+          "name": "Dr. Raj Arora",
+          "opinion": "Dr. Arora highlights that skin cleansing is crucial for removing dirt, debris, and sebum, leading to clearer pores and an improved overall complexion. She notes that using a gentle facial cleansing brush can enhance the cleansing process when used correctly.",
+          "src": "/doctor/Facial Cleansing/Dr. Raj Arora.jpg"
+        },
+        {
+          "name": "Dr. Whitney Bowe",
+          "opinion": "Dr. Bowe advises that overwashing the skin can lead to dryness and increased sensitivity. She recommends using gentle, fragrance-free cleansers and maintaining a balanced cleansing routine to protect the skin's natural barrier.",
+          "src": "/doctor/Facial Cleansing/Dr. Whitney Bowe.webp"
+        } ,
+        {
+          "name": "Dr. Rajani Katta",
+          "opinion": "Dr. Katta emphasizes the importance of selecting cleansers appropriate for specific skin conditions, such as eczema. She suggests opting for products that are hydrating and free from harsh ingredients to prevent irritation and maintain skin health.",
+          "src": "/doctor/Facial Cleansing/Dr. Rajani Katta.png"
+        }
+      ],
+      
+      "price": 150,
+      "time": "60 minutes"
+    },
+    {
+      "id": 2,
+      "service_name": "Peeling",
+      "slug": "peeling",
+      "images": "/service/peelling.jpeg",
+      "short_description": "Peeling is a highly effective skincare treatment that removes dead skin cells, improves texture, and boosts skin radiance. This treatment helps reduce acne scars, hyperpigmentation, and fine lines, revealing smoother and healthier skin. It accelerates skin renewal and enhances the absorption of skincare products, making your routine more effective. Whether you're looking to achieve a brighter complexion or minimize signs of aging, peeling is a rejuvenating solution tailored to various skin types. Experience the benefits of peeling today and restore your skin’s youthful glow.",
+      
+      "intro": "Peeling is a dermatological treatment that involves applying chemical solutions or natural exfoliants to remove dead skin cells and stimulate cell regeneration. It is commonly used to improve skin texture, treat acne scars, and reduce pigmentation issues.",
+      
+      "why_need_it": "Peeling is essential for improving skin tone and texture, reducing blemishes, and unclogging pores. It helps fade scars and fine lines while promoting collagen production. If you have dull or uneven skin, a peeling treatment can restore its brightness and youthful appearance. By removing damaged skin layers, this treatment accelerates cell turnover and enhances your overall complexion.",
+      
+      "benefits": [
+        {
+          "title": "Exfoliates Dead Skin",
+          "description": "Peeling removes dead skin cells, revealing a smoother and more radiant complexion."
+        },
+        {
+          "title": "Reduces Hyperpigmentation",
+          "description": "It helps fade dark spots, acne scars, and sun damage for an even skin tone."
+        },
+        {
+          "title": "Minimizes Fine Lines and Wrinkles",
+          "description": "By stimulating collagen production, peeling reduces the appearance of fine lines and wrinkles."
+        }
+      ],
+      
+      "expert_opinion": [
+        {
+          "name": "Dr. Dennis Gross",
+          "opinion": "Dr. Gross recommends chemical peels for improving skin tone, reducing acne scars, and enhancing collagen production. He suggests using gentle peels for beginners and gradually increasing strength based on skin tolerance.",
+          "src": "/doctor/pelling/Dr. Dennis Gross.jpg"
+        },
+        {
+          "name": "Dr. Barbara Sturm",
+          "opinion": "Dr. Sturm emphasizes that chemical peels should be carefully selected based on skin type. She warns against over-exfoliation and recommends using peels with hydrating ingredients to prevent irritation.",
+          "src": "/doctor/pelling/Dr. Barbara Sturm.jpg"
+        },
+        {
+          "name": "Dr. Shereene Idriss",
+          "opinion": "Dr. Idriss advises that chemical peels are effective for treating hyperpigmentation and acne scars. She suggests incorporating mild exfoliating treatments into a skincare routine for long-term benefits.",
+          "src": "/doctor/pelling/Dr. Shereene Idriss.jpeg"
+        }
+      ],
+      
+      "price": 120,
+      "time": "60 minutes"
+    }
+    
+
+  ]
+}

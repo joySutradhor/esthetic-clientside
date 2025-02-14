@@ -97,6 +97,16 @@
   @apply absolute top-24 lg:top-[25%] xl:top-[30%] 2xl:top-[30%] z-50 left-0  text-white text-center space-y-2 p-4 w-full mx-auto
  }
 
+ .e__c__header__service__parent{
+  @apply h-[50vh]  lg:h-[60vh] xl:h-[60vh] 2xl:h-[60vh] overflow-hidden
+ }
+ .e__c__service__overlay{
+  @apply  absolute inset-0 bg-black/40 h-[50vh] lg:h-[60vh] xl:h-[60vh] 2xl:h-[60vh]
+ }
+ .e__c__content__service__header{
+  @apply absolute top-24 lg:top-[35%] xl:top-[35%] 2xl:top-[40%] z-40 left-0  text-white text-center space-y-2 p-4 w-full  mx-auto md:px-[20%]  lg:px-[30%]
+ }
+
  .e__c__para{
   @apply text-white/80 pb-10
  }
@@ -361,6 +371,44 @@
   .e__book__input__feild{
     @apply w-full px-2 py-1 mt-2 border border-gray-300 rounded-sm focus:outline-none text-sm font-medium
   }
+  /* ----------------- esthetic Book styles ends here -----------------  */
+  /*==================================================================================== */
+
+  /* ----------------- esthetic service details styles start here -----------------  */
+  /*==================================================================================== */
+  .e__service__details__container {
+    @apply border p-5 lg:p-10
+  }
+  .e__details__action__parent{
+    @apply container mx-auto  grid lg:grid-cols-2 items-center gap-20 border p-5 lg:border-none
+  }
+  .e__details__serviceName{
+    @apply mb-3 lg:mb-5
+  }
+  .e__details__intro{
+    @apply mb-5 lg:mb-10
+
+  }
+  .e__details__action__child{
+    @apply my-5 lg:my-10
+
+  }
+
+  .e__deitails__child__parent{
+    @apply my-5 lg:my-10
+  }
+
+  .e__details__benefit__container{
+    @apply grid xl:grid-cols-2 justify-between gap-10 lg:gap-10 2xl:gap-20
+  }
+
+  .e__details__expert__parent{
+    @apply grid md:grid-cols-2 lg:grid-cols-[40%__50%] xl:grid-cols-[10%__85%] gap-5
+  }
+
+  /* ----------------- estheticservice details styles ends here -----------------  */
+  /*==================================================================================== */
+
   /* ----------------- esthetic Book styles ends here -----------------  */
   /*==================================================================================== */
 

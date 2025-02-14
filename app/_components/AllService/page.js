@@ -2,6 +2,8 @@
 import Image from 'next/image'
 import React, { useState } from 'react'
 import serviceList from '@/public/FakeDb/services.json'
+import { LuAlarmClock } from "react-icons/lu";
+
 
 import Link from 'next/link'
 
@@ -33,15 +35,16 @@ function AllService () {
             </div>
 
             <div className='p-5 space-y-3'>
-              <h3>{item?.service_name}</h3>
+              <h3 className='font-bold'>{item?.service_name}</h3>
+              <p className='flex justify-between items-center font-bold'> <span>${item?.price}</span> <span className='flex gap-x-1 items-center'> <LuAlarmClock/> {item?.time} </span> </p>
               <p>{item?.intro}</p>
             </div>
 
             <div className='flex justify-between items-center m-5'>
               <div>
-                <button className='underline underline-offset-2'>
+                <Link href={`/service/${item?.slug}`}><button className='underline underline-offset-2'>
                   View Details
-                </button>
+                </button></Link>
               </div>
 
               <div className=''>
