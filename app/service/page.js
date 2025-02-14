@@ -8,6 +8,7 @@ import AllService from '../_components/AllService/page'
 import Cta from '../_Main/CTA/page'
 import Faq from '../_Main/Faq/page'
 import OfficeLocation from '../_Main/OfficeLocation/page'
+import Review from '../_Main/Review/page'
 
 function Service () {
   const customerCommitment = [
@@ -73,6 +74,7 @@ function Service () {
       </div>
 
       {/* cta section */}
+      <Review/>
       <Cta/>
       <Faq/>
       <OfficeLocation/>
