@@ -1,5 +1,6 @@
 'use client'
 import Image from 'next/image'
+import { Confirm } from 'notiflix'
 import React, { useState } from 'react'
 import { LuAlarmClockPlus } from 'react-icons/lu'
 
@@ -146,22 +147,35 @@ function Book () {
       0
     )
 
-    const formData = {
-      customerName,
-      phone,
-      email,
-      date,
-      time,
-      selectedServices: selectedServicesDetails,
-      subtotal
-    }
-
-    console.log(formData)
+    Confirm.show(
+      'Esthetic Booking',
+      'Do you want to booking?',
+      'Yes',
+      'No',
+      () => {
+        const formData = {
+          customerName,
+          phone,
+          email,
+          date,
+          time,
+          selectedServices: selectedServicesDetails,
+          subtotal
+        }
+        console.log(formData)
+      },
+      () => {},
+      {}
+    )
   }
 
   const handleNextStep = () => {
     if (step === 1 && selectedServices.length === 0) {
-      alert('Please select at least one service!')
+      Confirm.show(
+        'Select Service',
+        'Please Select one service atleast',
+        'Okay',
+      )
       return
     }
     setStep(step + 1)
@@ -170,6 +184,8 @@ function Book () {
   const handlePreviousStep = () => {
     setStep(step - 1)
   }
+
+  // console.log(selectedServices , date , time , customerName ,phone , email , grandTotal  )
 
   return (
     <div className='e__book__container '>
@@ -251,7 +267,9 @@ function Book () {
         {step === 2 && (
           <>
             <div className='mb-4'>
-          <p className=' my-2 text-red-400'>Please Fill Name , Data and Time</p>
+              <p className=' my-2 text-red-400'>
+                Please Fill Name , Data and Time
+              </p>
               <label
                 htmlFor='customerName'
                 className='block text-sm font-medium text-gray-700'
@@ -265,6 +283,44 @@ function Book () {
                 placeholder='Write your name'
                 value={customerName}
                 onChange={e => setCustomerName(e.target.value)}
+                required
+                className='e__book__input__feild'
+              />
+            </div>
+
+            <div className='mb-4'>
+              <label
+                htmlFor='phone'
+                className='block text-sm font-medium text-gray-700'
+              >
+                Your Phone*
+              </label>
+              <input
+                type='number'
+                id='phone'
+                name='phone'
+                placeholder='Write Phone Number'
+                value={phone}
+                onChange={e => setPhone(e.target.value)}
+                required
+                className='e__book__input__feild'
+              />
+            </div>
+
+            <div className='mb-4'>
+              <label
+                htmlFor='email'
+                className='block text-sm font-medium text-gray-700'
+              >
+                Your Email*
+              </label>
+              <input
+                type='email'
+                id='email'
+                name='email'
+                placeholder='Write Email Here'
+                value={email}
+                onChange={e => setEmail(e.target.value)}
                 required
                 className='e__book__input__feild'
               />
@@ -384,7 +440,10 @@ function Book () {
           <>
             <div className='mb-5 border border-dashed p-5'>
               <h3 className=' pb-2 font-medium border-b border-dashed'>
-                ## Order Summary for <br/> <span className='text-base font-semibold italic'>{customerName}</span>
+                ## Order Summary for <br />{' '}
+                <span className='text-base font-semibold italic'>
+                  {customerName}
+                </span>
               </h3>
 
               {/* Booking Date and Time */}
@@ -450,10 +509,7 @@ function Book () {
               >
                 Previous
               </button>
-              <button
-                type='submit'
-                className='w-full e__service__btn md:py-2'
-              >
+              <button type='submit' className='w-full e__service__btn md:py-2'>
                 Confirm Booking
               </button>
             </div>
