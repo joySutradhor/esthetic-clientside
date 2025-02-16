@@ -131,7 +131,9 @@ function Book () {
     }
   ]
 
-  const today = new Date().toISOString().split('T')[0];
+  const today = new Date().toLocaleDateString("fr-CA"); // "YYYY-MM-DD" format in local time
+console.log("Today:", today);
+  console.log(date)
 
   const toggleService = serviceId => {
     if (selectedServices.includes(serviceId)) {
