@@ -4,6 +4,7 @@ import Image from 'next/image'
 import { Confirm } from 'notiflix'
 import React, { useState } from 'react'
 import { LuAlarmClockPlus } from 'react-icons/lu'
+import { v4 as uuidv4 } from 'uuid' // Install with `npm install uuid`
 
 function Book () {
   const [step, setStep] = useState(1) // Step state to manage stepper flow
@@ -130,6 +131,8 @@ function Book () {
     }
   ]
 
+  const today = new Date().toISOString().split('T')[0];
+
   const toggleService = serviceId => {
     if (selectedServices.includes(serviceId)) {
       setSelectedServices(selectedServices.filter(id => id !== serviceId))
@@ -148,13 +151,18 @@ function Book () {
       0
     )
 
+
+
     Confirm.show(
       'Esthetic Booking',
       'Do you want to book?',
       'Yes',
       'No',
       () => {
+        const orderId = uuidv4() 
+    
         const formData = {
+          orderId, // Attach the unique ID to the order
           customerName,
           phone,
           email,
@@ -163,38 +171,38 @@ function Book () {
           selectedServices: selectedServicesDetails,
           subtotal
         }
-
+    
         axios
           .post('http://localhost:8000/api/create', formData)
           .then(res => {
-            const status = res.status
-
-            if (status === 200) {
-              console.log('done')
-              // Get existing bookings from localStorage (ensure it's an array)
+            if (res.status === 200) {
+              console.log('Order created successfully')
+    
+              // Get existing bookings from localStorage
               const existingBookings =
                 JSON.parse(localStorage.getItem('estheticBookings')) || []
-
-              // Append new booking phone number to the array
-              existingBookings.push(phone)
-
-              // Save back the **updated array** to localStorage
+    
+              // Append new booking with order ID and phone
+              existingBookings.push({ orderId })
+    
+              // Save back the updated array to localStorage
               localStorage.setItem(
                 'estheticBookings',
                 JSON.stringify(existingBookings)
               )
-
-              // succoss modal
+    
+              // Success modal or redirect
               window.location.href = '/dashboard'
             }
           })
           .catch(error => {
-            console.error({ error: error })
+            console.error({ error })
           })
       },
       () => {},
       {}
     )
+    
   }
 
   const handleNextStep = () => {
@@ -367,6 +375,7 @@ function Book () {
                 name='date'
                 value={date}
                 onChange={e => setDate(e.target.value)}
+                min={today}
                 required
                 className='e__book__input__feild'
               />

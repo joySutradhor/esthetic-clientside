@@ -3,13 +3,13 @@ import React, { useState, useEffect } from 'react'
 import { FaTrash } from 'react-icons/fa'
 
 function Dashboard () {
-  // const [orders, setOrders] = useState([])
+  const [orders, setOrders] = useState([])
 
-  // useEffect(() => {
-  //   const storedOrders =
-  //     JSON.parse(localStorage.getItem('estheticBookings')) || []
-  //   setOrders(storedOrders)
-  // }, [])
+  useEffect(() => {
+    const storedOrders =
+      JSON.parse(localStorage.getItem('estheticBookings')) || []
+    setOrders(storedOrders)
+  }, [])
 
   // const deleteOrder = orderId => {
   //   const updatedOrders = orders.filter(order => order.id !== orderId)
@@ -19,7 +19,9 @@ function Dashboard () {
 
   return (
     <>
-    <p>hello Promise based HTTP client for the browser and node.js. Latest version: 1.7.9, last published: 2 months ago. Start using axios in your ...Promise based HTTP client for the browser and node.js. Latest version: 1.7.9, last published: 2 months ago. Start using axios in your ...Promise based HTTP client for the browser and node.js. Latest version: 1.7.9, last published: 2 months ago. Start using axios in your ...Promise based HTTP client for the browser and node.js. Latest version: 1.7.9, last published: 2 months ago. Start using axios in your ...Promise based HTTP client for the browser and node.js. Latest version: 1.7.9, last published: 2 months ago. Start using axios in your ...Promise based HTTP client for the browser and node.js. Latest version: 1.7.9, last published: 2 months ago. Start using axios in your ...Promise based HTTP client for the browser and node.js. Latest version: 1.7.9, last published: 2 months ago. Start using axios in your ...Promise based HTTP client for the browser and node.js. Latest version: 1.7.9, last published: 2 months ago. Start using axios in your ...Promise based HTTP client for the browser and node.js. Latest version: 1.7.9, last published: 2 months ago. Start using axios in your ...Promise based HTTP client for the browser and node.js. Latest version: 1.7.9, last published: 2 months ago. Start using axios in your ...Promise based HTTP client for the browser and node.js. Latest version: 1.7.9, last published: 2 months ago. Start using axios in your ...Promise based HTTP client for the browser and node.js. Latest version: 1.7.9, last published: 2 months ago. Start using axios in your ...Promise based HTTP client for the browser and node.js. Latest version: 1.7.9, last published: 2 months ago. Start using axios in your ...</p>
+      <div className='flex items-center justify-center h-screen bg-gray-100'>
+       hello
+      </div>
     </>
     // <div className='min-h-screen bg-gray-100 p-4 md:p-8'>
     //   <div className='max-w-4xl mx-auto'>
