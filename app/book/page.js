@@ -1,4 +1,5 @@
 'use client'
+import axios from 'axios'
 import Image from 'next/image'
 import { Confirm } from 'notiflix'
 import React, { useState } from 'react'
@@ -149,7 +150,7 @@ function Book () {
 
     Confirm.show(
       'Esthetic Booking',
-      'Do you want to booking?',
+      'Do you want to book?',
       'Yes',
       'No',
       () => {
@@ -162,7 +163,34 @@ function Book () {
           selectedServices: selectedServicesDetails,
           subtotal
         }
-        console.log(formData)
+
+        axios
+          .post('http://localhost:8000/api/create', formData)
+          .then(res => {
+            const status = res.status
+
+            if (status === 200) {
+              console.log('done')
+              // Get existing bookings from localStorage (ensure it's an array)
+              const existingBookings =
+                JSON.parse(localStorage.getItem('estheticBookings')) || []
+
+              // Append new booking phone number to the array
+              existingBookings.push(phone)
+
+              // Save back the **updated array** to localStorage
+              localStorage.setItem(
+                'estheticBookings',
+                JSON.stringify(existingBookings)
+              )
+
+              // succoss modal
+              window.location.href = '/dashboard'
+            }
+          })
+          .catch(error => {
+            console.error({ error: error })
+          })
       },
       () => {},
       {}
@@ -174,7 +202,7 @@ function Book () {
       Confirm.show(
         'Select Service',
         'Please Select one service atleast',
-        'Okay',
+        'Okay'
       )
       return
     }

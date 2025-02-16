@@ -1,6 +1,6 @@
 import { FaPumpSoap } from "react-icons/fa";
 
-export default function Loading() {
+export default function loading() {
   return (
     <div className="flex justify-center items-center min-h-screen bg-pink-50">
       <div className="flex flex-col items-center">

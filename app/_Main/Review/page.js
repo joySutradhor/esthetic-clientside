@@ -7,7 +7,7 @@ function Review () {
   const [sliceReview, setSliceReview] = useState(3)
   const [isShow, setIsShow] = useState(false)
   const allReviews = reviews.slice(0, sliceReview);
-  console.log(allReviews)
+
 
   const handleReviewToogle = () => {
     setIsShow(!isShow)

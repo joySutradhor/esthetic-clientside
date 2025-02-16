@@ -21,9 +21,9 @@ export default function MobileNav() {
           <FaCalendarCheck size={20} />
           <span className="text-xs">Book Now</span>
         </Link>
-        <Link href="/login" className="flex flex-col items-center text-gray-700 hover:e__secondary__color">
+        <Link href="/dashboard" className="flex flex-col items-center text-gray-700 hover:e__secondary__color">
           <FaSignInAlt size={20} />
-          <span className="text-xs">Login</span>
+          <span className="text-xs">Dashboard</span>
         </Link>
       </div>
     </section>
