@@ -44,11 +44,11 @@
   }
 
   .e__tooltip__btn {
-    @apply bg-black text-white text-sm font-medium py-1 px-4 rounded-xl;
+    @apply bg-gray-800 text-white text-sm font-medium py-1 px-4 rounded-xl;
   }
 
   .e__primary__btn {
-    @apply e__secondary__bg font-semibold rounded-xl text-base py-1 px-4 cursor-pointer hover:bg-black hover:text-white transition-colors duration-500 ease-in-out;
+    @apply e__secondary__bg font-semibold rounded-xl text-base py-1 px-4 cursor-pointer hover:bg-gray-800 hover:text-white transition-colors duration-500 ease-in-out;
   }
 
   .e__section__gap {
@@ -62,15 +62,15 @@
 
   /*------ button styles here ------- */
   .e__header__btn {
-    @apply e__secondary__bg hover:bg-black hover:text-white rounded-xl px-4 py-1 transition-colors duration-700 ease-in-out;
+    @apply e__secondary__bg hover:bg-gray-800 hover:text-white rounded-xl px-4 py-1 transition-colors duration-700 ease-in-out;
   }
 
   .e__bookBtn {
-    @apply bg-black text-white text-sm font-medium py-1 px-4 lg:py-2 lg:px-6 rounded-xl ;
+    @apply bg-gray-800 text-white text-sm font-medium py-1 px-4 lg:py-2 lg:px-6 rounded-xl ;
   }
 
   .e__service__btn {
-    @apply bg-black text-white text-sm font-medium py-1 px-4 rounded-xl ;
+    @apply bg-gray-800 text-white text-sm font-medium py-1 px-4 rounded-xl ;
   }
   .e__viewDetails__btn {
     @apply  e__secondary__color  text-sm font-semibold py-1 px-4 rounded-xl ;
@@ -91,7 +91,7 @@
   @apply h-[40vh] lg:h-[50vh] xl:h-[60vh] 2xl:h-[60vh] overflow-hidden
  }
  .e__c__overlay{
-  @apply absolute inset-0 bg-black/40 h-[40vh] lg:h-[50vh] xl:h-[60vh] 2xl:h-[60vh]
+  @apply absolute inset-0 bg-gray-800/40 h-[40vh] lg:h-[50vh] xl:h-[60vh] 2xl:h-[60vh]
  }
  .e__c__content__header{
   @apply absolute top-24 lg:top-[25%] xl:top-[30%] 2xl:top-[30%] z-50 left-0  text-white text-center space-y-2 p-4 w-full mx-auto
@@ -101,7 +101,7 @@
   @apply h-[50vh]  lg:h-[60vh] xl:h-[60vh] 2xl:h-[60vh] overflow-hidden
  }
  .e__c__service__overlay{
-  @apply  absolute inset-0 bg-black/40 h-[50vh] lg:h-[60vh] xl:h-[60vh] 2xl:h-[60vh]
+  @apply  absolute inset-0 bg-gray-800/40 h-[50vh] lg:h-[60vh] xl:h-[60vh] 2xl:h-[60vh]
  }
  .e__c__content__service__header{
   @apply absolute top-24 lg:top-[35%] xl:top-[35%] 2xl:top-[40%] z-40 left-0  text-white text-center space-y-2 p-4 w-full  mx-auto md:px-[20%]  lg:px-[30%]

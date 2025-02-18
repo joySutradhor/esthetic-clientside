@@ -1,6 +1,7 @@
 'use client'
 import axios from 'axios'
 import Image from 'next/image'
+import { useRouter } from 'next/navigation'
 import { Confirm } from 'notiflix'
 import React, { useEffect, useState } from 'react'
 import { LuAlarmClockPlus } from 'react-icons/lu'
@@ -17,6 +18,8 @@ function Book () {
   const [selectedServices, setSelectedServices] = useState([])
   const [date, setDate] = useState('')
   const [time, setTime] = useState('')
+
+  const router = useRouter()
 
   // Sample skincare services data
   const skincareServices = [
@@ -138,7 +141,7 @@ function Book () {
     const existingBookings =
       JSON.parse(localStorage.getItem('estheticBookings')) || {}
 
-    console.log(existingBookings, 'retrieved')
+
 
     // Set values only if they exist
     if (existingBookings.customerName) {
@@ -153,8 +156,7 @@ function Book () {
   }, [step]) // Ensure step is defined
 
   const today = new Date().toLocaleDateString('fr-CA') // "YYYY-MM-DD" format in local time
-  console.log('Today:', today)
-  console.log(date)
+
 
   const toggleService = serviceId => {
     if (selectedServices.includes(serviceId)) {
@@ -192,17 +194,16 @@ function Book () {
           email,
           date,
           time,
+          status: "pending" ,
           selectedServices: selectedServicesDetails,
           subtotal
         }
 
-        console.log(formData , "check")
 
         axios
           .post('http://localhost:8000/api/create', formData)
           .then(res => {
             if (res.status === 200) {
-              console.log(res , "output")
               // Save the booking to localStorage
               localStorage.setItem(
                 'estheticBookings',
@@ -212,11 +213,11 @@ function Book () {
               // Show success alert
               Swal.fire({
                 title: 'Success',
-                text: 'Event has been created successfully!',
+                text: 'Appointment has been created successfully!',
                 icon: 'success',
                 confirmButtonText: 'OK'
               }).then(() => {
-                window.location.href = '/dashboard' 
+                router.push("/dashboard")
               })
             }
           })
@@ -251,7 +252,7 @@ function Book () {
     setStep(step - 1)
   }
 
-  // console.log(selectedServices , date , time , customerName ,phone , email , grandTotal  )
+
 
   return (
     <div className='e__book__container '>

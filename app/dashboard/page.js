@@ -15,6 +15,7 @@ function Dashboard () {
   const [loading, setLoading] = useState(false)
 
   useEffect(() => {
+    setLoading(true)
     const storedBookings =
       JSON.parse(localStorage.getItem('estheticBookings')) || {}
 
@@ -44,7 +45,7 @@ function Dashboard () {
   // Delete order function
   const deleteOrder = orderId => {
     Swal.fire({
-      title: 'Are you sure you want to delete?',
+      title: 'Are you  want to delete?',
       text: "You won't be able to revert this!",
       icon: 'warning',
       showCancelButton: true,
@@ -60,7 +61,6 @@ function Dashboard () {
         axios
           .delete(`http://localhost:8000/api/deleteOrder/${orderId}`)
           .then(res => {
-            console.log('Order deleted:', res.data)
           })
           .catch(err => {
             console.error('Error deleting order:', err)
@@ -77,12 +77,12 @@ function Dashboard () {
     })
   }
 
-  console.log(customerInfo)
+
 
   return (
     <div className='mt-[30%] md:mt-[20%] lg:mt-[15%] xl:mt-[10%] '>
       <div className='e__section__gap  '>
-        <Link href="/adminLogin">
+        <Link href='/adminLogin'>
           <button className='text-sm font-medium p-3 bg-gray-100 rounded-lg my-2 lg:my-5 flex items-center gap-2 cursor-pointer'>
             {' '}
             <span>
@@ -146,7 +146,8 @@ function Dashboard () {
                 {/* Services */}
                 <div>
                   <h4 className='text-lg font-semibold mb-2 text-gray-600'>
-                    Selected Services:
+                    Selected Services:{' '}
+                    <span className='text-sm'>({order?.status})</span>
                   </h4>
                   <div className='space-y-4'>
                     {order.selectedServices.map(service => (

@@ -6,6 +6,7 @@ import { IoBriefcaseSharp } from 'react-icons/io5'
 import { MdOutlinePhotoLibrary, MdPeopleAlt } from 'react-icons/md'
 import { FaFacebook, FaInstagram } from 'react-icons/fa6'
 import { FaTiktok } from 'react-icons/fa6'
+import { MdOutlineDashboard } from 'react-icons/md'
 
 import { SiWhatsapp } from 'react-icons/si'
 import { GiHamburgerMenu } from 'react-icons/gi'
@@ -62,33 +63,35 @@ function Header () {
               </div>
 
               <div>
-                <NavButton
-                  className='!bg-black !text-white/80'
-                  navButtonText='Home'
-                  navButtonLink='/'
-                  icon={IoIosHome}
-                />
+                <Link href="/">
+                  <button className='e__header__btn flex items-center gap-1 !bg-black !text-white/80'> <span> <IoIosHome/> </span> Home </button>
+                </Link>
+              </div>
+
+              <div>
+                <Link href="/">
+                  <button className='e__header__btn flex items-center gap-1'> <span> <IoIosHome/> </span> Home </button>
+                </Link>
               </div>
               <div>
-                <NavButton
-                  navButtonText='About Us'
-                  navButtonLink='/about'
-                  icon={MdPeopleAlt}
-                />
+                <Link href="/about">
+                  <button className='e__header__btn flex items-center gap-1'> <span> <MdPeopleAlt/> </span> About Us </button>
+                </Link>
               </div>
               <div>
-                <NavButton
-                  navButtonText='Services'
-                  navButtonLink='/service'
-                  icon={IoBriefcaseSharp}
-                />
+                <Link href="/service">
+                  <button className='e__header__btn flex items-center gap-1'> <span> <IoBriefcaseSharp/> </span> Services </button>
+                </Link>
               </div>
               <div>
-                <NavButton
-                  navButtonText='Gallery'
-                  navButtonLink='/gallery'
-                  icon={MdOutlinePhotoLibrary}
-                />
+                <Link href="/gallery">
+                  <button className='e__header__btn flex items-center gap-1'> <span> <MdOutlinePhotoLibrary/> </span> Gallery </button>
+                </Link>
+              </div>
+              <div>
+                <Link href="/dashboard">
+                  <button className='e__header__btn flex items-center gap-1'> <span> <MdOutlineDashboard/> </span> Dashboard </button>
+                </Link>
               </div>
             </ul>
 

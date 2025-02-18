@@ -5,38 +5,37 @@ import { FaTrash } from 'react-icons/fa'
 import { LuAlarmClock } from 'react-icons/lu'
 import { SlCalender } from 'react-icons/sl'
 import Swal from 'sweetalert2'
-
+import { GrUserAdmin } from 'react-icons/gr'
 import Link from 'next/link'
-
+import { IoCheckmarkDoneCircleSharp } from 'react-icons/io5'
 import { VscCheckAll } from 'react-icons/vsc'
-import { ImRadioChecked } from "react-icons/im";
+import { PiChecksBold } from 'react-icons/pi'
 import { useRouter } from 'next/navigation'
 
-
-function AdminDashboard () {
+function AdminAccepted () {
   const [bookings, setBookings] = useState([])
-  const [loading, setLoading] = useState(false)
+  const [loading, setLoading] = useState(false);
 
-    const router = useRouter()
+  const router = useRouter()
 
   useEffect(() => {
-    const isAdmin = localStorage.getItem('isAdmin')
-    if (!isAdmin) {
-      router.push('/adminLogin') // Redirect to login if not authenticated
-    }
-  }, [])
+      const isAdmin = localStorage.getItem('isAdmin')
+      if (!isAdmin) {
+        router.push('/adminLogin') 
+      }
+    }, [])
 
   useEffect(() => {
     setLoading(true)
     axios
-      .get(`http://localhost:8000/api/orders`)
+      .get(`http://localhost:8000/api/orders/accept`)
       .then(res => {
         setBookings(res.data)
         setLoading(false)
       })
       .catch(err => {
-        
-        setLoading(false) 
+        console.error('Error fetching data:', err)
+        setLoading(false) // Ensure loading is turned off even if there's an error
       })
   }, [])
 
@@ -81,7 +80,7 @@ function AdminDashboard () {
   //   status update here
   const updateStatus = orderId => {
     Swal.fire({
-      title: 'Are you want to Accept?',
+      title: 'Are you sure you want to Accept?',
       text: "You won't be able to revert this!",
       icon: 'warning',
       showCancelButton: true,
@@ -90,32 +89,22 @@ function AdminDashboard () {
       confirmButtonText: 'Yes, Accept it!'
     }).then(result => {
       if (result.isConfirmed) {
-        // Update the bookings state locally before making the API call
-        const updatedBookings = bookings.filter(order => order._id !== orderId)
-        setBookings(updatedBookings)
-
         axios
           .patch(`http://localhost:8000/api/update/${orderId}`)
           .then(res => {
-            if (res.status === 200) {
-              Swal.fire({
-                title: 'Accept!',
-                text: 'Your Appointment has been Accept.',
-                icon: 'success'
-              })
-            } else {
-              Swal.fire({
-                title: 'Error!',
-                text: 'Your Appointment not Accept.',
-                icon: 'warning'
-              })
-            }
+
           })
           .catch(err => {
             console.error('Error aceepting order:', err)
             // If error occurs, revert the local state update
             setBookings(bookings)
           })
+
+        Swal.fire({
+          title: 'Accept!',
+          text: 'Your file has been Accept.',
+          icon: 'success'
+        })
       }
     })
   }
@@ -123,13 +112,13 @@ function AdminDashboard () {
   return (
     <div className='mt-[30%] md:mt-[20%] lg:mt-[15%] xl:mt-[10%] '>
       <div className='e__section__gap  '>
-        <Link href='/adminAccepted'>
+        <Link href='/adminDashboard'>
           <button className='text-sm font-medium p-3 bg-gray-100 rounded-lg my-2 lg:my-5 flex items-center gap-2 cursor-pointer'>
             {' '}
             <span>
               <VscCheckAll />
             </span>{' '}
-            Show Accepted Patient List
+            Show Pending Patient List
           </button>
         </Link>
 
@@ -164,7 +153,7 @@ function AdminDashboard () {
                   onClick={() => updateStatus(order._id)}
                   className='absolute top-16 right-8  text-gray-800'
                 >
-                  <ImRadioChecked size={18} />
+                  <PiChecksBold size={18} />
                 </button>
 
                 {/* Booking Details */}
@@ -179,7 +168,7 @@ function AdminDashboard () {
                     <span>
                       <LuAlarmClock />
                     </span>{' '}
-                    Time: {order.time}
+                    Time: {order?.time}
                   </p>
                 </div>
 
@@ -189,28 +178,28 @@ function AdminDashboard () {
                     Selected Services:
                   </h4>
                   <div className='space-y-4'>
-                    {order.selectedServices.map(service => (
+                    {order?.selectedServices?.map(service => (
                       <div
-                        key={service.id}
+                        key={service?.id}
                         className='flex items-center gap-4 p-3 border rounded-lg bg-gray-50'
                       >
                         <div>
                           <p className='text-gray-600 font-medium'>
-                            {service.serviceName}
+                            {service?.serviceName}
                           </p>
                           <div className='flex gap-x-5'>
                             <p className='text-gray-600 text-sm flex items-center gap-2'>
                               <span>
                                 <LuAlarmClock />
                               </span>{' '}
-                              {service.time}
+                              {service?.time}
                             </p>
                             <p className='text-gray-700'>
                               <span className='line-through text-gray-500'>
-                                ${service.originalPrice}
+                                ${service?.originalPrice}
                               </span>{' '}
                               <span className='text-green-600 font-bold'>
-                                ${service.discountedPrice}
+                                ${service?.discountedPrice}
                               </span>
                             </p>
                           </div>
@@ -224,7 +213,7 @@ function AdminDashboard () {
                 <div className='mt-4 text-right'>
                   <p className='text-lg font-semibold text-gray-600'>
                     Total:{' '}
-                    <span className='text-green-600'>${order.subtotal}</span>
+                    <span className='text-green-600'>${order?.subtotal}</span>
                   </p>
                 </div>
               </div>
@@ -236,4 +225,4 @@ function AdminDashboard () {
   )
 }
 
-export default AdminDashboard
+export default AdminAccepted

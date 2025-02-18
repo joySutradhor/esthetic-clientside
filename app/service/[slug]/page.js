@@ -15,7 +15,7 @@ function ServiceDetails () {
 
   // Find the service matching the slug
   const singleService = services.find(service => service.slug === slug);
-  console.log("single serveice" ,singleService)
+
 
   if (!services) {
     return (

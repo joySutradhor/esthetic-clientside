@@ -1,23 +1,37 @@
 'use client'
-import React, { useState } from 'react'
+import { useRouter } from 'next/navigation'
+import React, { useState, useEffect } from 'react'
 import { FaEye, FaEyeSlash } from 'react-icons/fa'
 import Swal from 'sweetalert2'
 
 function AdminLogin () {
   const [password, setPassword] = useState('')
   const [showPassword, setShowPassword] = useState(false)
-  const defaultPassword = 'admin123' // Set the default password
+  const defaultPassword = 'admin123' // Default admin password
+  const router = useRouter()
+
+  useEffect(() => {
+    // Check if admin is already logged in
+    const isAdmin = localStorage.getItem('isAdmin')
+    if (isAdmin) {
+      router.push('/adminDashboard') // Redirect if already logged in
+    }
+  }, [])
 
   const handleSubmit = e => {
     e.preventDefault()
 
-    // Check if password matches the default password
     if (password === defaultPassword) {
+      // Store authentication flag in local storage
+      localStorage.setItem('isAdmin', 'true')
+
       Swal.fire({
         title: 'Success!',
         text: 'You have logged in successfully.',
         icon: 'success',
         confirmButtonText: 'OK'
+      }).then(() => {
+        router.push('/adminDashboard') // Redirect after login
       })
     } else {
       Swal.fire({
@@ -51,7 +65,7 @@ function AdminLogin () {
               value={password}
               onChange={e => setPassword(e.target.value)}
               placeholder='Enter your password'
-              className='w-full p-3 border border-gray-300 rounded-lg focus:outline-none mb-4  '
+              className='w-full p-3 border border-gray-300 rounded-lg focus:outline-none mb-4'
             />
             <button
               type='button'
@@ -68,7 +82,7 @@ function AdminLogin () {
 
           <button
             type='submit'
-            className='w-full p-3 bg-gray-800 text-white rounded-lg  focus:outline-none '
+            className='w-full p-3 bg-gray-800 text-white rounded-lg focus:outline-none'
           >
             Login
           </button>

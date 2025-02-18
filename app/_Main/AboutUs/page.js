@@ -4,7 +4,7 @@ import founder from '@/public/founder/founderofestehtic.jpg'
 import skincareWorkflow from '@/public/FakeDb/workflow.json'
 
 function AboutUs () {
-  console.log(skincareWorkflow)
+
   return (
     <section className='e__section__gap'>
       <div className='e__about__container'>
