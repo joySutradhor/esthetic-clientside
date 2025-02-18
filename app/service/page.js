@@ -1,5 +1,5 @@
 import React from 'react'
-import serviceHeader from '@/public/service/serviceHeader.jpg'
+import serviceHero from "@/public/about/aboutHero.jpg"
 
 import SectionHeader from '../_components/SectionHeader/page'
 import { VscWorkspaceTrusted } from 'react-icons/vsc'
@@ -35,7 +35,7 @@ function Service () {
   return (
     <section>
       <SectionHeader
-        serviceHeader={serviceHeader}
+        serviceHeader={serviceHero}
         heading='Best Skin Care Service in Florida'
         btnText='Book Now'
         paraText='If you want great service, reach here.'

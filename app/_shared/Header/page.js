@@ -69,11 +69,6 @@ function Header () {
               </div>
 
               <div>
-                <Link href="/">
-                  <button className='e__header__btn flex items-center gap-1'> <span> <IoIosHome/> </span> Home </button>
-                </Link>
-              </div>
-              <div>
                 <Link href="/about">
                   <button className='e__header__btn flex items-center gap-1'> <span> <MdPeopleAlt/> </span> About Us </button>
                 </Link>

@@ -1,6 +1,9 @@
 import React from 'react'
 import SectionHeader from '../_components/SectionHeader/page'
-import serviceHeader from '@/public/service/serviceHeader.jpg'
+// import serviceHeader from '@/public/service/serviceHeader.jpg'
+import serviceHeader from '@/public/about/aboutHero.jpg'
+import ourMission from '@/public/about/ourmission.jpg'
+
 import Image from 'next/image'
 import OfficeLocation from '../_Main/OfficeLocation/page'
 
@@ -30,11 +33,11 @@ function About () {
               <div className='e__journey__child__parent '>
                 <div className='mt-5'>
                   <Image
-                    src='/about/Mission.webp'
+                    src={serviceHeader}
                     alt='Our Journey'
                     width={600}
                     height={400}
-                    className='rounded-lg shadow-lg'
+                    className='rounded-lg shadow-lg aspect-video object-cover object-center'
                   />
                 </div>
                 <div>
@@ -76,11 +79,11 @@ function About () {
                 </div>
                 <div className='mt-5'>
                   <Image
-                    src='/about/Mission.webp'
+                    src={ourMission}
                     alt='Our Mission & Vision'
                     width={600}
                     height={400}
-                    className='rounded-lg shadow-lg'
+                    className='rounded-lg shadow-lg aspect-video object-cover object-center'
                   />
                 </div>
               </div>
