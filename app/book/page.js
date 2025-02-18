@@ -2,8 +2,11 @@
 import axios from 'axios'
 import Image from 'next/image'
 import { Confirm } from 'notiflix'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { LuAlarmClockPlus } from 'react-icons/lu'
+import { PhoneInput } from 'react-international-phone'
+import { toast, Toaster } from 'sonner'
+import Swal from 'sweetalert2'
 import { v4 as uuidv4 } from 'uuid' // Install with `npm install uuid`
 
 function Book () {
@@ -131,8 +134,26 @@ function Book () {
     }
   ]
 
-  const today = new Date().toLocaleDateString("fr-CA"); // "YYYY-MM-DD" format in local time
-console.log("Today:", today);
+  useEffect(() => {
+    const existingBookings =
+      JSON.parse(localStorage.getItem('estheticBookings')) || {}
+
+    console.log(existingBookings, 'retrieved')
+
+    // Set values only if they exist
+    if (existingBookings.customerName) {
+      setCustomerName(existingBookings.customerName)
+    }
+    if (existingBookings.phone) {
+      setPhone(existingBookings.phone)
+    }
+    if (existingBookings.email) {
+      setEmail(existingBookings.email)
+    }
+  }, [step]) // Ensure step is defined
+
+  const today = new Date().toLocaleDateString('fr-CA') // "YYYY-MM-DD" format in local time
+  console.log('Today:', today)
   console.log(date)
 
   const toggleService = serviceId => {
@@ -153,16 +174,17 @@ console.log("Today:", today);
       0
     )
 
+    Swal.fire({
+      title: 'Esthetic Booking',
+      text: 'Do you want to book?',
+      icon: 'question',
+      showCancelButton: true,
+      confirmButtonText: 'Yes',
+      cancelButtonText: 'No'
+    }).then(result => {
+      if (result.isConfirmed) {
+        const orderId = uuidv4()
 
-
-    Confirm.show(
-      'Esthetic Booking',
-      'Do you want to book?',
-      'Yes',
-      'No',
-      () => {
-        const orderId = uuidv4() 
-    
         const formData = {
           orderId, // Attach the unique ID to the order
           customerName,
@@ -173,38 +195,44 @@ console.log("Today:", today);
           selectedServices: selectedServicesDetails,
           subtotal
         }
-    
+
+        console.log(formData , "check")
+
         axios
           .post('http://localhost:8000/api/create', formData)
           .then(res => {
             if (res.status === 200) {
-              console.log('Order created successfully')
-    
-              // Get existing bookings from localStorage
-              const existingBookings =
-                JSON.parse(localStorage.getItem('estheticBookings')) || []
-    
-              // Append new booking with order ID and phone
-              existingBookings.push({ orderId })
-    
-              // Save back the updated array to localStorage
+              console.log(res , "output")
+              // Save the booking to localStorage
               localStorage.setItem(
                 'estheticBookings',
-                JSON.stringify(existingBookings)
+                JSON.stringify({ customerName, phone, email })
               )
-    
-              // Success modal or redirect
-              window.location.href = '/dashboard'
+
+              // Show success alert
+              Swal.fire({
+                title: 'Success',
+                text: 'Event has been created successfully!',
+                icon: 'success',
+                confirmButtonText: 'OK'
+              }).then(() => {
+                window.location.href = '/dashboard' 
+              })
             }
           })
           .catch(error => {
             console.error({ error })
+
+            // Show error alert
+            Swal.fire({
+              title: 'Error',
+              text: 'Something went wrong. Please try again.',
+              icon: 'error',
+              confirmButtonText: 'OK'
+            })
           })
-      },
-      () => {},
-      {}
-    )
-    
+      }
+    })
   }
 
   const handleNextStep = () => {
@@ -227,6 +255,8 @@ console.log("Today:", today);
 
   return (
     <div className='e__book__container '>
+      <Toaster position='top-right' />
+
       <form onSubmit={handleSubmit} className='e__book__form__parent'>
         <div className='mt-5'>
           <h3 className=''>Esthetic N. Del Rosario</h3>

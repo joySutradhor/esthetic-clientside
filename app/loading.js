@@ -2,7 +2,7 @@ import { FaPumpSoap } from "react-icons/fa";
 
 export default function loading() {
   return (
-    <div className="flex justify-center items-center min-h-screen bg-pink-50">
+    <div className="flex justify-center items-center min-h-screen bg-gray-50">
       <div className="flex flex-col items-center">
         {/* Skincare Icon (Rotating) */}
         <FaPumpSoap className="text-pink-500 text-5xl animate-spin-slow" />
