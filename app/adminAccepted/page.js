@@ -14,21 +14,21 @@ import { useRouter } from 'next/navigation'
 
 function AdminAccepted () {
   const [bookings, setBookings] = useState([])
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(false)
 
   const router = useRouter()
 
   useEffect(() => {
-      const isAdmin = localStorage.getItem('isAdmin')
-      if (!isAdmin) {
-        router.push('/adminLogin') 
-      }
-    }, [])
+    const isAdmin = localStorage.getItem('isAdmin')
+    if (!isAdmin) {
+      router.push('/adminLogin')
+    }
+  }, [])
 
   useEffect(() => {
     setLoading(true)
     axios
-      .get(`http://localhost:8000/api/orders/accept`)
+      .get(`https://esthetic-serverside.vercel.app/api/orders/accept`)
       .then(res => {
         setBookings(res.data)
         setLoading(false)
@@ -38,8 +38,6 @@ function AdminAccepted () {
         setLoading(false) // Ensure loading is turned off even if there's an error
       })
   }, [])
-
-
 
   // Delete order function
   const deleteOrder = orderId => {
@@ -58,10 +56,10 @@ function AdminAccepted () {
         setBookings(updatedBookings)
 
         axios
-          .delete(`http://localhost:8000/api/deleteOrder/${orderId}`)
-          .then(res => {
-
-          })
+          .delete(
+            `https://esthetic-serverside.vercel.app/api/deleteOrder/${orderId}`
+          )
+          .then(res => {})
           .catch(err => {
             console.error('Error deleting order:', err)
             // If error occurs, revert the local state update
@@ -90,10 +88,8 @@ function AdminAccepted () {
     }).then(result => {
       if (result.isConfirmed) {
         axios
-          .patch(`http://localhost:8000/api/update/${orderId}`)
-          .then(res => {
-
-          })
+          .patch(`https://esthetic-serverside.vercel.app/api/update/${orderId}`)
+          .then(res => {})
           .catch(err => {
             console.error('Error aceepting order:', err)
             // If error occurs, revert the local state update

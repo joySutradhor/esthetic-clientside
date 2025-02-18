@@ -9,15 +9,14 @@ import Swal from 'sweetalert2'
 import Link from 'next/link'
 
 import { VscCheckAll } from 'react-icons/vsc'
-import { ImRadioChecked } from "react-icons/im";
+import { ImRadioChecked } from 'react-icons/im'
 import { useRouter } from 'next/navigation'
-
 
 function AdminDashboard () {
   const [bookings, setBookings] = useState([])
   const [loading, setLoading] = useState(false)
 
-    const router = useRouter()
+  const router = useRouter()
 
   useEffect(() => {
     const isAdmin = localStorage.getItem('isAdmin')
@@ -29,18 +28,15 @@ function AdminDashboard () {
   useEffect(() => {
     setLoading(true)
     axios
-      .get(`http://localhost:8000/api/orders`)
+      .get(`https://esthetic-serverside.vercel.app/api/orders`)
       .then(res => {
         setBookings(res.data)
         setLoading(false)
       })
       .catch(err => {
-        
-        setLoading(false) 
+        setLoading(false)
       })
   }, [])
-
-
 
   // Delete order function
   const deleteOrder = orderId => {
@@ -59,10 +55,10 @@ function AdminDashboard () {
         setBookings(updatedBookings)
 
         axios
-          .delete(`http://localhost:8000/api/deleteOrder/${orderId}`)
-          .then(res => {
-
-          })
+          .delete(
+            `https://esthetic-serverside.vercel.app/api/deleteOrder/${orderId}`
+          )
+          .then(res => {})
           .catch(err => {
             console.error('Error deleting order:', err)
             // If error occurs, revert the local state update
@@ -95,7 +91,7 @@ function AdminDashboard () {
         setBookings(updatedBookings)
 
         axios
-          .patch(`http://localhost:8000/api/update/${orderId}`)
+          .patch(`https://esthetic-serverside.vercel.app/api/update/${orderId}`)
           .then(res => {
             if (res.status === 200) {
               Swal.fire({

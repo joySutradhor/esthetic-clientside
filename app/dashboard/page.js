@@ -30,7 +30,7 @@ function Dashboard () {
     if (phone) {
       setLoading(true)
       axios
-        .get(`http://localhost:8000/api/orders/${phone}`)
+        .get(`https://esthetic-serverside.vercel.app/api/orders/${phone}`)
         .then(res => {
           setBookings(res.data)
           setLoading(false)
@@ -59,9 +59,10 @@ function Dashboard () {
         setBookings(updatedBookings)
 
         axios
-          .delete(`http://localhost:8000/api/deleteOrder/${orderId}`)
-          .then(res => {
-          })
+          .delete(
+            `https://esthetic-serverside.vercel.app/api/deleteOrder/${orderId}`
+          )
+          .then(res => {})
           .catch(err => {
             console.error('Error deleting order:', err)
             // If error occurs, revert the local state update
@@ -76,8 +77,6 @@ function Dashboard () {
       }
     })
   }
-
-
 
   return (
     <div className='mt-[30%] md:mt-[20%] lg:mt-[15%] xl:mt-[10%] '>

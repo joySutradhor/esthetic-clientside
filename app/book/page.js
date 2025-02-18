@@ -141,8 +141,6 @@ function Book () {
     const existingBookings =
       JSON.parse(localStorage.getItem('estheticBookings')) || {}
 
-
-
     // Set values only if they exist
     if (existingBookings.customerName) {
       setCustomerName(existingBookings.customerName)
@@ -156,7 +154,6 @@ function Book () {
   }, [step]) // Ensure step is defined
 
   const today = new Date().toLocaleDateString('fr-CA') // "YYYY-MM-DD" format in local time
-
 
   const toggleService = serviceId => {
     if (selectedServices.includes(serviceId)) {
@@ -194,14 +191,13 @@ function Book () {
           email,
           date,
           time,
-          status: "pending" ,
+          status: 'pending',
           selectedServices: selectedServicesDetails,
           subtotal
         }
 
-
         axios
-          .post('http://localhost:8000/api/create', formData)
+          .post('https://esthetic-serverside.vercel.app/api/create', formData)
           .then(res => {
             if (res.status === 200) {
               // Save the booking to localStorage
@@ -217,7 +213,7 @@ function Book () {
                 icon: 'success',
                 confirmButtonText: 'OK'
               }).then(() => {
-                router.push("/dashboard")
+                router.push('/dashboard')
               })
             }
           })
@@ -251,8 +247,6 @@ function Book () {
   const handlePreviousStep = () => {
     setStep(step - 1)
   }
-
-
 
   return (
     <div className='e__book__container '>
