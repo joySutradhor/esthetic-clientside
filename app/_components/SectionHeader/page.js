@@ -8,7 +8,7 @@ function SectionHeader ({serviceHeader , heading , btnText , paraText}) {
       <Image
         src={serviceHeader}
         alt='service header'
-        height={100}
+        height={1000}
         width={800}
         className='h-full w-full  aspect-square object-cover '
   

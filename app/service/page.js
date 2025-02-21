@@ -1,5 +1,5 @@
 import React from 'react'
-import serviceHero from "@/public/about/aboutHero.jpg"
+import serviceHero from "@/public/gallery/img6.webp"
 
 import SectionHeader from '../_components/SectionHeader/page'
 import { VscWorkspaceTrusted } from 'react-icons/vsc'

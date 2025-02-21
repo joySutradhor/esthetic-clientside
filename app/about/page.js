@@ -1,7 +1,7 @@
 import React from 'react'
 import SectionHeader from '../_components/SectionHeader/page'
 // import serviceHeader from '@/public/service/serviceHeader.jpg'
-import serviceHeader from '@/public/about/aboutHero.jpg'
+import serviceHeader from '@/public/gallery/red.jpg'
 import ourMission from '@/public/about/ourmission.jpg'
 
 import Image from 'next/image'
