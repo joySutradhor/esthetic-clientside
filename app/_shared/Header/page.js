@@ -63,29 +63,64 @@ function Header () {
               </div>
 
               <div>
-                <Link href="/">
-                  <button className='e__header__btn flex items-center gap-1 !bg-black !text-white/80'> <span> <IoIosHome/> </span> Home </button>
+                <Link href='/'>
+                  <button className='e__header__btn flex items-center gap-1 !bg-black !text-white/80'>
+                    {' '}
+                    <span>
+                      {' '}
+                      <IoIosHome />{' '}
+                    </span>{' '}
+                    Hogar{' '}
+                  </button>
                 </Link>
               </div>
 
               <div>
-                <Link href="/about">
-                  <button className='e__header__btn flex items-center gap-1'> <span> <MdPeopleAlt/> </span> About Us </button>
+                <Link href='/about'>
+                  <button className='e__header__btn flex items-center gap-1'>
+                    {' '}
+                    <span>
+                      {' '}
+                      <MdPeopleAlt />{' '}
+                    </span>{' '}
+                    Sobre nosotras{' '}
+                  </button>
                 </Link>
               </div>
               <div>
-                <Link href="/service">
-                  <button className='e__header__btn flex items-center gap-1'> <span> <IoBriefcaseSharp/> </span> Services </button>
+                <Link href='/service'>
+                  <button className='e__header__btn flex items-center gap-1'>
+                    {' '}
+                    <span>
+                      {' '}
+                      <IoBriefcaseSharp />{' '}
+                    </span>{' '}
+                    Servicios{' '}
+                  </button>
                 </Link>
               </div>
               <div>
-                <Link href="/gallery">
-                  <button className='e__header__btn flex items-center gap-1'> <span> <MdOutlinePhotoLibrary/> </span> Gallery </button>
+                <Link href='/gallery'>
+                  <button className='e__header__btn flex items-center gap-1'>
+                    {' '}
+                    <span>
+                      {' '}
+                      <MdOutlinePhotoLibrary />{' '}
+                    </span>{' '}
+                    Galería{' '}
+                  </button>
                 </Link>
               </div>
               <div>
-                <Link href="/dashboard">
-                  <button className='e__header__btn flex items-center gap-1'> <span> <MdOutlineDashboard/> </span> Dashboard </button>
+                <Link href='/dashboard'>
+                  <button className='e__header__btn flex items-center gap-1'>
+                    {' '}
+                    <span>
+                      {' '}
+                      <MdOutlineDashboard />{' '}
+                    </span>{' '}
+                    Panel{' '}
+                  </button>
                 </Link>
               </div>
             </ul>
@@ -153,7 +188,7 @@ function Header () {
           </div>
           <div>
             <Link href='/book'>
-              <button className='e__service__btn'>Book Now</button>
+              <button className='e__service__btn'>Reserva ahora</button>
             </Link>
           </div>
         </div>

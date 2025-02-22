@@ -1,5 +1,5 @@
 import React from 'react'
-import serviceHero from "@/public/gallery/img6.webp"
+import serviceHero from '@/public/gallery/img6.webp'
 
 import SectionHeader from '../_components/SectionHeader/page'
 import { VscWorkspaceTrusted } from 'react-icons/vsc'
@@ -13,21 +13,21 @@ import Review from '../_Main/Review/page'
 function Service () {
   const customerCommitment = [
     {
-      title: 'Personalized Care & Expert Guidance',
+      title: 'Atención Personalizada y Asesoramiento Experto',
       description:
-        'We provide tailored skincare solutions backed by expert dermatologists and estheticians, ensuring the best treatments for your unique skin needs.',
+        'Ofrecemos soluciones de cuidado de la piel personalizadas respaldadas por dermatólogos y esteticistas expertos, asegurando los mejores tratamientos para las necesidades únicas de tu piel.',
       icon: <FaUserMd className='text-4xl text-pink-500' />
     },
     {
-      title: 'Transparency & Trust',
+      title: 'Transparencia y Confianza',
       description:
-        'We believe in honest consultations, clear ingredient lists, and results-driven treatments with no hidden surprises.',
+        'Creemos en consultas honestas, listas claras de ingredientes y tratamientos orientados a resultados sin sorpresas ocultas.',
       icon: <VscWorkspaceTrusted className='text-4xl text-blue-500' />
     },
     {
-      title: 'Luxury Meets Care',
+      title: 'Lujo y Cuidado',
       description:
-        'Enjoy a relaxing, spa-like experience with high-end skincare solutions designed to nourish, heal, and rejuvenate your skin.',
+        'Disfruta de una experiencia relajante y tipo spa con soluciones de cuidado de la piel de alta gama diseñadas para nutrir, sanar y rejuvenecer tu piel.',
       icon: <FaSpa className='text-4xl text-green-500' />
     }
   ]
@@ -37,15 +37,15 @@ function Service () {
       <SectionHeader
         serviceHeader={serviceHero}
         heading='Best Skin Care Service in Florida'
-        btnText='Book Now'
+        btnText='Reserva ahora'
         paraText='If you want great service, reach here.'
       />
 
       {/* Commitment to Customer */}
       <div className='e__section__gap'>
         <div className='e__service__container'>
-          <button className='e__tooltip__btn'>Commitment</button>
-          <h2 className='mt-3 mb-8'>Our Commitment to Customers</h2>
+          <button className='e__tooltip__btn'>Compromiso</button>
+          <h2 className='mt-3 mb-8'>Nuestro compromiso con las clientes</h2>
 
           {/* Commitment Cards */}
           <div className='e__commitment__parent'>
@@ -64,21 +64,20 @@ function Service () {
       <div className='e__section__gap'>
         <div className='e__service__container'>
           <div>
-            <button className='e__tooltip__btn'>Service List</button>
-            <h2 className='mt-3 mb-8'>Our available services for Customers</h2>
+            <button className='e__tooltip__btn'>Lista de servicios</button>
+            <h2 className='mt-3 mb-8'>Nuestros servicios disponibles para el Paciente</h2>
           </div>
           <div>
-            <AllService/>
+            <AllService />
           </div>
         </div>
       </div>
 
       {/* cta section */}
-      <Review/>
-      <Cta/>
-      <Faq/>
-      <OfficeLocation/>
-      
+      <Review />
+      <Cta />
+      <Faq />
+      <OfficeLocation />
     </section>
   )
 }

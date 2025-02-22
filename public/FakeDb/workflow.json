@@ -1,78 +1,77 @@
 {
-    "workflow": [
-      {
-        "step": 1,
-        "title": "Appointment Booking & Walk-ins",
-        "details": [
-          "Clients book appointments online, via phone, or walk-in.",
-          "Collect client details (name, skin concerns, allergies, etc.).",
-          "Confirm appointment date and time."
-        ]
-      },
-      {
-        "step": 2,
-        "title": "Client Consultation & Skin Analysis",
-        "details": [
-          "Conduct one-on-one consultation to understand client’s skin type and concerns.",
-          "Use professional skin analysis tools if available.",
-          "Discuss client goals (hydration, anti-aging, acne treatment, etc.)."
-        ]
-      },
-      {
-        "step": 3,
-        "title": "Personalized Treatment Plan",
-        "details": [
-          "Recommend suitable skincare treatments based on analysis.",
-          "Explain the process, benefits, and expected results.",
-          "Get client consent before proceeding with treatments."
-        ]
-      },
-      {
-        "step": 4,
-        "title": "Skincare Treatment Session",
-        "details": [
-          "Cleanse the skin to prepare for treatment.",
-          "Perform selected skincare service (facial, exfoliation, microdermabrasion, etc.).",
-          "Use high-quality skincare products tailored to client’s needs.",
-          "Ensure a relaxing and comfortable experience."
-        ]
-      },
-      {
-        "step": 5,
-        "title": "Post-Treatment Care & Advice",
-        "details": [
-          "Gently cleanse and moisturize the skin after treatment.",
-          "Apply sunscreen if needed.",
-          "Provide aftercare instructions and recommend suitable skincare products."
-        ]
-      },
-      {
-        "step": 6,
-        "title": "Product Recommendations & Retail Sales",
-        "details": [
-          "Suggest home skincare products for maintenance.",
-          "Offer in-store skincare products that complement the treatment.",
-          "Educate clients on how to use the products correctly."
-        ]
-      },
-      {
-        "step": 7,
-        "title": "Payment & Loyalty Program",
-        "details": [
-          "Process payment via cash, card, or digital methods.",
-          "Offer discounts for repeat visits or membership programs.",
-          "Provide invoices or receipts."
-        ]
-      },
-      {
-        "step": 8,
-        "title": "Follow-up & Customer Retention",
-        "details": [
-          "Check in with clients after a few days for feedback.",
-          "Send appointment reminders for future treatments.",
-          "Offer promotions or seasonal skincare packages."
-        ]
-      }
-    ]
-  }
-  
+  "workflow": [
+    {
+      "step": 1,
+      "title": "Reserva de Cita y Visitas Sin Cita",
+      "details": [
+        "Los clientes reservan citas en línea, por teléfono o caminan.",
+        "Recopilar detalles del cliente (nombre, preocupaciones de la piel, alergias, etc.).",
+        "Confirmar la fecha y hora de la cita."
+      ]
+    },
+    {
+      "step": 2,
+      "title": "Consulta del Cliente y Análisis de la Piel",
+      "details": [
+        "Realizar una consulta uno a uno para comprender el tipo de piel y las preocupaciones del cliente.",
+        "Utilizar herramientas profesionales de análisis de la piel si están disponibles.",
+        "Discutir los objetivos del cliente (hidratación, anti-envejecimiento, tratamiento para el acné, etc.)."
+      ]
+    },
+    {
+      "step": 3,
+      "title": "Plan de Tratamiento Personalizado",
+      "details": [
+        "Recomendar tratamientos de cuidado de la piel adecuados según el análisis.",
+        "Explicar el proceso, los beneficios y los resultados esperados.",
+        "Obtener el consentimiento del cliente antes de proceder con los tratamientos."
+      ]
+    },
+    {
+      "step": 4,
+      "title": "Sesión de Tratamiento de Cuidado de la Piel",
+      "details": [
+        "Limpiar la piel para prepararla para el tratamiento.",
+        "Realizar el servicio de cuidado de la piel seleccionado (facial, exfoliación, microdermoabrasión, etc.).",
+        "Usar productos de cuidado de la piel de alta calidad adaptados a las necesidades del cliente.",
+        "Asegurar una experiencia relajante y cómoda."
+      ]
+    },
+    {
+      "step": 5,
+      "title": "Cuidado Post-Tratamiento y Consejos",
+      "details": [
+        "Limpiar suavemente y humectar la piel después del tratamiento.",
+        "Aplicar protector solar si es necesario.",
+        "Proporcionar instrucciones de cuidado posterior y recomendar productos adecuados de cuidado de la piel."
+      ]
+    },
+    {
+      "step": 6,
+      "title": "Recomendaciones de Productos y Ventas al por Menor",
+      "details": [
+        "Sugerir productos de cuidado de la piel para el hogar para su mantenimiento.",
+        "Ofrecer productos de cuidado de la piel en la tienda que complementen el tratamiento.",
+        "Educar a los clientes sobre cómo usar los productos correctamente."
+      ]
+    },
+    {
+      "step": 7,
+      "title": "Pago y Programa de Lealtad",
+      "details": [
+        "Procesar el pago mediante efectivo, tarjeta o métodos digitales.",
+        "Ofrecer descuentos para visitas repetidas o programas de membresía.",
+        "Proporcionar facturas o recibos."
+      ]
+    },
+    {
+      "step": 8,
+      "title": "Seguimiento y Retención de Clientes",
+      "details": [
+        "Hacer un seguimiento con los clientes después de unos días para obtener comentarios.",
+        "Enviar recordatorios de citas para futuros tratamientos.",
+        "Ofrecer promociones o paquetes de cuidado de la piel de temporada."
+      ]
+    }
+  ]
+}

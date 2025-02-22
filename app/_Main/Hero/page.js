@@ -26,16 +26,16 @@ function Hero () {
             <div className='e__hero__content'>
               <div>
                 <h1 className='e__hero__heading__text'>
-                  Transform Your Look{' '}
+                  Transforma tu apariencia{' '}
                   <span className='e__hero__heading__light__text'>
                     {' '}
-                    With Expert Services at
+                    con servicios expertos en
                   </span>{' '}
-                  Our Luxury Skin Care
+                  nuestro lujoso cuidado de la piel
                 </h1>
+
                 <p className='e__para'>
-                  The secret to glowing skin? A commitment to self-care, inside
-                  and out.
+                El secreto para una piel radiante? Un compromiso con el cuidado personal, por dentro y por fuera.
                 </p>
               </div>
             </div>
@@ -43,9 +43,7 @@ function Hero () {
             <div className='grid justify-center '>
               <div>
                 <h4 className='e__quote'>
-                  "Nurture your skin, and it will glow with the radiance of
-                  self-care. Because healthy skin is the foundation of true
-                  beauty. - <span className='text-xl font-bold'>Neomi</span>"
+                  "Cuida tu piel y brillará con la radiancia del autocuidado. Porque una piel saludable es la base de la verdadera belleza. <span className='text-xl font-bold'> - Neomi</span>"
                 </h4>
               </div>
             </div>

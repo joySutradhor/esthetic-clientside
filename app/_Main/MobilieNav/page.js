@@ -1,31 +1,52 @@
-import Link from "next/link";
-import { FaHome, FaUser, FaClipboardList, FaCalendarCheck, FaSignInAlt } from "react-icons/fa";
+import Link from 'next/link'
+import {
+  FaHome,
+  FaUser,
+  FaClipboardList,
+  FaCalendarCheck,
+  FaSignInAlt
+} from 'react-icons/fa'
 
-export default function MobileNav() {
+export default function MobileNav () {
   return (
-    <section className="fixed bottom-0 left-0 w-full bg-white shadow-md border-t border-gray-200 z-50 md:hidden">
-      <div className="flex justify-around items-center py-3">
-        <Link href="/" className="flex flex-col items-center text-gray-700 hover:e__secondary__color">
+    <section className='fixed bottom-0 left-0 w-full bg-white shadow-md border-t border-gray-200 z-50 md:hidden'>
+      <div className='flex justify-around items-center py-3'>
+        <Link
+          href='/'
+          className='flex flex-col items-center text-gray-700 hover:e__secondary__color'
+        >
           <FaHome size={20} />
-          <span className="text-xs">Home</span>
+          <span className='text-xs'>Hogar</span>
         </Link>
-        <Link href="/service" className="flex flex-col items-center text-gray-700 hover:e__secondary__color">
+        <Link
+          href='/service'
+          className='flex flex-col items-center text-gray-700 hover:e__secondary__color'
+        >
           <FaClipboardList size={20} />
-          <span className="text-xs">Services</span>
+          <span className='text-xs'>Servicios</span>
         </Link>
-        <Link href="/about" className="flex flex-col items-center text-gray-700 hover:e__secondary__color">
+        <Link
+          href='/about'
+          className='flex flex-col items-center text-gray-700 hover:e__secondary__color'
+        >
           <FaUser size={20} />
-          <span className="text-xs">About Us</span>
+          <span className='text-xs'> Sobre nosotras</span>
         </Link>
-        <Link href="/book" className="flex flex-col items-center text-gray-700 hover:e__secondary__color">
+        <Link
+          href='/book'
+          className='flex flex-col items-center text-gray-700 hover:e__secondary__color'
+        >
           <FaCalendarCheck size={20} />
-          <span className="text-xs">Book Now</span>
+          <span className='text-xs'>Reserva ahora</span>
         </Link>
-        <Link href="/dashboard" className="flex flex-col items-center text-gray-700 hover:e__secondary__color">
+        <Link
+          href='/dashboard'
+          className='flex flex-col items-center text-gray-700 hover:e__secondary__color'
+        >
           <FaSignInAlt size={20} />
-          <span className="text-xs">Dashboard</span>
+          <span className='text-xs'>Panel</span>
         </Link>
       </div>
     </section>
-  );
+  )
 }

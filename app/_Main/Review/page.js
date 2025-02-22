@@ -17,8 +17,8 @@ function Review () {
     <section className='e__section__gap'>
       <div className='e__review__container'>
         <div>
-          <button className='e__tooltip__btn'>Review</button>
-          <h2 className='e__review__heading'>Our Customers Reviews</h2>
+          <button className='e__tooltip__btn'>Revisar</button>
+          <h2 className='e__review__heading'>Opiniones de nuestras clientes</h2>
         </div>
         {/* customer reviews */}
         <div className='e__review__card__parent'>

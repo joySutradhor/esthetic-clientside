@@ -14,7 +14,7 @@ function About () {
         <SectionHeader
           serviceHeader={serviceHeader}
           heading='Lets know more about us'
-          btnText='Book Now'
+          btnText='Reserva ahora'
           paraText='If you want great service, reach here.'
         />
       </div>
@@ -22,8 +22,8 @@ function About () {
       <div className='e__section__gap'>
         <div className='e__mission__container'>
           <div>
-            <button className='e__tooltip__btn'>About Us</button>
-            <h2 className='mt-3 mb-8'>Read our Stuggle Moment</h2>
+            <button className='e__tooltip__btn'>Sobre nosotras</button>
+            <h2 className='mt-3 mb-8'>Lea nuestro momento de lucha</h2>
           </div>
 
           {/* our journey */}
@@ -41,19 +41,24 @@ function About () {
                   />
                 </div>
                 <div>
-                  <h2 className='my-4'>How can we overcome it</h2>
+                  <h2 className='my-4'>
+                    Cómo podemos mejorar tu cuidado de la piel
+                  </h2>
                   <p>
-                    As we move into 2025, our mission is to revolutionize
-                    digital communication by enhancing AI-driven translation
-                    tools. We strive to empower professionals and businesses
-                    with seamless multilingual interactions, breaking barriers
-                    and fostering global connectivity.
+                    Al entrar en 2025, nuestra misión es revolucionar el cuidado
+                    de la piel ofreciendo tratamientos personalizados y
+                    efectivos que priorizan la salud y belleza de tu piel. Nos
+                    esforzamos por empoderar a las personas con servicios
+                    profesionales de cuidado de la piel de alta calidad que
+                    aborden necesidades específicas, promoviendo la
+                    autoconfianza y el bienestar.
                     <br /> <br />
-                    Our vision is to redefine the way people communicate across
-                    languages. We envision a world where AI-driven translations
-                    feel natural, enabling businesses and individuals to connect
-                    effortlessly, fostering deeper understanding and
-                    collaboration across borders.
+                    Nuestra visión es redefinir la manera en que las personas
+                    cuidan su piel. Imaginamos un mundo donde los tratamientos
+                    para la piel no solo sean efectivos, sino que también se
+                    sientan lujosos y adaptados a las necesidades únicas de cada
+                    persona, permitiendo que los individuos logren una piel más
+                    saludable y radiante, y abracen su belleza natural.
                   </p>
                 </div>
               </div>
@@ -61,22 +66,27 @@ function About () {
               {/* Our Mission & Vision */}
               <div className='e__journey__child__parent '>
                 <div>
-                  <h2 className='my-4'>Our Mission & Vision for 2025</h2>
+                  <h2 className='my-4'>Nuestra Misión y Visión para 2025</h2>
                   <p>
-                    As we move into 2025, our mission is to revolutionize
-                    digital communication by enhancing AI-driven translation
-                    tools. We strive to empower professionals and businesses
-                    with seamless multilingual interactions, breaking barriers
-                    and fostering global connectivity.
+                    Nuestra misión es ofrecer servicios de cuidado de la piel
+                    premium y personalizados que no solo mejoren la apariencia
+                    de tu piel, sino que también promuevan su salud a largo
+                    plazo. Al mirar hacia el futuro, nos comprometemos a
+                    utilizar técnicas avanzadas y productos de alta calidad para
+                    obtener resultados excepcionales, asegurando que cada
+                    cliente se sienta confiado y radiante con su propia piel.
                   </p>
                   <p className='mt-4'>
-                    Our vision is to redefine the way people communicate across
-                    languages. We envision a world where AI-driven translations
-                    feel natural, enabling businesses and individuals to connect
-                    effortlessly, fostering deeper understanding and
-                    collaboration across borders.
+                    De cara al futuro, nuestra visión es convertirnos en un
+                    destino líder en cuidado de la piel, ofreciendo tratamientos
+                    adaptados a las necesidades únicas de cada persona.
+                    Aspiramos a crear un ambiente en el que cada individuo pueda
+                    experimentar un cuidado de la piel transformador,
+                    construyendo confianza a través de resultados sobresalientes
+                    y un compromiso con la belleza holística.
                   </p>
                 </div>
+
                 <div className='mt-5'>
                   <Image
                     src={ourMission}
@@ -99,16 +109,15 @@ function About () {
                   height={120}
                   className='mx-auto rounded-full mb-4'
                 />
-                <h2 className=' mb-2'>A Message from Our Founder</h2>
+                <h2 className='mb-2'>Un mensaje de nuestra fundadora</h2>
                 <p>
-                  "Our journey started with a vision to break language barriers
-                  and connect people across the globe. Every innovation we bring
-                  is driven by our commitment to enhancing communication and
-                  making the world more accessible. Together, we are shaping the
-                  future of AI-powered translation."
+                  "Nuestra misión es ofrecer cuidados de la piel excepcionales,
+                  ayudando a cada persona a sentirse segura y radiante. Nos
+                  dedicamos a mejorar la salud y belleza de tu piel con
+                  tratamientos personalizados y productos de calidad."
                 </p>
-                <p className=' font-semibold mt-4'>
-                  - Neomi Del Rosario, CEO & Founder
+                <p className='font-semibold mt-4'>
+                  - Neomi Del Rosario, CEO y Fundadora
                 </p>
               </div>
             </div>

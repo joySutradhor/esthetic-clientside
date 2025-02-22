@@ -1,45 +1,44 @@
 [
-    {
-      "reviewId": 1,
-      "name": "John Doe",
-      "rating": 5,
-      "comment": "The service was outstanding, and the team was highly professional. I am extremely satisfied with the results. Highly recommended!",
-      "date": "2025-02-11"
-    },
-    {
-      "reviewId": 2,
-      "name": "Jane Smith",
-      "rating": 4,
-      "comment": "Great experience overall! The website looks amazing, and the support team was very responsive. A few minor issues, but nothing major.",
-      "date": "2025-02-10"
-    },
-    {
-      "reviewId": 3,
-      "name": "Michael Johnson",
-      "rating": 4.5,
-      "comment": "Impressive work! The project was delivered on time, and communication was smooth. Definitely working with them again in the future.",
-      "date": "2025-02-09"
-    },
-    {
-      "reviewId": 4,
-      "name": "Emily Brown",
-      "rating": 5,
-      "comment": "Superb quality and attention to detail. The website is exactly what I wanted, and the process was seamless from start to finish.",
-      "date": "2025-02-08"
-    },
-    {
-      "reviewId": 5,
-      "name": "Daniel Lee",
-      "rating": 4.5,
-      "comment": "Very satisfied with the service. The team was patient, knowledgeable, and delivered a top-notch product. Highly recommend them for future projects!",
-      "date": "2025-02-07"
-    },
-    {
-      "reviewId": 6,
-      "name": "Sophia Martinez",
-      "rating": 5,
-      "comment": "Best experience ever! They understood my requirements perfectly and exceeded expectations. The website is stunning, fast, and user-friendly. Amazing work!",
-      "date": "2025-02-06"
-    }
-  ]
-  
+  {
+    "reviewId": 1,
+    "name": "Juan Pérez",
+    "rating": 5,
+    "comment": "El servicio fue excepcional, y el equipo fue muy profesional. Estoy extremadamente satisfecho con los resultados. ¡Altamente recomendado!",
+    "date": "2025-02-15"
+  },
+  {
+    "reviewId": 2,
+    "name": "Ana García",
+    "rating": 4,
+    "comment": "¡Gran experiencia en general! El sitio web se ve increíble, y el equipo de soporte fue muy receptivo. Unos pequeños problemas, pero nada grave.",
+    "date": "2025-01-28"
+  },
+  {
+    "reviewId": 3,
+    "name": "Miguel Rodríguez",
+    "rating": 4.5,
+    "comment": "¡Trabajo impresionante! El proyecto se entregó a tiempo y la comunicación fue fluida. Definitivamente trabajaré con ellos nuevamente en el futuro.",
+    "date": "2025-02-14"
+  },
+  {
+    "reviewId": 4,
+    "name": "Emily Gómez",
+    "rating": 5,
+    "comment": "Calidad y atención al detalle sobresalientes. El sitio web es exactamente lo que quería y el proceso fue impecable desde el principio hasta el final.",
+    "date": "2025-01-20"
+  },
+  {
+    "reviewId": 5,
+    "name": "Daniela López",
+    "rating": 4.5,
+    "comment": "Muy satisfecha con el servicio. El equipo fue paciente, conocedor y entregó un producto de primera. ¡Los recomiendo mucho para futuros proyectos!",
+    "date": "2025-01-28"
+  },
+  {
+    "reviewId": 6,
+    "name": "Sofía Martínez",
+    "rating": 5,
+    "comment": "¡La mejor experiencia de todas! Entendieron perfectamente mis requisitos y superaron las expectativas. El sitio web es impresionante, rápido y fácil de usar. ¡Un trabajo increíble!",
+    "date": "2025-02-15"
+  }
+]

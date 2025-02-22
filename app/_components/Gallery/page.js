@@ -10,8 +10,8 @@ function GalleryImages () {
     <section>
       <div className='e__section__gap'>
         <div className='e__gallery__container'>
-          <button className='e__tooltip__btn'>Working Area</button>
-          <h2 className='mt-3 mb-8'>Our Recent Working Portfolio</h2>
+          <button className='e__tooltip__btn'>Área de trabajo</button>
+          <h2 className='mt-3 mb-8'>Nuestra cartera de trabajo reciente</h2>
 
           {/* Masonry Grid */}
           <div className='columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4 '>

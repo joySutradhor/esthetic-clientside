@@ -14,8 +14,7 @@ function ServiceDetails () {
   const services = servicesData?.services
 
   // Find the service matching the slug
-  const singleService = services.find(service => service.slug === slug);
-
+  const singleService = services.find(service => service.slug === slug)
 
   if (!services) {
     return (
@@ -44,7 +43,7 @@ function ServiceDetails () {
           link={slug}
           serviceHeader={images}
           heading={service_name}
-          btnText='Book Now'
+          btnText='Reserva ahora'
           paraText={intro}
         />
       </div>

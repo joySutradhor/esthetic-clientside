@@ -1,15 +1,10 @@
-"use client"
+'use client'
 import Image from 'next/image'
-import {
-  FaFacebookF,
-  FaInstagram,
-  FaTiktok
-} from 'react-icons/fa'
+import { FaFacebookF, FaInstagram, FaTiktok } from 'react-icons/fa'
 import esthetic from '@/public/office/Esthetic.webp'
 import { useState } from 'react'
 import { FaCopy, FaEnvelope, FaPhone } from 'react-icons/fa6'
-import { FaLocationDot } from "react-icons/fa6";
-
+import { FaLocationDot } from 'react-icons/fa6'
 
 function OfficeLocation () {
   const [copied, setCopied] = useState('')
@@ -30,8 +25,8 @@ function OfficeLocation () {
         <div className='e__office__containerParent'>
           {/* Heading & Business Area */}
           <div className='e__office__header__parent'>
-            <button className='e__tooltip__btn '>Business Area</button>
-            <h2 className='e__faq_heading'>You Can Find Us Here </h2>
+            <button className='e__tooltip__btn '>Área de Negocios</button>
+            <h2 className='e__faq_heading'>Puedes encontrarnos aquí </h2>
           </div>
 
           {/* Content Section */}
@@ -52,13 +47,12 @@ function OfficeLocation () {
               <div className='e__office__bussiness__info'>
                 {/* Contact Info */}
                 <div className='space-y-4'>
-                  <h3>
-                    Contact Information
-                  </h3>
+                  <h3>Información del contacto</h3>
 
                   {/* Address */}
                   <p className=' flex items-center space-x-1'>
-                    <FaLocationDot/> <span>146 W Robertson Brandon St, Florida 33511</span>
+                    <FaLocationDot />{' '}
+                    <span>146 W Robertson Brandon St, Florida 33511</span>
                   </p>
 
                   {/* Phone */}
@@ -107,7 +101,7 @@ function OfficeLocation () {
                 {/* Opening Hours */}
                 <div>
                   <div>
-                    <h3>Opening Hours</h3>
+                    <h3>Horario de apertura</h3>
                     <ul className='text-gray-600 mt-2'>
                       <ul className='space-y-2'>
                         <p>🕒 Monday: 7:00 AM - 8:00 PM</p>
@@ -125,23 +119,26 @@ function OfficeLocation () {
                 {/* Social Icons */}
                 <div>
                   <h3 className='text-xl font-semibold text-gray-800'>
-                    Follow Us
+                    Síganos
                   </h3>
                   <div className='flex space-x-4 mt-3'>
                     <a
-                      href='https://www.facebook.com/profile.php?id=100063898472777' target='__blank'
+                      href='https://www.facebook.com/profile.php?id=100063898472777'
+                      target='__blank'
                       className='text-white bg-blue-600 p-2 md:p-3 rounded-full shadow-lg hover:bg-blue-700'
                     >
                       <FaFacebookF />
                     </a>
                     <a
-                      href='https://www.tiktok.com/@noemidelrosario03' target='__blank'
+                      href='https://www.tiktok.com/@noemidelrosario03'
+                      target='__blank'
                       className='text-white bg-blue-400 p-2 md:p-3 rounded-full shadow-lg hover:bg-blue-500'
                     >
                       <FaTiktok />
                     </a>
                     <a
-                      href='https://www.instagram.com/esthetic_n.delrosario/' target='__blank'
+                      href='https://www.instagram.com/esthetic_n.delrosario/'
+                      target='__blank'
                       className='text-white bg-pink-500 p-2 md:p-3 rounded-full shadow-lg hover:bg-pink-600'
                     >
                       <FaInstagram />
