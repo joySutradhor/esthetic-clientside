@@ -9,7 +9,20 @@ import { PhoneInput } from 'react-international-phone'
 import { toast, Toaster } from 'sonner'
 import Swal from 'sweetalert2'
 import { v4 as uuidv4 } from 'uuid' // Install with `npm install uuid`
-import bookingImg from "@/public/service/peelling.jpeg"
+import limpiezaFacial from "@/public/service/limpieza facial.webp"
+import PlasmaRicoenPlaquetas from "@/public/service/Plasma Rico en Plaquetas.webp"
+import MesoterapiadeAcné from "@/public/service/Mesoterapia de Acné.webp"
+import Hidratación from "@/public/service/Hidratación.webp"
+import TratamientoparaOjeras from "@/public/service/Tratamiento para Ojeras.webp"
+import MesoterapiadeVitaminas from "@/public/service/Mesoterapia de Vitaminas.webp"
+import MesoBotox from "@/public/service/Meso Botox.webp"
+import BBBotox from "@/public/service/BB Botox.webp"
+import ÁcidoHialurónico from "@/public/service/Ácido Hialurónico.webp"
+import TratamientoparaOjeras from "@/public/service/Tratamiento para Ojeras.webp"
+import Dermapen from "@/public/service/Dermapen.webp"
+import Dermaplaning from "@/public/service/Dermaplaning.webp"
+import Nasogenianos from "@/public/service/Nasogenianos.jpeg"
+import Labios from "@/public/service/Labios.jpeg"
 
 function Book () {
   const [step, setStep] = useState(1) // Step state to manage stepper flow
@@ -30,7 +43,7 @@ function Book () {
       originalPrice: 200,
       discountedPrice: 150,
       time: '60 minutos',
-      image: bookingImg
+      image: limpiezaFacial
     },
     {
       id: 2,
@@ -38,7 +51,7 @@ function Book () {
       originalPrice: 300,
       discountedPrice: 250,
       time: '90 minutos',
-      image: bookingImg
+      image: PlasmaRicoenPlaquetas
     },
     {
       id: 3,
@@ -46,7 +59,7 @@ function Book () {
       originalPrice: 300,
       discountedPrice: 250,
       time: '90 minutos',
-      image: bookingImg
+      image: MesoterapiadeAcné
     },
     {
       id: 4,
@@ -54,7 +67,7 @@ function Book () {
       originalPrice: 140,
       discountedPrice: 90,
       time: '60 minutos',
-      image: bookingImg
+      image: Hidratación
     },
     {
       id: 5,
@@ -62,7 +75,7 @@ function Book () {
       originalPrice: 170,
       discountedPrice: 120,
       time: '60 minutos',
-      image: bookingImg
+      image: TratamientoparaOjeras
     },
     {
       id: 6,
@@ -70,7 +83,7 @@ function Book () {
       originalPrice: 185,
       discountedPrice: 135,
       time: '60 minutos',
-      image: bookingImg
+      image: MesoterapiadeVitaminas
     },
     {
       id: 7,
@@ -78,7 +91,7 @@ function Book () {
       originalPrice: 300,
       discountedPrice: 250,
       time: '30 minutos',
-      image: bookingImg
+      image: MesoBotox
     },
     {
       id: 8,
@@ -86,7 +99,7 @@ function Book () {
       originalPrice: 400,
       discountedPrice: 350,
       time: '30 minutos',
-      image: bookingImg
+      image: BBBotox
     },
     {
       id: 9,
@@ -94,7 +107,7 @@ function Book () {
       originalPrice: 350,
       discountedPrice: 300,
       time: 'N/A',
-      image: bookingImg
+      image: ÁcidoHialurónico
     },
     {
       id: 10,
@@ -102,7 +115,7 @@ function Book () {
       originalPrice: 1150,
       discountedPrice: 1100,
       time: '90 minutos',
-      image: bookingImg
+      image: TratamientoparaOjeras
     },
     {
       id: 11,
@@ -110,7 +123,7 @@ function Book () {
       originalPrice: 230,
       discountedPrice: 180,
       time: '80 minutos',
-      image: bookingImg
+      image: Dermapen
     },
     {
       id: 12,
@@ -118,7 +131,7 @@ function Book () {
       originalPrice: 180,
       discountedPrice: 130,
       time: '45 minutos',
-      image: bookingImg
+      image: Dermaplaning
     },
     {
       id: 13,
@@ -126,7 +139,7 @@ function Book () {
       originalPrice: 400,
       discountedPrice: 350,
       time: '20 minutos',
-      image: bookingImg
+      image: Nasogenianos
     },
     {
       id: 14,
@@ -134,7 +147,7 @@ function Book () {
       originalPrice: 350,
       discountedPrice: 300,
       time: 'N/A',
-      image: bookingImg
+      image: Labios
     }
   ]
 
