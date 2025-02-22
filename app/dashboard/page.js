@@ -41,6 +41,7 @@ function Dashboard () {
         })
     }
   }, [phone])
+  setLoading(false)
 
   // Delete order function
   const deleteOrder = orderId => {
@@ -94,7 +95,7 @@ function Dashboard () {
           <h3 className=''>
             #Order History of{' '}
             <span className='font-bold'>
-              {customerInfo.customerName || 'No Phone Found'}
+              {customerInfo.customerName || 'No User Found'}
             </span>
           </h3>
           <div>
