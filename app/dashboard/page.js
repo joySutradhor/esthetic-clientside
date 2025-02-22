@@ -41,7 +41,7 @@ function Dashboard () {
         })
     }
   }, [phone])
-  setLoading(false)
+
 
   // Delete order function
   const deleteOrder = orderId => {
