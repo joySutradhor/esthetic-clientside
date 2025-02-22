@@ -76,34 +76,34 @@ function AdminAccepted () {
   }
 
   //   status update here
-  const updateStatus = orderId => {
-    Swal.fire({
-      title: 'Are you sure you want to Accept?',
-      text: "You won't be able to revert this!",
-      icon: 'warning',
-      showCancelButton: true,
-      confirmButtonColor: '#3085d6',
-      cancelButtonColor: '#d33',
-      confirmButtonText: 'Yes, Accept it!'
-    }).then(result => {
-      if (result.isConfirmed) {
-        axios
-          .patch(`https://esthetic-serverside.vercel.app/api/update/${orderId}`)
-          .then(res => {})
-          .catch(err => {
-            console.error('Error aceepting order:', err)
-            // If error occurs, revert the local state update
-            setBookings(bookings)
-          })
+  // const updateStatus = orderId => {
+  //   Swal.fire({
+  //     title: 'Are you sure you want to Accept?',
+  //     text: "You won't be able to revert this!",
+  //     icon: 'warning',
+  //     showCancelButton: true,
+  //     confirmButtonColor: '#3085d6',
+  //     cancelButtonColor: '#d33',
+  //     confirmButtonText: 'Yes, Accept it!'
+  //   }).then(result => {
+  //     if (result.isConfirmed) {
+  //       axios
+  //         .patch(`https://esthetic-serverside.vercel.app/api/update/${orderId}`)
+  //         .then(res => {})
+  //         .catch(err => {
+  //           console.error('Error aceepting order:', err)
+  //           // If error occurs, revert the local state update
+  //           setBookings(bookings)
+  //         })
 
-        Swal.fire({
-          title: 'Accept!',
-          text: 'Your file has been Accept.',
-          icon: 'success'
-        })
-      }
-    })
-  }
+  //       Swal.fire({
+  //         title: 'Accept!',
+  //         text: 'Your file has been Accept.',
+  //         icon: 'success'
+  //       })
+  //     }
+  //   })
+  // }
 
   return (
     <div className='mt-[30%] md:mt-[20%] lg:mt-[15%] xl:mt-[10%] '>
@@ -130,9 +130,9 @@ function AdminAccepted () {
         ) : (
           <div className='grid lg:grid-cols-2 xl:grid-cols-3 gap-6 mb-28 lg:mb-20'>
             {bookings?.map((order, i) => (
-              <div key={i} className='bg-white border p-6 relative'>
+              <div key={i} className='bg-white border border-green-600 p-6 relative'>
                 <div className='pb-5 border-b '>
-                  <h3>{order?.customerName}</h3>
+                  <h3>{order?.customerName} <span className='text-green-600 text-sm'>" Accepted "</span> </h3>
                   <p>{order?.phone}</p>
                   <p>{order?.email}</p>
                 </div>
@@ -146,7 +146,7 @@ function AdminAccepted () {
                 </button>
 
                 <button
-                  onClick={() => updateStatus(order._id)}
+                  // onClick={() => updateStatus(order._id)}
                   className='absolute top-16 right-8  text-gray-800'
                 >
                   <PiChecksBold size={18} />
