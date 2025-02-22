@@ -14,7 +14,7 @@ function AllService () {
   const sliceServices = services.slice(0, sliceService)
 
   const toggleShowMore = () => {
-    setSliceService(showMore ? 12 : 6)
+    setSliceService(showMore ? 14 : 6)
     setShowMore(!showMore)
   }
 

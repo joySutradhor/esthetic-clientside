@@ -113,13 +113,13 @@ function ServiceDetails () {
               <h2> Expert recommendations</h2>
               {expert_opinion?.map((opinion, index) => (
                 <div key={index} className='e__details__expert__parent'>
-                  <div className=''>
+                  {/* <div className=''>
                     <img
                       src={opinion.src}
                       alt={opinion.name}
                       className='h-52 xl:h-full w-full rounded object-cover object-top'
                     />
-                  </div>
+                  </div> */}
                   <p>
                     <strong>{opinion.name}</strong>: {opinion.opinion}
                   </p>

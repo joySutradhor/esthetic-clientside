@@ -44,7 +44,7 @@ function Service () {
       {/* Commitment to Customer */}
       <div className='e__section__gap'>
         <div className='e__service__container'>
-          <button className='e__tooltip__btn'>Compromiso</button>
+          <button className='e__tooltip__btn'>Lo que ofrecemos</button>
           <h2 className='mt-3 mb-8'>Nuestro compromiso con las clientes</h2>
 
           {/* Commitment Cards */}

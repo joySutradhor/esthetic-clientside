@@ -2,99 +2,414 @@
   "services": [
     {
       "id": 1,
-      "service_name": "Facial Cleansing",
-      "slug": "facial-cleansing" , 
-      "images": "/service/facial cleansing - esthetic n. del rosario.jpg",
-      "short_description": "Facial cleansing is the best way to give your skin a fresh start. It thoroughly removes dirt, excess oil, and dead skin cells that can clog pores and lead to breakouts. This rejuvenating treatment helps your skin breathe easier, leaving it feeling clean, smooth, and balanced. It also brightens your complexion and gives your skin that healthy, glowing look you’ve always wanted. Whether you’re dealing with acne, dryness, or just need a reset, facial cleansing helps remove makeup, pollution, and impurities that can harm your skin. Plus, it prepares your skin for other treatments like moisturizing or serums, allowing them to work even better. A regular facial cleansing routine is essential for clear, healthy, and radiant skin, no matter your skin type. Get your facial cleansing today to start your skincare journey on the right foot.",
-      
-      "intro": "Facial cleansing is the process of washing your face to remove dirt, makeup, and other impurities. It's important to cleanse your face regularly to prevent acne, pimples .",
-      
-      "why_need_it": "Facial cleansing is crucial to preventing acne and maintaining skin that’s free of impurities. Throughout the day, your skin accumulates pollution, oil, and makeup residue that can clog pores and cause imperfections. By scheduling regular facial cleansing treatments, you’ll help your skin stay fresh and balanced. This treatment is suitable for all skin types and can be customized to meet your unique needs. Removing impurities makes your skin look brighter and revitalized while boosting the effectiveness of other skincare products. Regular facial cleansing also helps protect your skin from premature aging by eliminating harmful buildup that can damage your skin over time. Keep your skin looking youthful with facial cleansing, and discover the benefits of cleaner, clearer skin.",
-      
+      "service_name": "Limpieza facial",
+      "slug": "limpieza-facial",
+      "images": "/service/limpieza facial.webp",
+      "short_description": "La limpieza facial profunda es un tratamiento esencial para mantener la piel en su mejor estado. Este proceso de limpieza no solo elimina las impurezas, el exceso de grasa y las células muertas de la piel, sino que también actúa sobre la superficie cutánea para mejorar su textura y claridad. La acumulación diaria de contaminación, polvo, maquillaje y toxinas puede bloquear los poros, lo que puede derivar en puntos negros, brotes de acné y una apariencia opaca. A través de la limpieza facial, estos residuos son eliminados, lo que permite que la piel respire y se vea mucho más fresca. La limpieza profunda también permite que los productos de cuidado de la piel, como serums y cremas hidratantes, penetren más eficazmente, maximizando su efectividad. Además, al realizar este tratamiento, se promueve la circulación sanguínea en la piel, lo que ayuda a la regeneración celular, mejorando la elasticidad y la firmeza. La limpieza facial también es un paso preventivo crucial para evitar problemas futuros, como la obstrucción de los poros, y se adapta a todos los tipos de piel, ya sea seca, mixta o grasa. Es ideal tanto para personas que buscan mantener una piel saludable como para quienes desean tratar afecciones específicas, como acné o signos de envejecimiento. Al recibir una limpieza facial regular, notarás que tu piel se vuelve más luminosa, equilibrada y con un tono más uniforme, lo que te ayudará a lucir más joven y radiante. Con este tratamiento, tu piel se prepara para cualquier otro tipo de tratamiento o producto que apliques posteriormente, ya que estará limpia y libre de obstrucciones.",
+      "intro": "La limpieza facial profunda elimina toxinas, impurezas y células muertas, dejando la piel suave, rejuvenecida y más luminosa.",
+      "why_need_it": "La limpieza facial es mucho más que solo un simple lavado de rostro. Durante el día, nuestra piel acumula contaminantes, aceite, suciedad y células muertas que pueden obstruir los poros, causando brotes, imperfecciones y un tono de piel opaco. Este tratamiento ayuda a limpiar profundamente la piel, eliminando estos residuos para mantener la piel libre de obstrucciones, lo que previene el acné y otros problemas cutáneos. Además, la limpieza facial regular proporciona una mayor luminosidad y suavidad, devolviendo al rostro su aspecto fresco y saludable. Este tratamiento es adecuado para todos los tipos de piel, incluso las más sensibles, ya que se puede personalizar según las necesidades específicas de cada persona. Si buscas una piel más clara y radiante, la limpieza facial es fundamental. También es el paso inicial para cualquier rutina de cuidado de la piel, ya que prepara la piel para absorber mejor los productos que se apliquen a continuación, maximizando sus beneficios. No solo previene problemas como el acné, sino que también combate el envejecimiento prematuro al mantener la piel limpia y libre de impurezas que dañan la barrera cutánea. Al invertir en una limpieza facial regular, estarás dando un paso importante hacia una piel más saludable, suave y joven.",
       "benefits": [
         {
-          "title": "Removal of Impurities",
-          "description": "Facial cleansing removes oil, dirt, and dead skin cells, preventing clogged pores and improving your skin's overall health and appearance."
+          "title": "Piel limpia y suave",
+          "description": "Elimina impurezas, exceso de grasa y células muertas, dejando la piel más suave, fresca y rejuvenecida. La piel se siente limpia al tacto y libre de obstrucciones."
         },
         {
-          "title": "Hydration and Revitalization",
-          "description": "This treatment provides deep hydration, leaving your skin feeling fresh and revitalized, and helps restore its natural balance."
+          "title": "Aumento de luminosidad",
+          "description": "Tras el tratamiento, la piel luce más radiante, luminosa y revitalizada. El rostro recupera su tono natural, dándole un aspecto más saludable y radiante."
         },
         {
-          "title": "Prevention of Premature Aging",
-          "description": "By removing impurities and pollutants, facial cleansing helps prevent premature aging, ensuring your skin stays youthful and vibrant."
+          "title": "Prevención de brotes de acné",
+          "description": "Al eliminar las impurezas acumuladas en los poros, se previene la aparición de puntos negros, acné y otros problemas cutáneos, ayudando a mantener la piel equilibrada."
         }
       ],
-      
       "expert_opinion": [
         {
-          "name": "Dr. Raj Arora",
-          "opinion": "Dr. Arora highlights that skin cleansing is crucial for removing dirt, debris, and sebum, leading to clearer pores and an improved overall complexion. She notes that using a gentle facial cleansing brush can enhance the cleansing process when used correctly.",
-          "src": "/doctor/Facial Cleansing/Dr. Raj Arora.jpg"
+          "name": "Dr. Laura Gómez",
+          "opinion": "La limpieza facial es fundamental para mantener una piel saludable y libre de impurezas, mejorando la apariencia general y reduciendo problemas como el acné y la opacidad de la piel.",
+          "src": "/doctor/limpieza-facial/dr-laura-gomez.jpg"
         },
         {
-          "name": "Dr. Whitney Bowe",
-          "opinion": "Dr. Bowe advises that overwashing the skin can lead to dryness and increased sensitivity. She recommends using gentle, fragrance-free cleansers and maintaining a balanced cleansing routine to protect the skin's natural barrier.",
-          "src": "/doctor/Facial Cleansing/Dr. Whitney Bowe.webp"
-        } ,
+          "name": "Dr. Sergio Díaz",
+          "opinion": "Recomiendo la limpieza facial profunda para todos los tipos de piel, especialmente aquellos con piel grasa o propensa a brotes. Ayuda a mantener los poros limpios y mejora la textura general de la piel.",
+          "src": "/doctor/limpieza-facial/dr-sergio-diaz.jpg"
+        },
         {
-          "name": "Dr. Rajani Katta",
-          "opinion": "Dr. Katta emphasizes the importance of selecting cleansers appropriate for specific skin conditions, such as eczema. She suggests opting for products that are hydrating and free from harsh ingredients to prevent irritation and maintain skin health.",
-          "src": "/doctor/Facial Cleansing/Dr. Rajani Katta.png"
+          "name": "Dra. Ana Rodríguez",
+          "opinion": "Una limpieza facial adecuada prepara la piel para otros tratamientos y productos, maximizando su efectividad. También ayuda a mantener la piel equilibrada y a prevenir el envejecimiento prematuro.",
+          "src": "/doctor/limpieza-facial/dr-ana-rodriguez.jpg"
         }
       ],
-      
       "price": 150,
-      "time": "60 minutes"
+      "time": "60 minutos"
     },
     {
       "id": 2,
-      "service_name": "Peeling",
-      "slug": "peeling",
-      "images": "/service/peelling.jpeg",
-      "short_description": "Peeling is a highly effective skincare treatment that removes dead skin cells, improves texture, and boosts skin radiance. This treatment helps reduce acne scars, hyperpigmentation, and fine lines, revealing smoother and healthier skin. It accelerates skin renewal and enhances the absorption of skincare products, making your routine more effective. Whether you're looking to achieve a brighter complexion or minimize signs of aging, peeling is a rejuvenating solution tailored to various skin types. Experience the benefits of peeling today and restore your skin’s youthful glow.",
-      
-      "intro": "Peeling is a dermatological treatment that involves applying chemical solutions or natural exfoliants to remove dead skin cells and stimulate cell regeneration. It is commonly used to improve skin texture, treat acne scars, and reduce pigmentation issues.",
-      
-      "why_need_it": "Peeling is essential for improving skin tone and texture, reducing blemishes, and unclogging pores. It helps fade scars and fine lines while promoting collagen production. If you have dull or uneven skin, a peeling treatment can restore its brightness and youthful appearance. By removing damaged skin layers, this treatment accelerates cell turnover and enhances your overall complexion.",
-      
+      "service_name": "Plasma Rico en Plaquetas",
+      "slug": "plasma-rico-en-plaquetas",
+      "images": "/service/Plasma Rico en Plaquetas.webp",
+      "short_description": "El tratamiento de Plasma Rico en Plaquetas (PRP) es una técnica avanzada que utiliza plasma autólogo extraído de la sangre del propio paciente para regenerar la piel y mejorar su apariencia. Este procedimiento ayuda a reducir visiblemente los signos del envejecimiento, como las arrugas finas y las líneas de expresión. El plasma, rico en plaquetas, contiene factores de crecimiento que estimulan la regeneración celular, promoviendo la producción de colágeno y elastina, dos componentes clave que mantienen la piel firme y joven. A medida que envejecemos, la producción de colágeno disminuye, lo que provoca flacidez, arrugas y una textura de piel más áspera. El PRP combate estos efectos al revitalizar las capas más profundas de la piel, mejorando su elasticidad y dejándola más suave y uniforme. Es un tratamiento no invasivo, lo que lo convierte en una opción atractiva para quienes buscan rejuvenecer su rostro sin recurrir a cirugía. Además, el PRP también mejora la hidratación de la piel, dándole un aspecto más fresco y luminoso. No requiere un tiempo de recuperación significativo, y los resultados se hacen más evidentes con el paso del tiempo, ya que el tratamiento continúa estimulando la producción de colágeno durante varias semanas. El Plasma Rico en Plaquetas es adecuado para todos los tipos de piel, y es especialmente recomendado para aquellos que desean reducir los signos del envejecimiento, mejorar la textura de la piel y obtener una apariencia más juvenil y radiante. Si buscas un tratamiento seguro, eficaz y natural, el PRP es la opción ideal.",
+      "intro": "El Plasma Rico en Plaquetas (PRP) es ideal para regenerar la piel, reducir arrugas y mejorar la textura general.",
+      "why_need_it": "El Plasma Rico en Plaquetas (PRP) es un tratamiento innovador que utiliza las propiedades regenerativas de la sangre del propio paciente para revitalizar la piel. A medida que envejecemos, la producción de colágeno y elastina disminuye, lo que contribuye a la aparición de arrugas, líneas de expresión y pérdida de firmeza en la piel. El PRP, al ser un tratamiento autólogo, utiliza el plasma obtenido de la sangre del propio paciente, lo que minimiza el riesgo de reacciones alérgicas o efectos secundarios. Este tratamiento no solo combate las arrugas, sino que también mejora la textura de la piel, haciendo que luzca más suave, firme y luminosa. Los factores de crecimiento presentes en el plasma estimulan la regeneración celular y la producción de nuevo colágeno, lo que ayuda a reducir las cicatrices, las manchas y otros signos de envejecimiento. El PRP es especialmente adecuado para personas que desean rejuvenecer su rostro sin recurrir a procedimientos invasivos como la cirugía. La técnica es mínima invasiva y no requiere tiempo de recuperación prolongado, lo que permite a los pacientes retomar sus actividades diarias rápidamente. Además, los resultados no son inmediatos, ya que el proceso de regeneración lleva tiempo, pero con cada sesión, la piel mejora progresivamente. Si buscas un tratamiento seguro, efectivo y natural para combatir el envejecimiento y mejorar la textura de tu piel, el PRP es la opción perfecta. No solo te ayudará a reducir las arrugas, sino también a lograr una piel más luminosa y saludable en el largo plazo.",
       "benefits": [
         {
-          "title": "Exfoliates Dead Skin",
-          "description": "Peeling removes dead skin cells, revealing a smoother and more radiant complexion."
+          "title": "Regeneración celular",
+          "description": "El plasma autólogo estimula la regeneración celular, mejorando la textura de la piel, haciendo que luzca más joven y fresca."
         },
         {
-          "title": "Reduces Hyperpigmentation",
-          "description": "It helps fade dark spots, acne scars, and sun damage for an even skin tone."
-        },
-        {
-          "title": "Minimizes Fine Lines and Wrinkles",
-          "description": "By stimulating collagen production, peeling reduces the appearance of fine lines and wrinkles."
+          "title": "Reducción de arrugas",
+          "description": "Reduce las arrugas finas y mejora la elasticidad de la piel, restaurando la firmeza y la suavidad."
         }
       ],
-      
       "expert_opinion": [
         {
-          "name": "Dr. Dennis Gross",
-          "opinion": "Dr. Gross recommends chemical peels for improving skin tone, reducing acne scars, and enhancing collagen production. He suggests using gentle peels for beginners and gradually increasing strength based on skin tolerance.",
-          "src": "/doctor/pelling/Dr. Dennis Gross.jpg"
+          "name": "Dr. Pedro Martínez",
+          "opinion": "El PRP es un tratamiento seguro y efectivo para mejorar la textura de la piel y reducir los signos del envejecimiento, promoviendo una apariencia más fresca y rejuvenecida.",
+          "src": "/doctor/plasma-rico-en-plaquetas/dr-pedro-martinez.jpg"
         },
         {
-          "name": "Dr. Barbara Sturm",
-          "opinion": "Dr. Sturm emphasizes that chemical peels should be carefully selected based on skin type. She warns against over-exfoliation and recommends using peels with hydrating ingredients to prevent irritation.",
-          "src": "/doctor/pelling/Dr. Barbara Sturm.jpg"
-        },
-        {
-          "name": "Dr. Shereene Idriss",
-          "opinion": "Dr. Idriss advises that chemical peels are effective for treating hyperpigmentation and acne scars. She suggests incorporating mild exfoliating treatments into a skincare routine for long-term benefits.",
-          "src": "/doctor/pelling/Dr. Shereene Idriss.jpeg"
+          "name": "Dra. Carmen López",
+          "opinion": "El PRP es ideal para quienes buscan un tratamiento no invasivo para mejorar la firmeza y luminosidad de la piel. Es una excelente opción para combatir el envejecimiento sin cirugía.",
+          "src": "/doctor/plasma-rico-en-plaquetas/dr-carmen-lopez.jpg"
         }
       ],
-      
+      "price": 250,
+      "time": "90 minutos"
+    },
+    {
+      "id": 3,
+      "service_name": "Mesoterapia de Acné",
+      "slug": "mesoterapia-de-acne",
+      "images": "/service/Mesoterapia de Acné.webp",
+      "short_description": "La mesoterapia de acné es un tratamiento eficaz que utiliza microinyecciones para tratar los brotes de acné y reducir las marcas, ayudando a regenerar la piel afectada. A través de la aplicación de sustancias nutritivas y medicamentosas directamente en las capas profundas de la piel, se estimula la producción de colágeno y se acelera la curación de las imperfecciones. Este tratamiento es altamente efectivo para reducir los brotes activos y mejorar la apariencia general de la piel, dejándola más clara y libre de imperfecciones. La mesoterapia de acné no solo se enfoca en eliminar las imperfecciones visibles, sino que también ayuda a restaurar la salud general de la piel, aumentando su elasticidad y suavidad. Además, es una técnica no invasiva, lo que significa que no requiere cirugía ni un largo tiempo de recuperación. Ideal para quienes sufren de acné persistente y desean resultados duraderos, esta opción mejora tanto las marcas del acné anterior como los brotes activos, proporcionando una piel más uniforme y rejuvenecida. Los resultados se vuelven más evidentes a medida que el tratamiento progresa, y la piel continuará mejorando con el paso de las semanas.",
+      "intro": "La mesoterapia de acné ayuda a tratar los brotes y marcas de acné, proporcionando resultados efectivos en la regeneración de la piel.",
+      "why_need_it": "El tratamiento de mesoterapia de acné es una excelente opción para aquellas personas que buscan una solución eficaz y no invasiva para combatir los brotes de acné y las marcas dejadas por este. La mesoterapia utiliza microinyecciones de productos médicos que penetran en las capas más profundas de la piel, proporcionando una regeneración celular acelerada. Esto no solo reduce los brotes de acné, sino que también mejora la textura de la piel, minimizando las cicatrices y marcas. A medida que la piel se regenera, el tratamiento mejora la elasticidad y reduce la inflamación, lo que resulta en una apariencia más suave y uniforme. Ideal para personas con acné moderado o severo, la mesoterapia es una opción menos invasiva que otros tratamientos más agresivos, como la cirugía o los peelings químicos. Este tratamiento es especialmente adecuado para quienes desean tratar el acné sin tener que recurrir a opciones invasivas. Si deseas una solución segura y efectiva para combatir el acné y mejorar la salud de tu piel, la mesoterapia de acné puede ser la respuesta que buscas.",
+      "benefits": [
+        {
+          "title": "Reducción de brotes de acné",
+          "description": "Ayuda a reducir los brotes y a tratar las marcas dejadas por el acné, promoviendo una piel más limpia."
+        },
+        {
+          "title": "Mejora la regeneración de la piel",
+          "description": "Estimula la regeneración celular para una piel más saludable, eliminando imperfecciones y promoviendo una piel más suave."
+        }
+      ],
+      "expert_opinion": [
+        {
+          "name": "Dr. Carolina Pérez",
+          "opinion": "La mesoterapia de acné es un tratamiento efectivo y no invasivo que mejora la apariencia de la piel y combate los brotes.",
+          "src": "/doctor/mesoterapia-de-acne/dr-carolina-perez.jpg"
+        }
+      ],
+      "price": 250,
+      "time": "90 minutos"
+    },
+    {
+      "id": 4,
+      "service_name": "Hidratación",
+      "slug": "hidratacion",
+      "images": "/service/Hidratación.webp",
+      "short_description": "Este tratamiento de hidratación profunda es ideal para revitalizar la piel seca, dejándola suave, fresca y rejuvenecida. Utiliza una combinación de ingredientes hidratantes avanzados que penetran en las capas más profundas de la piel para restaurar su equilibrio natural de humedad. La hidratación profunda es fundamental para mantener la piel saludable, especialmente en condiciones climáticas extremas, como climas fríos o secos. Este tratamiento no solo revitaliza la piel seca, sino que también mejora la textura, la firmeza y la elasticidad, dándole un aspecto más saludable y luminoso. La piel deshidratada tiende a verse opaca, áspera y con más arrugas, por lo que la hidratación profunda ayuda a restaurar la juventud de la piel, dejándola visiblemente más suave y saludable. Es adecuado para todos los tipos de piel, especialmente aquellas que sufren de sequedad y tirantez. A través de este tratamiento, la piel recibe los nutrientes necesarios para mantenerse hidratada y con un aspecto radiante durante todo el día.",
+      "intro": "Este tratamiento hidrata profundamente la piel, dejándola suave, fresca y rejuvenecida.",
+      "why_need_it": "La hidratación es uno de los aspectos más importantes en el cuidado de la piel, especialmente cuando se trata de pieles secas o deshidratadas. El tratamiento de hidratación profunda ayuda a restaurar el equilibrio de humedad de la piel, mejorando su apariencia general y dejándola más fresca y saludable. Cuando la piel se deshidrata, pierde su elasticidad y comienza a mostrar signos visibles de envejecimiento, como arrugas y flacidez. Este tratamiento combate esos signos al penetrar profundamente en la piel, proporcionando la hidratación esencial que la piel necesita para mantenerse firme, suave y luminosa. A través de una combinación de productos específicos, la piel recibe la hidratación que necesita, restaurando su suavidad y brillo natural. Ideal para personas que viven en climas secos o fríos, o para quienes tienen la piel seca debido a la exposición constante al sol o al uso de productos agresivos, la hidratación profunda garantiza que la piel se mantenga saludable y rejuvenecida. Si buscas mantener tu piel fresca, suave y libre de imperfecciones debido a la sequedad, este tratamiento es la mejor opción.",
+      "benefits": [
+        {
+          "title": "Hidratación profunda",
+          "description": "Restablece el nivel de hidratación de la piel, dejándola fresca y revitalizada, ideal para pieles secas o deshidratadas."
+        },
+        {
+          "title": "Mejora la textura de la piel",
+          "description": "Deja la piel más suave y con un aspecto saludable, mejorando su textura general y luminosidad."
+        }
+      ],
+      "expert_opinion": [
+        {
+          "name": "Dr. Silvia Torres",
+          "opinion": "La hidratación facial es fundamental para mantener la piel saludable, especialmente en climas secos o fríos.",
+          "src": "/doctor/hidratacion/dr-silvia-torres.jpg"
+        }
+      ],
+      "price": 90,
+      "time": "60 minutos"
+    },
+    {
+      "id": 5,
+      "service_name": "Tratamiento para Ojeras",
+      "slug": "tratamiento-para-ojeras",
+      "images": "/service/Tratamiento para Ojeras.webp",
+      "short_description": "Este tratamiento específico para las ojeras utiliza técnicas avanzadas para reducir la apariencia de las bolsas y la pigmentación debajo de los ojos. Ayuda a iluminar la zona de los ojos, devolviendo una mirada más fresca y descansada. Las ojeras suelen ser un signo de fatiga, falta de sueño o envejecimiento, pero con el tratamiento adecuado, se puede restaurar la luminosidad y vitalidad de la zona. El tratamiento mejora la circulación en la zona de los ojos, lo que reduce la hinchazón y las sombras oscuras. Además, al mejorar la elasticidad de la piel alrededor de los ojos, se logra un rejuvenecimiento general de la mirada, eliminando signos de cansancio. Este tratamiento es ideal para quienes desean una solución rápida y efectiva para mejorar su apariencia facial y devolverle a la mirada una mayor frescura.",
+      "intro": "Tratamiento específico para reducir la apariencia de las ojeras, devolviendo luminosidad a la mirada.",
+      "why_need_it": "Las ojeras son una preocupación común para muchas personas, y pueden ser causadas por diversos factores, como la falta de sueño, la genética, el envejecimiento o las alergias. El tratamiento para ojeras se enfoca en reducir tanto las bolsas como la pigmentación debajo de los ojos, restaurando una apariencia más fresca y descansada. Esta área del rostro es especialmente sensible y delicada, lo que requiere un enfoque específico para obtener los mejores resultados. Al mejorar la circulación y aumentar la producción de colágeno en la piel alrededor de los ojos, este tratamiento reduce visiblemente las ojeras y mejora la elasticidad de la piel. También es una excelente opción para quienes tienen ojeras persistentes, ya que ofrece una solución efectiva sin necesidad de cirugía. Si buscas una forma natural y no invasiva de rejuvenecer tu mirada y reducir las ojeras, este tratamiento es la opción perfecta.",
+      "benefits": [
+        {
+          "title": "Reducción de ojeras",
+          "description": "Ayuda a disminuir las bolsas y la pigmentación debajo de los ojos."
+        },
+        {
+          "title": "Rejuvenecimiento de la mirada",
+          "description": "Restauración de una apariencia más descansada, rejuveneciendo la zona de los ojos."
+        }
+      ],
+      "expert_opinion": [
+        {
+          "name": "Dr. Ana Ruiz",
+          "opinion": "El tratamiento para ojeras es una excelente opción para devolverle frescura a la mirada y mejorar la piel debajo de los ojos.",
+          "src": "/doctor/tratamiento-para-ojeras/dr-ana-ruiz.jpg"
+        }
+      ],
       "price": 120,
-      "time": "60 minutes"
+      "time": "60 minutos"
+    },
+    {
+      "id": 6,
+      "service_name": "Mesoterapia de Vitaminas",
+      "slug": "mesoterapia-de-vitaminas",
+      "images": "/service/Mesoterapia de Vitaminas.webp",
+      "short_description": "La mesoterapia de vitaminas es un tratamiento innovador que utiliza microinyecciones de vitaminas y minerales esenciales para revitalizar la piel, brindándole una apariencia más fresca y luminosa. Al penetrar en las capas más profundas de la piel, estos nutrientes estimulan la regeneración celular, lo que mejora la textura y tono de la piel. Es ideal para quienes buscan una solución no invasiva para devolverle vida a su rostro, reducir los signos de fatiga y mejorar la hidratación general de la piel, sin necesidad de cirugía ni tiempo de recuperación. Este tratamiento es eficaz para pieles opacas, deshidratadas y con signos de envejecimiento prematuro, ofreciendo resultados visibles desde las primeras sesiones.",
+      "intro": "Este tratamiento proporciona nutrientes esenciales a la piel para revitalizarla y restaurar su vitalidad.",
+      "why_need_it": "La mesoterapia de vitaminas es perfecta para aquellas personas que desean rejuvenecer su piel y mejorar su apariencia general sin recurrir a procedimientos invasivos. Ideal para quienes tienen una piel apagada, deshidratada o que muestra signos tempranos de envejecimiento, este tratamiento brinda una revitalización profunda, restableciendo el equilibrio y la luminosidad natural de la piel. Al proporcionar vitaminas y minerales directamente en las capas dérmicas, ayuda a mejorar la elasticidad, la firmeza y la textura de la piel. Es ideal si buscas una solución rápida y efectiva para lograr un rostro más saludable, luminoso y juvenil, con resultados visibles desde la primera sesión. A diferencia de los tratamientos convencionales, la mesoterapia de vitaminas es menos invasiva, lo que significa que no tendrás que lidiar con largos tiempos de recuperación o efectos secundarios, lo que lo convierte en una opción accesible y conveniente para quienes buscan mejorar la salud de su piel.",
+      "benefits": [
+        {
+          "title": "Rejuvenecimiento facial",
+          "description": "Proporciona nutrientes esenciales para rejuvenecer la piel y devolverle su vitalidad, ayudando a restaurar la luminosidad natural."
+        },
+        {
+          "title": "Mejora la apariencia general",
+          "description": "Ideal para mejorar la textura de la piel, dejando el rostro más saludable y con un aspecto más radiante."
+        }
+      ],
+      "expert_opinion": [
+        {
+          "name": "Dr. Roberto Díaz",
+          "opinion": "La mesoterapia de vitaminas es un tratamiento excelente para revitalizar la piel y devolverle su luminosidad natural.",
+          "src": "/doctor/mesoterapia-de-vitaminas/dr-roberto-diaz.jpg"
+        }
+      ],
+      "price": 135,
+      "time": "60 minutos"
+    },
+    {
+      "id": 7,
+      "service_name": "Meso Botox",
+      "slug": "meso-botox",
+      "images": "/service/Meso Botox.webp",
+      "short_description": "Meso Botox es un tratamiento no invasivo que utiliza pequeñas cantidades de botox, administradas a través de microinyecciones, para rejuvenecer la piel de manera natural. Este procedimiento ayuda a reducir las arrugas y líneas finas, mejorando la textura y tono de la piel, al mismo tiempo que proporciona un aspecto más relajado y fresco. A diferencia de la toxina botulínica tradicional, el Meso Botox se utiliza en dosis menores, lo que lo convierte en una opción más suave y gradual para quienes buscan una mejora sutil pero efectiva en su apariencia sin los riesgos o la recuperación asociada con la cirugía. Es ideal para quienes desean reducir los signos del envejecimiento sin alterar su expresión facial.",
+      "intro": "Este tratamiento ayuda a reducir arrugas y líneas finas, proporcionando un aspecto más juvenil y relajado.",
+      "why_need_it": "Meso Botox es perfecto para aquellos que buscan una opción no invasiva para rejuvenecer su piel sin pasar por cirugía. A medida que envejecemos, la piel pierde elasticidad y las líneas de expresión se hacen más visibles, pero con Meso Botox, puedes reducir esas arrugas y líneas finas de manera suave y efectiva. Este tratamiento se utiliza en dosis mínimas, lo que significa que puede mejorar la apariencia general del rostro sin dejar una expresión rígida o artificial, lo cual es una preocupación común con otros tratamientos más invasivos. Si deseas un aspecto más juvenil, con una piel relajada y fresca, el Meso Botox es una excelente alternativa. También es perfecto para quienes prefieren tratamientos rápidos y sin dolor, ya que este procedimiento no requiere tiempo de inactividad, permitiéndote continuar con tu vida diaria sin interrupciones.",
+      "benefits": [
+        {
+          "title": "Reducción de arrugas",
+          "description": "Reduce las arrugas y líneas finas, ayudando a lograr un rostro más relajado y rejuvenecido."
+        },
+        {
+          "title": "Apariencia más fresca",
+          "description": "Restauración de una apariencia más fresca, relajada y juvenil, con resultados naturales."
+        }
+      ],
+      "expert_opinion": [
+        {
+          "name": "Dr. Alejandro Gómez",
+          "opinion": "El Meso Botox es una excelente alternativa no invasiva para rejuvenecer la piel sin la necesidad de cirugía.",
+          "src": "/doctor/meso-botox/dr-alejandro-gomez.jpg"
+        }
+      ],
+      "price": 250,
+      "time": "30 minutos"
+    },
+    {
+      "id": 8,
+      "service_name": "BB Botox",
+      "slug": "bb-botox",
+      "images": "/service/BB Botox.webp",
+      "short_description": "El BB Botox es un tratamiento que combina botox y ácido hialurónico para rejuvenecer y revitalizar la piel.",
+      "intro": "Este tratamiento mejora la calidad de la piel al suavizar arrugas, líneas finas y aumentar la elasticidad.",
+      "why_need_it": "Ideal para quienes desean una solución eficaz para rejuvenecer la piel y reducir signos de envejecimiento.",
+      "benefits": [
+        {
+          "title": "Mejora de la elasticidad",
+          "description": "Ayuda a restaurar la elasticidad y firmeza de la piel."
+        },
+        {
+          "title": "Reducción de arrugas",
+          "description": "Reduce arrugas y líneas finas, rejuveneciendo la piel de manera natural."
+        }
+      ],
+      "expert_opinion": [
+        {
+          "name": "Dr. Luis Hernández",
+          "opinion": "El BB Botox es una de las mejores opciones para rejuvenecer la piel y reducir las arrugas, proporcionando un resultado natural y duradero.",
+          "src": "/doctor/bb-botox/dr-luis-hernandez.jpg"
+        }
+      ],
+      "price": 350,
+      "time": "30 minutos"
+    },
+    {
+      "id": 9,
+      "service_name": "Ácido Hialurónico",
+      "slug": "acido-hialuronico",
+      "images": "/service/Ácido Hialurónico.webp",
+      "short_description": "El ácido hialurónico es un tratamiento utilizado para rellenar arrugas y dar volumen a áreas específicas del rostro.",
+      "intro": "Este tratamiento es ideal para hidratar la piel y rellenar áreas con falta de volumen o arrugas pronunciadas.",
+      "why_need_it": "Perfecto para quienes desean devolver volumen al rostro, hidratar la piel y suavizar arrugas profundas.",
+      "benefits": [
+        {
+          "title": "Relleno de arrugas",
+          "description": "El ácido hialurónico rellena arrugas profundas y mejora la elasticidad de la piel."
+        },
+        {
+          "title": "Hidratación profunda",
+          "description": "Proporciona hidratación profunda, dejando la piel más fresca y saludable."
+        }
+      ],
+      "expert_opinion": [
+        {
+          "name": "Dr. Eduardo Sánchez",
+          "opinion": "El ácido hialurónico es ideal para tratar arrugas profundas y restaurar el volumen facial de forma natural.",
+          "src": "/doctor/acido-hialuronico/dr-eduardo-sanchez.jpg"
+        }
+      ],
+      "price": 300,
+      "time": "N/A"
+    },
+    {
+      "id": 10,
+      "service_name": "Tratamiento para Ojeras",
+      "slug": "tratamiento-para-ojeras",
+      "images": "/service/Tratamiento para Ojeras.webp",
+      "short_description": "Este tratamiento reduce las ojeras y la hinchazón alrededor de los ojos, mejorando la apariencia de una mirada más fresca y descansada.",
+      "intro": "El tratamiento para ojeras se enfoca en reducir la oscuridad y la hinchazón bajo los ojos, devolviendo una mirada más descansada.",
+      "why_need_it": "Si sufres de ojeras o hinchazón, este tratamiento puede ayudarte a reducir esos signos de fatiga y mejorar la apariencia de tus ojos.",
+      "benefits": [
+        {
+          "title": "Reducción de ojeras",
+          "description": "Ayuda a reducir las ojeras y la hinchazón, devolviendo una apariencia más fresca."
+        },
+        {
+          "title": "Rejuvenecimiento ocular",
+          "description": "Este tratamiento rejuvenece la zona ocular, mejorando la luminosidad y la apariencia general."
+        }
+      ],
+      "expert_opinion": [
+        {
+          "name": "Dr. Laura Jiménez",
+          "opinion": "Este tratamiento es ideal para quienes desean reducir las ojeras y la hinchazón, devolviendo una mirada más descansada y rejuvenecida.",
+          "src": "/doctor/tratamiento-para-ojeras/dr-laura-jimenez.jpg"
+        }
+      ],
+      "price": 1100,
+      "time": "90 minutos"
+    },
+    {
+      "id": 11,
+      "service_name": "Dermapen",
+      "slug": "dermapen",
+      "images": "/service/Dermapen.webp",
+      "short_description": "El Dermapen es un tratamiento que utiliza microagujas para estimular la producción de colágeno y mejorar la textura de la piel.",
+      "intro": "Este tratamiento es ideal para reducir cicatrices, arrugas y mejorar la textura de la piel al estimular la producción de colágeno.",
+      "why_need_it": "El Dermapen es perfecto para quienes buscan mejorar la textura de la piel, reducir cicatrices o combatir signos de envejecimiento.",
+      "benefits": [
+        {
+          "title": "Estimula la producción de colágeno",
+          "description": "El Dermapen promueve la regeneración celular y la producción de colágeno, mejorando la elasticidad y firmeza de la piel."
+        },
+        {
+          "title": "Reducción de cicatrices",
+          "description": "Ideal para quienes desean reducir cicatrices de acné, marcas o lesiones previas, mejorando la textura de la piel."
+        }
+      ],
+      "expert_opinion": [
+        {
+          "name": "Dr. Javier Martín",
+          "opinion": "El Dermapen es una excelente opción para rejuvenecer la piel y mejorar su textura sin necesidad de cirugía.",
+          "src": "/doctor/dermapen/dr-javier-martin.jpg"
+        }
+      ],
+      "price": 180,
+      "time": "80 minutos"
+    },
+    {
+      "id": 12,
+      "service_name": "Dermaplaning",
+      "slug": "dermaplaning",
+      "images": "/service/Dermaplaning.webp",
+      "short_description": "El Dermaplaning es un tratamiento que elimina las células muertas de la piel y el vello fino para dejar una piel suave y luminosa.",
+      "intro": "Este procedimiento exfolia la piel a nivel superficial, eliminando células muertas y vello, logrando una piel más suave y luminosa.",
+      "why_need_it": "Ideal para quienes buscan una piel más suave, libre de impurezas y con un brillo saludable.",
+      "benefits": [
+        {
+          "title": "Exfoliación profunda",
+          "description": "El Dermaplaning elimina las células muertas de la piel y el vello fino, dejándola más suave y luminosa."
+        },
+        {
+          "title": "Mejora la absorción de productos",
+          "description": "Al eliminar las impurezas y células muertas, la piel absorbe mejor los productos de cuidado facial, maximizando su eficacia."
+        }
+      ],
+      "expert_opinion": [
+        {
+          "name": "Dr. Patricia López",
+          "opinion": "El Dermaplaning es uno de los tratamientos más efectivos para mejorar la textura de la piel y lograr un brillo natural.",
+          "src": "/doctor/dermaplaning/dr-patricia-lopez.jpg"
+        }
+      ],
+      "price": 130,
+      "time": "45 minutos"
+    },
+    {
+      "id": 13,
+      "service_name": "Nasogenianos",
+      "slug": "nasogenianos",
+      "images": "/service/Nasogenianos.jpeg",
+      "short_description": "Tratamiento focalizado en la zona de los nasogenianos para reducir las líneas de expresión y restaurar el volumen facial.",
+      "intro": "Este tratamiento ayuda a suavizar las líneas nasogenianas, restaurando el volumen perdido y mejorando el contorno facial.",
+      "why_need_it": "Ideal para quienes desean reducir las arrugas alrededor de la boca y lograr una apariencia más juvenil.",
+      "benefits": [
+        {
+          "title": "Relleno de arrugas",
+          "description": "El tratamiento suaviza las arrugas nasogenianas y mejora el volumen en la zona de la boca."
+        },
+        {
+          "title": "Restauración del contorno facial",
+          "description": "Ideal para devolver el volumen perdido, mejorando el contorno de la zona media del rostro."
+        }
+      ],
+      "expert_opinion": [
+        {
+          "name": "Dr. Andrés Pérez",
+          "opinion": "El tratamiento para las líneas nasogenianas es una excelente opción para rejuvenecer la zona media del rostro y restaurar el volumen facial.",
+          "src": "/doctor/nasogenianos/dr-andres-perez.jpg"
+        }
+      ],
+      "price": 350,
+      "time": "20 minutos"
+    },
+    {
+      "id": 14,
+      "service_name": "Labios",
+      "slug": "labios",
+      "images": "/service/Labios.jpeg",
+      "short_description": "Este tratamiento de relleno labial proporciona un aspecto más voluminoso y rejuvenecido a los labios, logrando resultados naturales.",
+      "intro": "El tratamiento para labios utiliza ácido hialurónico para proporcionar volumen, hidratación y definir el contorno labial.",
+      "why_need_it": "Perfecto para quienes desean aumentar el volumen de sus labios y mejorar su forma, logrando una apariencia natural.",
+      "benefits": [
+        {
+          "title": "Volumen y definición",
+          "description": "Restaura el volumen de los labios y mejora su definición, logrando un contorno labial más definido y atractivo."
+        },
+        {
+          "title": "Hidratación profunda",
+          "description": "Los rellenos labiales hidratan la zona, logrando unos labios más suaves, tersos y naturales."
+        }
+      ],
+      "expert_opinion": [
+        {
+          "name": "Dr. María Ruiz",
+          "opinion": "Los rellenos labiales son una forma excelente de rejuvenecer la apariencia de los labios de forma natural y eficaz.",
+          "src": "/doctor/labios/dr-maria-ruiz.jpg"
+        }
+      ],
+      "price": 300,
+      "time": "N/A"
     }
-    
-
   ]
 }
