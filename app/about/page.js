@@ -13,9 +13,9 @@ function About () {
       <div>
         <SectionHeader
           serviceHeader={serviceHeader}
-          heading='Lets know more about us'
+          heading='Vamos a saber más sobre nosotras'
           btnText='Reserva ahora'
-          paraText='If you want great service, reach here.'
+          paraText='Conoce nuestra misión y visión, y descubre cómo transformamos el cuidado de la piel para tu bienestar.'
         />
       </div>
       {/* our mission and vision */}

@@ -36,9 +36,9 @@ function Service () {
     <section>
       <SectionHeader
         serviceHeader={serviceHero}
-        heading='Best Skin Care Service in Florida'
+        heading='El mejor servicio de cuidado de la piel en Florida'
         btnText='Reserva ahora'
-        paraText='If you want great service, reach here.'
+        paraText='Tratamientos personalizados para una piel radiante y saludable, respaldados por expertos en dermatología y estética'
       />
 
       {/* Commitment to Customer */}
