@@ -1,0 +1,9 @@
+User-Agent: *
+Allow: /
+Disallow: /dashboard
+Disallow: /adminLogin
+Disallow: /adminDashboard
+Disallow: /adminDashboard
+Disallow: /adminAccepted
+
+Sitemap: https://estheticsbynoemi.com/sitemap.xml
