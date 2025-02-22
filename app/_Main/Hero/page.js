@@ -53,75 +53,75 @@ function Hero () {
           <div className='hidden lg:block'>
             <div className='e__hero__content__child'>
               <HeroServiceBtn
-                btnText='Peel'
+                btnText='Limpieza facial'
                 Icon={MdArrowOutward}
-                serviceLink='/'
+                serviceLink="/book"
               />
               <HeroServiceBtn
-                btnText='Peeling'
+                btnText='Plasma Rico en Plaquetas'
                 Icon={MdArrowOutward}
-                serviceLink='/'
+                serviceLink="/book"
               />
               <HeroServiceBtn
-                btnText='Botox'
+                btnText='Mesoterapia de Acné'
                 Icon={MdArrowOutward}
-                serviceLink='/'
+                serviceLink="/book"
               />
               <HeroServiceBtn
-                btnText='Bb Botox'
+                btnText='Hidratación'
                 Icon={MdArrowOutward}
-                serviceLink='/'
+                serviceLink="/book"
               />
               <HeroServiceBtn
-                btnText='Dermapen '
+                btnText='Tratamiento para Ojeras '
                 Icon={MdArrowOutward}
-                serviceLink='/'
+                serviceLink="/book"
               />
               <HeroServiceBtn
                 className=' !bg-black !text-white animate-pulse'
-                btnText='DERMAPLENING '
+                btnText='Mesoterapia de Vitaminas'
                 Icon={MdArrowOutward}
-                serviceLink='/'
+                serviceLink="/book"
               />
               <HeroServiceBtn
-                btnText='Y mucho más'
+                btnText='Meso Botox'
                 Icon={MdArrowOutward}
-                serviceLink='/'
+                serviceLink="/book"
               />
               <HeroServiceBtn
-                btnText='Meso botox'
+                btnText='BB Botox'
                 Icon={MdArrowOutward}
-                serviceLink='/'
+                serviceLink="/book"
               />
               <HeroServiceBtn
                 btnText='Ácido hialuronico'
                 Icon={MdArrowOutward}
-                serviceLink='/'
+                serviceLink="/book"
               />
               <HeroServiceBtn
-                btnText='Limpieza facial'
+                btnText='Tratamiento para Ojeras'
                 Icon={MdArrowOutward}
-                serviceLink='/'
+                serviceLink="/book"
               />
               <HeroServiceBtn
-                btnText='Plasma Rico en plaquetas'
+                btnText='Dermapen'
                 Icon={MdArrowOutward}
-                serviceLink='/'
+                serviceLink="/book"
               />
               <HeroServiceBtn
-                btnText='Mesoterapia de vitaminas '
+                btnText='Dermaplaning '
                 Icon={MdArrowOutward}
-                serviceLink='/'
+                serviceLink="/book"
               />
               <HeroServiceBtn
-                btnText='Rejuvenecimiento facial'
+                btnText='Nasogenianos'
                 Icon={MdArrowOutward}
-                serviceLink='/'
+                serviceLink="/book"
               />
               <HeroServiceBtn
-                btnText='Hidratación profunda'
+                btnText='Labios'
                 Icon={MdArrowOutward}
-                serviceLink='/'
+                serviceLink="/book"
               />
             </div>
           </div>
