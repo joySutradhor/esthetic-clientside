@@ -23,6 +23,41 @@ import Dermaplaning from "@/public/service/Dermaplaning.webp"
 import Nasogenianos from "@/public/service/Nasogenianos.jpeg"
 import Labios from "@/public/service/Labios.jpeg"
 
+
+// export const metadata = {
+//   title: 'Book Your Appointment | Esthetic N. Del Rosario | Premium Skin Care in Brandon, Florida',
+//   description:
+//     'Book your appointment with Esthetic N. Del Rosario for premium skin care treatments such as mesotherapy, Meso Botox, facials, and rejuvenating services in Brandon, Florida.',
+//   keywords:
+//     'book appointment, Esthetic N. Del Rosario, skin care appointment, mesotherapy booking, Meso Botox appointment, facial treatment booking, skin rejuvenation, Brandon Florida, book skin care service',
+//   openGraph: {
+//     title: 'Book Your Appointment | Esthetic N. Del Rosario | Premium Skin Care in Brandon, Florida',
+//     description:
+//       'Easily schedule your appointment for premium skin care services at Esthetic N. Del Rosario. Whether it’s mesotherapy or facials, book today for glowing skin!',
+//     images: [
+//       {
+//         url: 'https://i.ibb.co/cK6DX7jJ/ourmission.jpg', // Image for social sharing
+//         width: 1200,
+//         height: 630,
+//         alt: 'Esthetic N. Del Rosario - Book Your Skin Care Appointment'
+//       }
+//     ],
+//     url: 'https://www.estheticndelrosario.com/book',
+//     siteName: 'Esthetic N. Del Rosario',
+//     type: 'website'
+//   },
+//   twitter: {
+//     card: 'summary_large_image',
+//     site: '@estheticnrosario',
+//     title: 'Book Your Appointment | Esthetic N. Del Rosario | Premium Skin Care in Brandon, Florida',
+//     description:
+//       'Book your appointment now for mesotherapy, Meso Botox, facials, and other rejuvenating skin care treatments at Esthetic N. Del Rosario in Brandon, Florida.',
+//     images: ['https://i.ibb.co/My2ydCTV/ourmission.jpg'] // Image for Twitter sharing
+//   }
+// };
+
+
+
 function Book () {
   const [step, setStep] = useState(1) // Step state to manage stepper flow
   const [customerName, setCustomerName] = useState('')

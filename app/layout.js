@@ -3,7 +3,7 @@ import Header from './_shared/Header/page'
 import './globals.css'
 
 export const metadata = {
-  title: 'Esthetic N. Del Rosario - Premium Skin Care Services',
+  title: 'Esthetic N. Del Rosario - Premium Skin Care Services || Brandon, Florida',
   description:
     'Discover premium skin care treatments designed to rejuvenate, hydrate, and enhance your natural beauty.',
   keywords:
