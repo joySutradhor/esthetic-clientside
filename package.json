@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@headlessui/react": "^2.2.0",
+    "@next/third-parties": "^15.1.7",
     "@szhsin/react-accordion": "^1.4.0",
     "axios": "^1.7.9",
     "next": "15.1.6",
