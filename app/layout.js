@@ -13,7 +13,7 @@ export const metadata = {
     title: 'Esthetic N. Del Rosario - Premium Skin Care Services',
     description:
       'Explore a range of expert skin care services aimed at rejuvenating and enhancing your beauty. We offer advanced treatments like mesotherapy and Meso Botox for visible results.',
-    image: '/about/ourmission.jpg', // Add a relevant image URL
+    image: 'https://i.ibb.co.com/My2ydCTV/ourmission.jpg', // Add a relevant image URL
     url: 'https://www.estheticndelrosario.com',
     site_name: 'Esthetic N. Del Rosario'
   },
@@ -23,7 +23,7 @@ export const metadata = {
     title: 'Esthetic N. Del Rosario - Premium Skin Care Services',
     description:
       'Enhance your natural beauty with our rejuvenating skin care treatments. Book your appointment now!',
-    image: '/about/ourmission.jpg' // Add a relevant image URL
+    image: 'https://i.ibb.co.com/My2ydCTV/ourmission.jpg' // Add a relevant image URL
   }
 }
 
