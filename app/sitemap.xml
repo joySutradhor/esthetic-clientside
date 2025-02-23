@@ -1,0 +1,144 @@
+// import serviceList from '@/public/FakeDb/services.json'
+// export const revalidate = 60
+
+// export default function sitemap () {
+//   const serviceData = serviceList?.services
+
+//   const data = serviceData.map((d, i) => ({
+//     url:   `https://estheticsbynoemi.com/service/${d?.slug}`,
+//     lastModified:  new Date(),
+//     changeFrequency: 'weekly',
+//     priority: .8
+//   }))
+
+//   return [
+//     {
+//       url: 'https://estheticsbynoemi.com',
+//       lastModified: new Date(),
+//       changeFrequency: 'yearly',
+//       priority: 1
+//     },
+//     {
+//       url: 'https://estheticsbynoemi.com/about',
+//       lastModified: new Date(),
+//       changeFrequency: 'monthly',
+//       priority: 0.8
+//     },
+//     {
+//       url: 'https://estheticsbynoemi.com/service',
+//       lastModified: new Date(),
+//       changeFrequency: 'weekly',
+//       priority: 0.8
+//     },
+//     {
+//       url: 'https://estheticsbynoemi.com/gallery',
+//       lastModified: new Date(),
+//       changeFrequency: 'weekly',
+//       priority: 0.8
+//     },
+
+//     ...data
+//   ]
+// }
+
+<urlset
+  xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'
+  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+  xsi:schemaLocation='http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd'
+>
+  <url>
+    <loc>https://estheticsbynoemi.com/</loc>
+    <lastmod>2025-02-23T10:40:42+00:00</lastmod>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://estheticsbynoemi.com/about</loc>
+    <lastmod>2025-02-23T10:40:42+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://estheticsbynoemi.com/service</loc>
+    <lastmod>2025-02-23T10:40:42+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://estheticsbynoemi.com/gallery</loc>
+    <lastmod>2025-02-23T10:40:42+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://estheticsbynoemi.com/book</loc>
+    <lastmod>2025-02-23T10:40:42+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://estheticsbynoemi.com/service/limpieza-facial</loc>
+    <lastmod>2025-02-23T10:40:42+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://estheticsbynoemi.com/service/plasma-rico-en-plaquetas</loc>
+    <lastmod>2025-02-23T10:40:42+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://estheticsbynoemi.com/service/mesoterapia-de-acne</loc>
+    <lastmod>2025-02-23T10:40:42+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://estheticsbynoemi.com/service/hidratacion</loc>
+    <lastmod>2025-02-23T10:40:42+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://estheticsbynoemi.com/service/tratamiento-para-ojeras</loc>
+    <lastmod>2025-02-23T10:40:42+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://estheticsbynoemi.com/service/mesoterapia-de-vitaminas</loc>
+    <lastmod>2025-02-23T10:40:42+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://estheticsbynoemi.com/service/meso-botox</loc>
+    <lastmod>2025-02-23T10:40:42+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://estheticsbynoemi.com/service/bb-botox</loc>
+    <lastmod>2025-02-23T10:40:42+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://estheticsbynoemi.com/service/acido-hialuronico</loc>
+    <lastmod>2025-02-23T10:40:42+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://estheticsbynoemi.com/service/tratamiento-para-ojeras</loc>
+    <lastmod>2025-02-23T10:40:42+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://estheticsbynoemi.com/service/dermapen</loc>
+    <lastmod>2025-02-23T10:40:42+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://estheticsbynoemi.com/service/dermaplaning</loc>
+    <lastmod>2025-02-23T10:40:42+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://estheticsbynoemi.com/service/nasogenianos</loc>
+    <lastmod>2025-02-23T10:40:42+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://estheticsbynoemi.com/service/labios</loc>
+    <lastmod>2025-02-23T10:40:42+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+</urlset>
