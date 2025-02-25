@@ -72,7 +72,7 @@ function AboutUs () {
             <div className='e__secondary__bg p-4 rounded-md '>
               <div>
                 <p>Paciente feliz</p>
-                <h2>50K+</h2>
+                <h2>1K+</h2>
               </div>
             </div>
             <div className='e__secondary__bg p-4 rounded-md '>
@@ -84,13 +84,13 @@ function AboutUs () {
             <div className='e__secondary__bg p-4 rounded-md '>
               <div>
                 <p>Años de experiencia</p>
-                <h2>7+</h2>
+                <h2>10+</h2>
               </div>
             </div>
             <div className='e__secondary__bg p-4 rounded-md '>
               <div>
                 <p>Productos Servir</p>
-                <h2>50K+</h2>
+                <h2>5K+</h2>
               </div>
             </div>
           </div>

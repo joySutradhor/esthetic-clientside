@@ -9,20 +9,19 @@ import { PhoneInput } from 'react-international-phone'
 import { toast, Toaster } from 'sonner'
 import Swal from 'sweetalert2'
 import { v4 as uuidv4 } from 'uuid' // Install with `npm install uuid`
-import limpiezaFacial from "@/public/service/limpieza facial.webp"
-import PlasmaRicoenPlaquetas from "@/public/service/Plasma Rico en Plaquetas.webp"
-import MesoterapiadeAcné from "@/public/service/Mesoterapia de Acné.webp"
-import Hidratación from "@/public/service/Hidratación.webp"
-import MesoterapiadeVitaminas from "@/public/service/Mesoterapia de Vitaminas.webp"
-import MesoBotox from "@/public/service/Meso Botox.webp"
-import BBBotox from "@/public/service/BB Botox.webp"
-import ÁcidoHialurónico from "@/public/service/Ácido Hialurónico.webp"
-import TratamientoparaOjeras from "@/public/service/Tratamiento para Ojeras.webp"
-import Dermapen from "@/public/service/Dermapen.webp"
-import Dermaplaning from "@/public/service/Dermaplaning.webp"
-import Nasogenianos from "@/public/service/Nasogenianos.jpeg"
-import Labios from "@/public/service/Labios.jpeg"
-
+import limpiezaFacial from '@/public/service/limpieza facial.webp'
+import PlasmaRicoenPlaquetas from '@/public/service/Plasma Rico en Plaquetas.webp'
+import MesoterapiadeAcné from '@/public/service/Mesoterapia de Acné.webp'
+import Hidratación from '@/public/service/Hidratación.webp'
+import MesoterapiadeVitaminas from '@/public/service/Mesoterapia de Vitaminas.webp'
+import MesoBotox from '@/public/service/Meso Botox.webp'
+import BBBotox from '@/public/service/BB Botox.webp'
+import ÁcidoHialurónico from '@/public/service/Ácido Hialurónico.webp'
+import TratamientoparaOjeras from '@/public/service/Tratamiento para Ojeras.webp'
+import Dermapen from '@/public/service/Dermapen.webp'
+import Dermaplaning from '@/public/service/Dermaplaning.webp'
+import Nasogenianos from '@/public/service/Nasogenianos.jpeg'
+import Labios from '@/public/service/Labios.jpeg'
 
 // export const metadata = {
 //   title: 'Book Your Appointment | Esthetic N. Del Rosario | Premium Skin Care in Brandon, Florida',
@@ -55,8 +54,6 @@ import Labios from "@/public/service/Labios.jpeg"
 //     images: ['https://i.ibb.co/My2ydCTV/ourmission.jpg'] // Image for Twitter sharing
 //   }
 // };
-
-
 
 function Book () {
   const [step, setStep] = useState(1) // Step state to manage stepper flow
@@ -303,7 +300,7 @@ function Book () {
       <form onSubmit={handleSubmit} className='e__book__form__parent'>
         <div className='mt-5'>
           <h3 className=''>Esthetic N. Del Rosario</h3>
-          <p>Our Capital is Quality And Honesty - Neomi </p>
+          <p>Our Capital is Quality And Honesty - Noemi </p>
         </div>
 
         {step === 1 && (

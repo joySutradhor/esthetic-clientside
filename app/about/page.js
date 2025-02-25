@@ -7,15 +7,16 @@ import ourMission from '@/public/about/ourmission.jpg'
 import Image from 'next/image'
 import OfficeLocation from '../_Main/OfficeLocation/page'
 
-
 export const metadata = {
-  title: 'About Esthetic N. Del Rosario | Premium Skin Care in Brandon, Florida',
+  title:
+    'About Esthetic N. Del Rosario | Premium Skin Care in Brandon, Florida',
   description:
     'Explore Esthetic N. Del Rosario in Brandon, FL. Offering premium skin care services like mesotherapy and Meso Botox to rejuvenate, hydrate, and enhance your natural beauty.',
   keywords:
     'Esthetic N. Del Rosario, skin care, mesotherapy, Meso Botox, anti-aging, facial treatments, beauty services, Brandon Florida, rejuvenation, skin hydration, natural beauty',
   openGraph: {
-    title: 'About Esthetic N. Del Rosario | Premium Skin Care Services | Brandon, Florida',
+    title:
+      'About Esthetic N. Del Rosario | Premium Skin Care Services | Brandon, Florida',
     description:
       'Discover Esthetic N. Del Rosario’s commitment to providing rejuvenating and non-invasive skin care treatments in Brandon, FL.',
     images: [
@@ -33,14 +34,13 @@ export const metadata = {
   twitter: {
     card: 'summary_large_image',
     site: '@estheticnrosario',
-    title: 'About Esthetic N. Del Rosario | Premium Skin Care in Brandon, Florida',
+    title:
+      'About Esthetic N. Del Rosario | Premium Skin Care in Brandon, Florida',
     description:
       'Learn more about Esthetic N. Del Rosario and our premium skin care services in Brandon, FL.',
     images: ['https://i.ibb.co/My2ydCTV/ourmission.jpg'] // ✅ Correct format
   }
-};
-
-
+}
 
 function About () {
   return (
@@ -138,7 +138,7 @@ function About () {
             <div className='e__founder__parent '>
               <div className='e__founder__child'>
                 <Image
-                  src='/founder/neomi.jpg'
+                  src='/founder/Noemi.jpg'
                   alt='Founder'
                   width={120}
                   height={120}
@@ -152,7 +152,7 @@ function About () {
                   tratamientos personalizados y productos de calidad."
                 </p>
                 <p className='font-semibold mt-4'>
-                  - Neomi Del Rosario, CEO y Fundadora
+                  - Noemi Del Rosario, LLC
                 </p>
               </div>
             </div>
