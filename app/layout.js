@@ -1,7 +1,7 @@
 import MobileNav from './_Main/MobilieNav/page'
 import Header from './_shared/Header/page'
 import './globals.css'
-import { GoogleTagManager } from '@next/third-parties/google'
+import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google'
 
 export const metadata = {
   title: 'Esthetic N. Del Rosario - Premium Skin Care Services || Brandon, Florida',
@@ -46,6 +46,7 @@ export default function RootLayout ({ children }) {
         <MobileNav />
 
         <GoogleTagManager gtmId="GTM-WWWNMW9W"></GoogleTagManager>
+        <GoogleAnalytics gaId='G-BSDHMMB2MQ'></GoogleAnalytics>
       </body>
     </html>
   )
