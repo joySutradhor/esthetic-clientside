@@ -45,7 +45,7 @@ export default function RootLayout ({ children }) {
 
         <MobileNav />
 
-        <GoogleTagManager gtmId="G-BSDHMMB2MQ"></GoogleTagManager>
+        <GoogleTagManager gtmId="GTM-WWWNMW9W"></GoogleTagManager>
       </body>
     </html>
   )
