@@ -119,8 +119,11 @@
 
   /* ----------------- esthetic nav bar -----------------  */
   .e__nav__container {
-    @apply absolute top-0  left-0 z-50 w-full pt-3  md:pt-5 lg:pt-5 xl:pt-5 2xl:pt-10 ;
+    @apply absolute  top-0  left-0 z-20 w-full pt-3  md:pt-5 lg:pt-5 xl:pt-5 2xl:pt-10 ;
   }
+
+
+
   .e__nav__parent {
     @apply py-4 rounded-lg;
   }

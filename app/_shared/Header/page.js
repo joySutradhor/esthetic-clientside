@@ -21,7 +21,7 @@ function Header () {
   return (
     <>
       <header className='e__nav__container hidden md:block'>
-        <nav className='header__footer__main__gapping  e__nav__parent'>
+        <nav className='header__footer__main__gapping  e__nav__parent '>
           <div className='flex justify-between items-center'>
             {/* Mobile Menu Toggle */}
             <button
