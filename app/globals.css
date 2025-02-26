@@ -98,7 +98,7 @@
  }
 
  .e__c__header__service__parent{
-  @apply h-[50vh]  lg:h-[60vh] xl:h-[60vh] 2xl:h-[60vh] overflow-hidden
+  @apply h-[50vh]  lg:h-[60vh] xl:h-[60vh] 2xl:h-[60vh] overflow-hidden e__secondary__color
  }
  .e__c__service__overlay{
   @apply  absolute inset-0 bg-gray-800/40 h-[50vh] lg:h-[60vh] xl:h-[60vh] 2xl:h-[60vh]

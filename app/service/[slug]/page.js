@@ -41,7 +41,7 @@ function ServiceDetails () {
       <div className='relative'>
         <ServiceHeader
           link={slug}
-          serviceHeader={images}
+          // serviceHeader={images}
           heading={service_name}
           btnText='Reserva ahora'
           paraText={intro}

@@ -5,13 +5,7 @@ import Link from 'next/link'
 function ServiceHeader ({ serviceHeader, heading, btnText, paraText, link }) {
   return (
     <div className='e__c__header__service__parent'>
-      <Image
-        src={serviceHeader}
-        alt='service header'
-        height={800}
-        width={800}
-        className='h-full w-full object-cover object-center'
-      ></Image>
+  
       <div className='e__c__service__overlay'></div>
       <div className='e__c__content__service__header'>
         <div className='flex justify-center items-center'>
