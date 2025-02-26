@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
-import hero from '@/public/Hero/hero.png'
+// import hero from '@/public/Hero/hero.png'
+import estheticsbynoemi from '@/public/gallery/estheticsbynoemi.png'
 import HeroServiceBtn from '@/app/_components/HeroServicesBtn/page'
 import { MdArrowOutward } from 'react-icons/md'
 // import man from '@/public/Hero/man.jpg'
@@ -13,8 +14,8 @@ function Hero () {
           <div className=''>
             <div>
               <Image
-                src={hero}
-                className='e__hero__main__image'
+                src={estheticsbynoemi}
+                className='e__hero__main__image '
                 alt='hero img'
               />
             </div>
