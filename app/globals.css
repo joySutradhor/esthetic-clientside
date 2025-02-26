@@ -88,17 +88,17 @@
 
  /* ---------------------- components styles here ------------------ */
  .e__c__header__parent{
-  @apply h-[40vh] lg:h-[50vh] xl:h-[60vh] 2xl:h-[60vh] overflow-hidden
+  @apply h-[50vh] lg:h-[50vh] xl:h-[60vh] 2xl:h-[60vh] overflow-hidden
  }
  .e__c__overlay{
-  @apply absolute inset-0 bg-gray-800/40 h-[40vh] lg:h-[50vh] xl:h-[60vh] 2xl:h-[60vh]
+  @apply absolute inset-0 bg-gray-800/40 h-[50vh] lg:h-[50vh] xl:h-[60vh] 2xl:h-[60vh]
  }
  .e__c__content__header{
   @apply absolute top-24 lg:top-[25%] xl:top-[30%] 2xl:top-[30%] z-50 left-0  text-white text-center space-y-2 p-4 w-full mx-auto
  }
 
  .e__c__header__service__parent{
-  @apply h-[50vh]  lg:h-[60vh] xl:h-[60vh] 2xl:h-[60vh] overflow-hidden e__secondary__color
+  @apply h-[50vh]  lg:h-[60vh] xl:h-[60vh] 2xl:h-[60vh] overflow-hidden e__secondary__color border
  }
  .e__c__service__overlay{
   @apply  absolute inset-0 bg-gray-800/40 h-[50vh] lg:h-[60vh] xl:h-[60vh] 2xl:h-[60vh]

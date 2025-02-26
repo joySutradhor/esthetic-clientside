@@ -138,8 +138,8 @@ function About () {
             <div className='e__founder__parent '>
               <div className='e__founder__child'>
                 <Image
-                  src='/founder/Noemi.jpg'
-                  alt='Founder'
+                  src='/founder/neomi.jpg'
+                  alt='llc message'
                   width={120}
                   height={120}
                   className='mx-auto rounded-full mb-4'
