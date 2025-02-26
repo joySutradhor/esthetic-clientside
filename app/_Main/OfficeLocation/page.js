@@ -149,6 +149,11 @@ function OfficeLocation () {
             </div>
           </div>
         </div>
+
+        {/* footer */}
+        <p className='text-center text-sm  mt-14 md:mt-14 '>
+          © All rights reserved. Esthetics by Noemi | <span className='font-medium underline underline-offset-2 text-blue-900'><a href='https://www.linkedin.com/in/joy-sutradhor/'>Developed by Joy Sutradhor</a></span>
+        </p>
       </div>
     </section>
   )
