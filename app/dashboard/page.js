@@ -30,7 +30,7 @@ function Dashboard () {
     if (phone) {
       setLoading(true)
       axios
-        .get(`https://esthetic-serverside-f3c1.vercel.app/api/orders/${phone}`)
+        .get(`https://esthetic-serverside.onrender.com/api/orders/${phone}`)
         .then(res => {
           setBookings(res.data)
           setLoading(false)
@@ -60,7 +60,7 @@ function Dashboard () {
 
         axios
           .delete(
-            `https://esthetic-serverside-f3c1.vercel.app/api/deleteOrder/${orderId}`
+            `https://esthetic-serverside.onrender.com/api/deleteOrder/${orderId}`
           )
           .then(res => {})
           .catch(err => {

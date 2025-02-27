@@ -28,7 +28,7 @@ function AdminAccepted () {
   useEffect(() => {
     setLoading(true)
     axios
-      .get(`https://esthetic-serverside-f3c1.vercel.app/api/orders/accept`)
+      .get(`https://esthetic-serverside.onrender.com/api/orders/accept`)
       .then(res => {
         setBookings(res.data)
         setLoading(false)
@@ -57,7 +57,7 @@ function AdminAccepted () {
 
         axios
           .delete(
-            `https://esthetic-serverside-f3c1.vercel.app/api/deleteOrder/${orderId}`
+            `https://esthetic-serverside.onrender.com/api/deleteOrder/${orderId}`
           )
           .then(res => {})
           .catch(err => {
@@ -88,7 +88,7 @@ function AdminAccepted () {
   //   }).then(result => {
   //     if (result.isConfirmed) {
   //       axios
-  //         .patch(`https://esthetic-serverside-f3c1.vercel.app/api/update/${orderId}`)
+  //         .patch(`https://esthetic-serverside.onrender.com/api/update/${orderId}`)
   //         .then(res => {})
   //         .catch(err => {
   //           console.error('Error aceepting order:', err)
