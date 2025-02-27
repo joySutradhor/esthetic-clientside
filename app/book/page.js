@@ -198,9 +198,30 @@ function Book () {
     }
   }, [step]) // Ensure step is defined
 
-  const today = new Date();
-  const formattedDate = today.toISOString().split('T')[0]; 
-  console.log(formattedDate); 
+  const today = new Date()
+  const formattedDate = today.toISOString().split('T')[0]
+  const currentHour = today.getHours()
+  const currentMinutes = today.getMinutes()
+
+  const isToday = date === formattedDate
+
+  // Function to check if a time slot is valid
+  const isTimeSlotValid = timeSlot => {
+    if (!isToday) return true // Enable all slots if not today
+
+    // Convert time slot to 24-hour format for comparison
+    const [timeValue, period] = timeSlot.split(' ')
+    let [hours, minutes] = timeValue.split(':').map(Number)
+
+    if (period === 'PM' && hours !== 12) hours += 12
+    if (period === 'AM' && hours === 12) hours = 0
+
+    // Disable past time slots
+    return (
+      hours > currentHour ||
+      (hours === currentHour && minutes >= currentMinutes)
+    )
+  }
 
   const toggleService = serviceId => {
     if (selectedServices.includes(serviceId)) {
@@ -462,14 +483,13 @@ function Book () {
               >
                 Time*
               </label>
-              <div className='mt-2'>
-                {/* Generate buttons based on day */}
+              {/* previous code */}
+
+              <div className='grid grid-cols-3 gap-3'>
                 {['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'].includes(
                   new Date(date).toLocaleString('en-us', { weekday: 'short' })
-                ) ? (
-                  <div className='grid grid-cols-3 gap-3'>
-                    {/* Time slots for Monday to Saturday */}
-                    {[
+                )
+                  ? [
                       '7:00 AM',
                       '8:00 AM',
                       '9:00 AM',
@@ -492,17 +512,20 @@ function Book () {
                           time === timeSlot
                             ? 'bg-green-500 text-white'
                             : 'bg-white text-blue-500'
+                        } ${
+                          !isTimeSlotValid(timeSlot)
+                            ? 'opacity-50 cursor-not-allowed'
+                            : ''
                         }`}
-                        onClick={() => setTime(timeSlot)}
+                        onClick={() =>
+                          isTimeSlotValid(timeSlot) && setTime(timeSlot)
+                        }
+                        disabled={!isTimeSlotValid(timeSlot)}
                       >
                         {timeSlot}
                       </button>
-                    ))}
-                  </div>
-                ) : (
-                  <div className='grid grid-cols-3 gap-3'>
-                    {/* Time slots for Sunday */}
-                    {['2:00 PM', '3:00 PM', '4:00 PM', '5:00 PM'].map(
+                    ))
+                  : ['2:00 PM', '3:00 PM', '4:00 PM', '5:00 PM'].map(
                       timeSlot => (
                         <button
                           key={timeSlot}
@@ -518,8 +541,6 @@ function Book () {
                         </button>
                       )
                     )}
-                  </div>
-                )}
               </div>
             </div>
 
@@ -564,9 +585,7 @@ function Book () {
                     <h4 className='text-base font-medium e__primary__color'>
                       Booking Date
                     </h4>
-                    <p className='text-sm text-gray-500'>
-                      {date}
-                    </p>
+                    <p className='text-sm text-gray-500'>{date}</p>
                   </div>
                   <div>
                     <h4 className='text-base font-medium e__primary__color'>

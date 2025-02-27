@@ -182,7 +182,8 @@ function AdminDashboard () {
                 {/* Services */}
                 <div>
                   <h4 className='text-lg font-semibold mb-2 text-gray-600'>
-                    Selected Services:
+                    Selected Services:{' '}
+                    <span className='text-sm text-red-500'>({order?.status})</span>
                   </h4>
                   <div className='space-y-4'>
                     {order.selectedServices.map(service => (
