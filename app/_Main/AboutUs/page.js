@@ -15,7 +15,7 @@ function AboutUs () {
               que nos conozcas!
             </h2>
             <p>
-              ¡Vamos a compartir un poco sobre nosotros! Con más de 7 años de
+              ¡Vamos a compartir un poco sobre nosotros! Con más de 10+ años de
               experiencia en el cuidado de la piel, somos un equipo dedicado y
               apasionado que ofrece servicios excepcionales en Brandon, Florida.
               Nos enorgullece brindar a nuestros clientes no solo resultados

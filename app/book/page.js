@@ -198,7 +198,9 @@ function Book () {
     }
   }, [step]) // Ensure step is defined
 
-  const today = new Date().toLocaleDateString('fr-CA') // "YYYY-MM-DD" format in local time
+  const today = new Date();
+  const formattedDate = today.toISOString().split('T')[0]; 
+  console.log(formattedDate); 
 
   const toggleService = serviceId => {
     if (selectedServices.includes(serviceId)) {
@@ -447,7 +449,7 @@ function Book () {
                 name='date'
                 value={date}
                 onChange={e => setDate(e.target.value)}
-                min={today}
+                min={formattedDate}
                 required
                 className='e__book__input__feild'
               />
@@ -563,7 +565,7 @@ function Book () {
                       Booking Date
                     </h4>
                     <p className='text-sm text-gray-500'>
-                      {new Date(date).toLocaleDateString()}
+                      {date}
                     </p>
                   </div>
                   <div>
