@@ -265,7 +265,10 @@ function Book () {
         }
 
         axios
-          .post('https://esthetic-serverside.vercel.app/api/create', formData)
+          .post(
+            'https://esthetic-serverside-f3c1.vercel.app/api/create',
+            formData
+          )
           .then(res => {
             if (res.status === 200) {
               // Save the booking to localStorage

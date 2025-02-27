@@ -30,7 +30,7 @@ function Dashboard () {
     if (phone) {
       setLoading(true)
       axios
-        .get(`https://esthetic-serverside.vercel.app/api/orders/${phone}`)
+        .get(`https://esthetic-serverside-f3c1.vercel.app/api/orders/${phone}`)
         .then(res => {
           setBookings(res.data)
           setLoading(false)
@@ -41,7 +41,6 @@ function Dashboard () {
         })
     }
   }, [phone])
-
 
   // Delete order function
   const deleteOrder = orderId => {
@@ -61,7 +60,7 @@ function Dashboard () {
 
         axios
           .delete(
-            `https://esthetic-serverside.vercel.app/api/deleteOrder/${orderId}`
+            `https://esthetic-serverside-f3c1.vercel.app/api/deleteOrder/${orderId}`
           )
           .then(res => {})
           .catch(err => {
@@ -147,7 +146,9 @@ function Dashboard () {
                 <div>
                   <h4 className='text-lg font-semibold mb-2 text-gray-600'>
                     Selected Services:{' '}
-                    <span className='text-sm text-red-500'>({order?.status})</span>
+                    <span className='text-sm text-red-500'>
+                      ({order?.status})
+                    </span>
                   </h4>
                   <div className='space-y-4'>
                     {order.selectedServices.map(service => (

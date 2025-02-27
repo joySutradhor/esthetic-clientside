@@ -28,7 +28,7 @@ function AdminAccepted () {
   useEffect(() => {
     setLoading(true)
     axios
-      .get(`https://esthetic-serverside.vercel.app/api/orders/accept`)
+      .get(`https://esthetic-serverside-f3c1.vercel.app/api/orders/accept`)
       .then(res => {
         setBookings(res.data)
         setLoading(false)
@@ -57,7 +57,7 @@ function AdminAccepted () {
 
         axios
           .delete(
-            `https://esthetic-serverside.vercel.app/api/deleteOrder/${orderId}`
+            `https://esthetic-serverside-f3c1.vercel.app/api/deleteOrder/${orderId}`
           )
           .then(res => {})
           .catch(err => {
@@ -88,7 +88,7 @@ function AdminAccepted () {
   //   }).then(result => {
   //     if (result.isConfirmed) {
   //       axios
-  //         .patch(`https://esthetic-serverside.vercel.app/api/update/${orderId}`)
+  //         .patch(`https://esthetic-serverside-f3c1.vercel.app/api/update/${orderId}`)
   //         .then(res => {})
   //         .catch(err => {
   //           console.error('Error aceepting order:', err)
@@ -130,9 +130,15 @@ function AdminAccepted () {
         ) : (
           <div className='grid lg:grid-cols-2 xl:grid-cols-3 gap-6 mb-28 lg:mb-20'>
             {bookings?.map((order, i) => (
-              <div key={i} className='bg-white border border-green-600 p-6 relative'>
+              <div
+                key={i}
+                className='bg-white border border-green-600 p-6 relative'
+              >
                 <div className='pb-5 border-b '>
-                  <h3>{order?.customerName} <span className='text-green-600 text-sm'>" Accepted "</span> </h3>
+                  <h3>
+                    {order?.customerName}{' '}
+                    <span className='text-green-600 text-sm'>" Accepted "</span>{' '}
+                  </h3>
                   <p>{order?.phone}</p>
                   <p>{order?.email}</p>
                 </div>
