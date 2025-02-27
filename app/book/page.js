@@ -246,7 +246,7 @@ function Book () {
       text: 'Do you want to book?',
       icon: 'question',
       showCancelButton: true,
-      confirmButtonText: 'Yes',
+      confirmButtonText: 'Yes, Submit',
       cancelButtonText: 'No'
     }).then(result => {
       if (result.isConfirmed) {
