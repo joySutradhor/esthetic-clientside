@@ -164,7 +164,7 @@
   }
 
   .e__hero__main__image {
-    @apply w-full h-[60vh] md:h-[70vh] lg:h-[100vh] xl:h-[100vh] 2xl:h-auto object-cover object-center brightness-50 2xl:brightness-75 xl:scale-110 2xl:scale-50 overflow-hidden transition-all ease-in-out duration-1000 ;
+    @apply w-full h-[60vh] md:h-[70vh] lg:h-[100vh] xl:h-[100vh] 2xl:h-auto object-cover object-center brightness-75 lg:brightness-100 xl:scale-110 2xl:scale-50 overflow-hidden transition-all ease-in-out duration-1000 ;
   }
 
   /* ------- */
