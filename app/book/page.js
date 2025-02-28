@@ -63,6 +63,7 @@ function Book () {
   const [selectedServices, setSelectedServices] = useState([])
   const [date, setDate] = useState('')
   const [time, setTime] = useState('')
+  const [loading, setLoading] = useState(false)
 
   const router = useRouter()
 
@@ -250,6 +251,7 @@ function Book () {
       cancelButtonText: 'No'
     }).then(result => {
       if (result.isConfirmed) {
+        setLoading(true)
         const orderId = uuidv4()
 
         const formData = {
@@ -265,12 +267,10 @@ function Book () {
         }
 
         axios
-          .post(
-            'https://esthetic-serverside.onrender.com/api/create',
-            formData
-          )
+          .post('https://esthetic-serverside.onrender.com/api/create', formData)
           .then(res => {
             if (res.status === 200) {
+              setLoading(false)
               // Save the booking to localStorage
               localStorage.setItem(
                 'estheticBookings',
@@ -322,6 +322,17 @@ function Book () {
   return (
     <div className='e__book__container '>
       <Toaster position='top-right' />
+
+      {loading && (
+        <section className='absolute h-[100vh] w-[100vw]  top-0 left-0 bg-white flex justify-center items-center'>
+          <div className='flex justify-center items-center'>
+            <div className='spinner-border animate-spin inline-block w-8 h-8 border-4 border-solid rounded-full border-gray-700 border-t-transparent'></div>
+            <p className='text-gray-600 text-center ml-4'>
+              Appointment Submitting...
+            </p>
+          </div>
+        </section>
+      )}
 
       <form onSubmit={handleSubmit} className='e__book__form__parent'>
         <div className='mt-5'>
