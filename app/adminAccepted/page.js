@@ -11,8 +11,7 @@ import { IoCheckmarkDoneCircleSharp } from 'react-icons/io5'
 import { VscCheckAll } from 'react-icons/vsc'
 import { PiChecksBold } from 'react-icons/pi'
 import { useRouter } from 'next/navigation'
-import { FaInfoCircle } from "react-icons/fa";
-
+import { FaInfoCircle } from 'react-icons/fa'
 
 function AdminAccepted () {
   const [bookings, setBookings] = useState([])
@@ -117,7 +116,7 @@ function AdminAccepted () {
               <span>
                 <FaInfoCircle />
               </span>{' '}
-              Show Pending Patient List
+              Pending List
             </button>
           </Link>
 
@@ -127,7 +126,7 @@ function AdminAccepted () {
               <span>
                 <VscCheckAll />
               </span>{' '}
-              Show Accepted Patient List
+              Accepted List
             </button>
           </Link>
         </div>
