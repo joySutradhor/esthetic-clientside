@@ -23,14 +23,14 @@ function CTACard () {
           piel. ¡Llámanos en cualquier momento para recibir asesoría y apoyo
           experto!
         </p>
-        <div className='flex gap-5 md:justify-end justify-center'>
+        <div className='flex gap-3 md:gap-5 md:justify-end justify-center'>
           <a href='tel:+18134169628'>
-            <button className='border py-2 px-6 bg-gray-800 text-white rounded'>
+            <button className='border py-1 md:py-2 px-4 md:px-6 bg-gray-800 text-white rounded'>
               Llama Ahora
             </button>
           </a>
           <Link href='/book'>
-            <button className='border py-2 px-6 e__secondary__color bg-white rounded'>
+            <button className='border py-1 md:py-2 px-4 md:px-6 e__secondary__color bg-white rounded'>
               Reserva Ahora
             </button>
           </Link>
