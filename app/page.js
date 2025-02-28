@@ -1,4 +1,5 @@
 
+import CTACard from './_components/CTACard/page'
 import Main from './_Main/page'
 
 
@@ -7,6 +8,7 @@ export default function Home () {
     <>
       <main>
         <Main></Main>
+        <CTACard></CTACard>
       </main>
     </>
   )
