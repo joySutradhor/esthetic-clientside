@@ -28,7 +28,7 @@ function AdminDashboard () {
   useEffect(() => {
     setLoading(true)
     axios
-      .get(`https://esthetic-serverside.onrender.com/api/orders`)
+      .get(`https://esthetic-serverside-teal.vercel.app/api/orders`)
       .then(res => {
         setBookings(res.data)
         setLoading(false)
@@ -56,7 +56,7 @@ function AdminDashboard () {
 
         axios
           .delete(
-            `https://esthetic-serverside.onrender.com/api/deleteOrder/${orderId}`
+            `https://esthetic-serverside-teal.vercel.app/api/deleteOrder/${orderId}`
           )
           .then(res => {})
           .catch(err => {
@@ -92,7 +92,7 @@ function AdminDashboard () {
 
         axios
           .patch(
-            `https://esthetic-serverside.onrender.com/api/update/${orderId}`
+            `https://esthetic-serverside-teal.vercel.app/api/update/${orderId}`
           )
           .then(res => {
             if (res.status === 200) {

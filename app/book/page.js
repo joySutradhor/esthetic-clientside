@@ -267,7 +267,10 @@ function Book () {
         }
 
         axios
-          .post('https://esthetic-serverside.onrender.com/api/create', formData)
+          .post(
+            'https://esthetic-serverside-teal.vercel.app/api/create',
+            formData
+          )
           .then(res => {
             if (res.status === 200) {
               setLoading(false)
