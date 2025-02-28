@@ -7,7 +7,7 @@ import { SlCalender } from 'react-icons/sl'
 import Swal from 'sweetalert2'
 
 import Link from 'next/link'
-
+import { FaInfoCircle } from "react-icons/fa";
 import { VscCheckAll } from 'react-icons/vsc'
 import { ImRadioChecked } from 'react-icons/im'
 import { useRouter } from 'next/navigation'
@@ -121,8 +121,19 @@ function AdminDashboard () {
   return (
     <div className='mt-[30%] md:mt-[20%] lg:mt-[15%] xl:mt-[10%] '>
       <div className='e__section__gap  '>
-        <Link href='/adminAccepted'>
+        <div className='flex items-center gap-5'>
+        <Link href='/adminDashboard'>
           <button className='text-sm font-medium p-3 bg-gray-100 rounded-lg my-2 lg:my-5 flex items-center gap-2 cursor-pointer'>
+            {' '}
+            <span>
+              <FaInfoCircle />
+            </span>{' '}
+            Show Pending Patient List
+          </button>
+        </Link>
+
+        <Link href='/adminAccepted'>
+          <button className='text-sm font-medium p-3  bg-green-500 text-white  rounded-lg my-2 lg:my-5 flex items-center gap-2 cursor-pointer'>
             {' '}
             <span>
               <VscCheckAll />
@@ -130,6 +141,8 @@ function AdminDashboard () {
             Show Accepted Patient List
           </button>
         </Link>
+
+        </div>
 
         {loading ? (
           <div className='flex justify-center items-center'>

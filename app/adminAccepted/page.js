@@ -11,6 +11,8 @@ import { IoCheckmarkDoneCircleSharp } from 'react-icons/io5'
 import { VscCheckAll } from 'react-icons/vsc'
 import { PiChecksBold } from 'react-icons/pi'
 import { useRouter } from 'next/navigation'
+import { FaInfoCircle } from "react-icons/fa";
+
 
 function AdminAccepted () {
   const [bookings, setBookings] = useState([])
@@ -108,15 +110,27 @@ function AdminAccepted () {
   return (
     <div className='mt-[30%] md:mt-[20%] lg:mt-[15%] xl:mt-[10%] '>
       <div className='e__section__gap  '>
-        <Link href='/adminDashboard'>
-          <button className='text-sm font-medium p-3 bg-gray-100 rounded-lg my-2 lg:my-5 flex items-center gap-2 cursor-pointer'>
-            {' '}
-            <span>
-              <VscCheckAll />
-            </span>{' '}
-            Show Pending Patient List
-          </button>
-        </Link>
+        <div className='flex items-center gap-5'>
+          <Link href='/adminDashboard'>
+            <button className='text-sm font-medium p-3 bg-gray-100 rounded-lg my-2 lg:my-5 flex items-center gap-2 cursor-pointer'>
+              {' '}
+              <span>
+                <FaInfoCircle />
+              </span>{' '}
+              Show Pending Patient List
+            </button>
+          </Link>
+
+          <Link href='/adminAccepted'>
+            <button className='text-sm font-medium p-3  bg-green-400 text-white  rounded-lg my-2 lg:my-5 flex items-center gap-2 cursor-pointer'>
+              {' '}
+              <span>
+                <VscCheckAll />
+              </span>{' '}
+              Show Accepted Patient List
+            </button>
+          </Link>
+        </div>
 
         {loading ? (
           <div className='flex justify-center items-center'>
