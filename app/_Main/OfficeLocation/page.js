@@ -78,15 +78,15 @@ function OfficeLocation () {
                   {/* Email */}
                   <div className='flex items-center space-x-2'>
                     <a
-                      href='mailto:Noemidlrosario@hotmail.com'
+                      href='mailto:info.estheticsbynoemi@gmail.com'
                       className='text-blue-600 hover:underline flex items-center space-x-1'
                     >
                       <FaEnvelope />
-                      <span>Noemidlrosario@hotmail.com</span>
+                      <span>info.estheticsbynoemi@gmail.com</span>
                     </a>
                     <button
                       onClick={() =>
-                        handleCopy('Noemidlrosario@hotmail.com', 'email')
+                        handleCopy('info.estheticsbynoemi@gmail.com', 'email')
                       }
                       className='text-gray-500 hover:text-blue-500'
                     >
