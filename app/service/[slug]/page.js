@@ -1,5 +1,5 @@
 'use client'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import servicesData from '@/public/FakeDb/services.json'
 import { useParams } from 'next/navigation'
 import ServiceHeader from '@/app/_components/ServiceHeader/page'
@@ -9,18 +9,25 @@ import Review from '@/app/_Main/Review/page'
 import OfficeLocation from '@/app/_Main/OfficeLocation/page'
 
 function ServiceDetails () {
-  const params = useParams()
-  const { slug } = params
-  const services = servicesData?.services
 
-  // Find the service matching the slug
-  const singleService = services.find(service => service.slug === slug)
+  const [singleService , setSingleService] = useState(null)
 
-  if (!services) {
-    return (
-      <p className='text-center text-xl text-red-500'>Service not found!</p>
-    )
-  }
+  useEffect(()=>{
+    const params = useParams()
+    const { slug } = params
+    const services = servicesData?.services
+  
+    // Find the service matching the slug
+    const service = services.find(service => service.slug === slug);
+    setSingleService(service)
+
+  
+    if (!services) {
+      return (
+        <p className='text-center text-xl text-red-500'>Service not found!</p>
+      )
+    }
+  },[])
 
   // Destructure the service data for easier usage
   const {
