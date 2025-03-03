@@ -16,8 +16,7 @@ function ServiceDetails () {
     const services = servicesData?.services
   
     // Find the service matching the slug section
-    const service = services.find(service => service.slug === slug);
-    setSingleService(service)
+    const singleService = services.find(service => service.slug === slug);
 
   
     if (!services) {
