@@ -24,33 +24,33 @@ import Nasogenianos from '@/public/service/Nasogenianos.jpeg'
 import Labios from '@/public/service/Labios.jpeg'
 
 // export const metadata = {
-//   title: 'Book Your Appointment | Esthetic N. Del Rosario | Premium Skin Care in Brandon, Florida',
+//   title: 'Book Your Appointment | estheticsbynoemi | Premium Skin Care in Brandon, Florida',
 //   description:
-//     'Book your appointment with Esthetic N. Del Rosario for premium skin care treatments such as mesotherapy, Meso Botox, facials, and rejuvenating services in Brandon, Florida.',
+//     'Book your appointment with estheticsbynoemi for premium skin care treatments such as mesotherapy, Meso Botox, facials, and rejuvenating services in Brandon, Florida.',
 //   keywords:
-//     'book appointment, Esthetic N. Del Rosario, skin care appointment, mesotherapy booking, Meso Botox appointment, facial treatment booking, skin rejuvenation, Brandon Florida, book skin care service',
+//     'book appointment, estheticsbynoemi, skin care appointment, mesotherapy booking, Meso Botox appointment, facial treatment booking, skin rejuvenation, Brandon Florida, book skin care service',
 //   openGraph: {
-//     title: 'Book Your Appointment | Esthetic N. Del Rosario | Premium Skin Care in Brandon, Florida',
+//     title: 'Book Your Appointment | estheticsbynoemi | Premium Skin Care in Brandon, Florida',
 //     description:
-//       'Easily schedule your appointment for premium skin care services at Esthetic N. Del Rosario. Whether it’s mesotherapy or facials, book today for glowing skin!',
+//       'Easily schedule your appointment for premium skin care services at estheticsbynoemi. Whether it’s mesotherapy or facials, book today for glowing skin!',
 //     images: [
 //       {
 //         url: 'https://i.ibb.co/cK6DX7jJ/ourmission.jpg', // Image for social sharing
 //         width: 1200,
 //         height: 630,
-//         alt: 'Esthetic N. Del Rosario - Book Your Skin Care Appointment'
+//         alt: 'estheticsbynoemi - Book Your Skin Care Appointment'
 //       }
 //     ],
 //     url: 'https://www.estheticndelrosario.com/book',
-//     siteName: 'Esthetic N. Del Rosario',
+//     siteName: 'estheticsbynoemi',
 //     type: 'website'
 //   },
 //   twitter: {
 //     card: 'summary_large_image',
 //     site: '@estheticnrosario',
-//     title: 'Book Your Appointment | Esthetic N. Del Rosario | Premium Skin Care in Brandon, Florida',
+//     title: 'Book Your Appointment | estheticsbynoemi | Premium Skin Care in Brandon, Florida',
 //     description:
-//       'Book your appointment now for mesotherapy, Meso Botox, facials, and other rejuvenating skin care treatments at Esthetic N. Del Rosario in Brandon, Florida.',
+//       'Book your appointment now for mesotherapy, Meso Botox, facials, and other rejuvenating skin care treatments at estheticsbynoemi in Brandon, Florida.',
 //     images: ['https://i.ibb.co/My2ydCTV/ourmission.jpg'] // Image for Twitter sharing
 //   }
 // };
@@ -339,7 +339,7 @@ function Book () {
 
       <form onSubmit={handleSubmit} className='e__book__form__parent'>
         <div className='mt-5'>
-          <h3 className=''>Esthetic N. Del Rosario</h3>
+          <h3 className=''>estheticsbynoemi</h3>
           <p>Our Capital is Quality And Honesty - Noemi </p>
         </div>
 

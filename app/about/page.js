@@ -8,36 +8,34 @@ import Image from 'next/image'
 import OfficeLocation from '../_Main/OfficeLocation/page'
 
 export const metadata = {
-  title:
-    'About Esthetic N. Del Rosario | Premium Skin Care in Brandon, Florida',
+  title: 'About estheticsbynoemi | Premium Skin Care in Brandon, Florida',
   description:
-    'Explore Esthetic N. Del Rosario in Brandon, FL. Offering premium skin care services like mesotherapy and Meso Botox to rejuvenate, hydrate, and enhance your natural beauty.',
+    'Explore estheticsbynoemi in Brandon, FL. Offering premium skin care services like mesotherapy and Meso Botox to rejuvenate, hydrate, and enhance your natural beauty.',
   keywords:
-    'Esthetic N. Del Rosario, skin care, mesotherapy, Meso Botox, anti-aging, facial treatments, beauty services, Brandon Florida, rejuvenation, skin hydration, natural beauty',
+    'estheticsbynoemi, skin care, mesotherapy, Meso Botox, anti-aging, facial treatments, beauty services, Brandon Florida, rejuvenation, skin hydration, natural beauty',
   openGraph: {
     title:
-      'About Esthetic N. Del Rosario | Premium Skin Care Services | Brandon, Florida',
+      'About estheticsbynoemi | Premium Skin Care Services | Brandon, Florida',
     description:
-      'Discover Esthetic N. Del Rosario’s commitment to providing rejuvenating and non-invasive skin care treatments in Brandon, FL.',
+      'Discover estheticsbynoemi’s commitment to providing rejuvenating and non-invasive skin care treatments in Brandon, FL.',
     images: [
       {
         url: 'https://i.ibb.co/cK6DX7jJ/ourmission.jpg', // ✅ Correct format
         width: 1200,
         height: 630,
-        alt: 'Esthetic N. Del Rosario Premium Skin Care in Brandon, Florida'
+        alt: 'estheticsbynoemi Premium Skin Care in Brandon, Florida'
       }
     ],
     url: 'https://www.estheticndelrosario.com/about',
-    siteName: 'Esthetic N. Del Rosario',
+    siteName: 'estheticsbynoemi',
     type: 'website'
   },
   twitter: {
     card: 'summary_large_image',
     site: '@estheticnrosario',
-    title:
-      'About Esthetic N. Del Rosario | Premium Skin Care in Brandon, Florida',
+    title: 'About estheticsbynoemi | Premium Skin Care in Brandon, Florida',
     description:
-      'Learn more about Esthetic N. Del Rosario and our premium skin care services in Brandon, FL.',
+      'Learn more about estheticsbynoemi and our premium skin care services in Brandon, FL.',
     images: ['https://i.ibb.co/My2ydCTV/ourmission.jpg'] // ✅ Correct format
   }
 }
@@ -151,9 +149,7 @@ function About () {
                   dedicamos a mejorar la salud y belleza de tu piel con
                   tratamientos personalizados y productos de calidad."
                 </p>
-                <p className='font-semibold mt-4'>
-                  - Noemi Del Rosario, LLC
-                </p>
+                <p className='font-semibold mt-4'>- Noemi Del Rosario, LLC</p>
               </div>
             </div>
           </section>
