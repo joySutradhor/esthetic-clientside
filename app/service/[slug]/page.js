@@ -10,14 +10,12 @@ import OfficeLocation from '@/app/_Main/OfficeLocation/page'
 
 function ServiceDetails () {
 
-  const [singleService , setSingleService] = useState(null)
 
-  useEffect(()=>{
-    const params = useParams()
+  const params = useParams()
     const { slug } = params
     const services = servicesData?.services
   
-    // Find the service matching the slug
+    // Find the service matching the slug section
     const service = services.find(service => service.slug === slug);
     setSingleService(service)
 
@@ -27,7 +25,6 @@ function ServiceDetails () {
         <p className='text-center text-xl text-red-500'>Service not found!</p>
       )
     }
-  },[])
 
   // Destructure the service data for easier usage
   const {
