@@ -339,7 +339,7 @@ function Book () {
 
       <form onSubmit={handleSubmit} className='e__book__form__parent'>
         <div className='mt-5'>
-          <h3 className=''>estheticsbynoemi</h3>
+          <h3 className=''>Esthetics by Noemi</h3>
           <p>Our Capital is Quality And Honesty - Noemi </p>
         </div>
 
