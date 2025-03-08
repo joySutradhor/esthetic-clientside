@@ -156,26 +156,38 @@ function AdminDashboard () {
           <div className='grid lg:grid-cols-2 xl:grid-cols-3 gap-6 mb-28 lg:mb-20'>
             {bookings?.map((order, i) => (
               <div key={i} className='bg-white border p-6 relative'>
-                <div className='pb-5 border-b '>
-                  <h3>{order?.customerName}</h3>
-                  <p>{order?.phone}</p>
-                  <p>{order?.email}</p>
+                <div className='grid grid-cols-2   border-b py-5'>
+                  <div className='  '>
+                    <h3>{order?.customerName}</h3>
+                    <p>{order?.phone}</p>
+                    <p>{order?.email}</p>
+                  </div>
+
+                  <div className=' flex justify-end'>
+                    <div className='space-x-2 text-sm'>
+                      {/* Delete Button */}
+                      <button
+                        onClick={() => deleteOrder(order._id)}
+                        className=' py-1 px-4  border rounded  hover:text-red-500 hover:border-red-500 '
+                      >
+                        Delete
+                      </button>
+
+                      <button
+                        onClick={() => updateStatus(order._id)}
+                        className=' py-1 px-4    border rounded text-gray-800'
+                      >
+                        Accept
+                      </button>
+                      <button
+                        onClick={() => updateStatus(order._id)}
+                        className=' py-1 px-4   border rounded  text-gray-800'
+                      >
+                        Cancel
+                      </button>
+                    </div>
+                  </div>
                 </div>
-
-                {/* Delete Button */}
-                <button
-                  onClick={() => deleteOrder(order._id)}
-                  className='absolute top-5 right-8 text-red-500 hover:text-red-700'
-                >
-                  <FaTrash size={18} />
-                </button>
-
-                <button
-                  onClick={() => updateStatus(order._id)}
-                  className='absolute top-16 right-8  text-gray-800'
-                >
-                  <ImRadioChecked size={18} />
-                </button>
 
                 {/* Booking Details */}
                 <div className='border-b py-4 mb-4'>

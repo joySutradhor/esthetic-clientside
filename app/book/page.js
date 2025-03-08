@@ -200,7 +200,7 @@ function Book () {
   }, [step]) // Ensure step is defined
 
   const today = new Date()
-  const formattedDate = today.toISOString().split('T')[0]
+  const formattedDate = today.toLocaleDateString('en-US')
   const currentHour = today.getHours()
   const currentMinutes = today.getMinutes()
 
@@ -602,7 +602,7 @@ function Book () {
                     <h4 className='text-base font-medium e__primary__color'>
                       Booking Date
                     </h4>
-                    <p className='text-sm text-gray-500'>{date}</p>
+                    <p className='text-sm text-gray-500'>{new Date(date).toLocaleDateString('en-US')}</p>
                   </div>
                   <div>
                     <h4 className='text-base font-medium e__primary__color'>
