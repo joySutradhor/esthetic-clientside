@@ -1,7 +1,7 @@
 'use client'
 import axios from 'axios'
 import React, { useState, useEffect } from 'react'
-import { FaTrash } from 'react-icons/fa'
+import { FaTrash, FaUndoAlt } from 'react-icons/fa'
 import { LuAlarmClock } from 'react-icons/lu'
 import { SlCalender } from 'react-icons/sl'
 import Swal from 'sweetalert2'
@@ -111,7 +111,7 @@ function AdminCancel () {
       <div className='e__section__gap  '>
         <div className='flex items-center gap-5'>
           <Link href='/adminDashboard'>
-            <button className='text-sm font-medium p-3 bg-gray-100 rounded-lg my-2 lg:my-5 flex items-center gap-2 cursor-pointer'>
+            <button className='text-sm font-medium p-3 border rounded-lg my-2 lg:my-5 flex items-center gap-2 cursor-pointer'>
               {' '}
               <span>
                 <FaInfoCircle />
@@ -121,12 +121,22 @@ function AdminCancel () {
           </Link>
 
           <Link href='/adminAccepted'>
-            <button className='text-sm font-medium p-3  bg-green-400 text-white  rounded-lg my-2 lg:my-5 flex items-center gap-2 cursor-pointer'>
+            <button className='text-sm font-medium p-3  border  rounded-lg my-2 lg:my-5 flex items-center gap-2 cursor-pointer'>
               {' '}
               <span>
                 <VscCheckAll />
               </span>{' '}
               Accepted List
+            </button>
+          </Link>
+
+          <Link href='/adminCancel'>
+            <button className='text-sm font-medium p-3   border bg-gray-100  rounded-lg my-2 lg:my-5 flex items-center gap-2 cursor-pointer'>
+              {' '}
+              <span>
+                <FaUndoAlt />
+              </span>{' '}
+              Cancel List
             </button>
           </Link>
         </div>
@@ -150,7 +160,7 @@ function AdminCancel () {
                 <div className='pb-5 border-b '>
                   <h3>
                     {order?.customerName}{' '}
-                    <span className='text-green-600 text-sm'>" Accepted "</span>{' '}
+                    -<span className='text-yellow-600 text-sm'>" {order?.status} "</span>{' '}
                   </h3>
                   <p>{order?.phone}</p>
                   <p>{order?.email}</p>

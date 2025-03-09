@@ -11,6 +11,8 @@ import { FaInfoCircle } from 'react-icons/fa'
 import { VscCheckAll } from 'react-icons/vsc'
 import { ImRadioChecked } from 'react-icons/im'
 import { useRouter } from 'next/navigation'
+import { FaUndoAlt } from "react-icons/fa";
+
 
 function AdminDashboard () {
   const [bookings, setBookings] = useState([])
@@ -167,7 +169,7 @@ function AdminDashboard () {
       <div className='e__section__gap  '>
         <div className='flex items-center gap-5'>
           <Link href='/adminDashboard'>
-            <button className='text-sm font-medium p-3 bg-gray-100 rounded-lg my-2 lg:my-5 flex items-center gap-2 cursor-pointer'>
+            <button className='text-sm font-medium p-3 border bg-gray-100 rounded-lg my-2 lg:my-5 flex items-center gap-2 cursor-pointer'>
               {' '}
               <span>
                 <FaInfoCircle />
@@ -177,12 +179,22 @@ function AdminDashboard () {
           </Link>
 
           <Link href='/adminAccepted'>
-            <button className='text-sm font-medium p-3  bg-green-500 text-white  rounded-lg my-2 lg:my-5 flex items-center gap-2 cursor-pointer'>
+            <button className='text-sm font-medium p-3  border rounded-lg my-2 lg:my-5 flex items-center gap-2 cursor-pointer'>
               {' '}
               <span>
                 <VscCheckAll />
               </span>{' '}
               Accepted List
+            </button>
+          </Link>
+
+          <Link href='/adminCancel'>
+            <button className='text-sm font-medium p-3   border  rounded-lg my-2 lg:my-5 flex items-center gap-2 cursor-pointer'>
+              {' '}
+              <span>
+                <FaUndoAlt />
+              </span>{' '}
+              Cancel List
             </button>
           </Link>
         </div>
