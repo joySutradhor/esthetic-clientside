@@ -136,7 +136,7 @@ function AdminDashboard () {
 
         axios
           .patch(
-            `https://esthetic-serverside-teal.vercel.app/api/update/${orderId}`
+            `https://esthetic-serverside-teal.vercel.app/api/cancel/${orderId}`
           )
           .then(res => {
             if (res.status === 200) {
