@@ -167,7 +167,7 @@ function AdminDashboard () {
   return (
     <div className='mt-[30%] md:mt-[20%] lg:mt-[15%] xl:mt-[10%] '>
       <div className='e__section__gap  '>
-        <div className='flex items-center gap-5'>
+        <div className='flex items-center flex-wrap gap-x-5 xl:gap-5'>
           <Link href='/adminDashboard'>
             <button className='text-sm font-medium p-3 border bg-gray-100 rounded-lg my-2 lg:my-5 flex items-center gap-2 cursor-pointer'>
               {' '}
@@ -209,17 +209,17 @@ function AdminDashboard () {
         ) : bookings?.length === 0 ? (
           <p className='text-gray-600 text-center'>No bookings found.</p>
         ) : (
-          <div className='grid lg:grid-cols-2 xl:grid-cols-3 gap-6 mb-28 lg:mb-20'>
+          <div className='grid lg:grid-cols-2 xl:grid-cols-3 gap-6 mb-28 lg:mb-20 mt-5 lg:mt-10'>
             {bookings?.map((order, i) => (
               <div key={i} className='bg-white border p-6 relative'>
-                <div className='grid grid-cols-2   border-b py-5'>
+                <div className='grid xl:grid-cols-2   border-b py-5'>
                   <div className='  '>
                     <h3>{order?.customerName}</h3>
                     <p>{order?.phone}</p>
                     <p>{order?.email}</p>
                   </div>
 
-                  <div className=' flex justify-end'>
+                  <div className=' flex xl:justify-end pt-4 xl:pt-0'>
                     <div className='space-x-2 text-sm'>
                       {/* Delete Button */}
                       <button

@@ -76,40 +76,53 @@ function AdminAccepted () {
     })
   }
 
-  //   status update here
-  // const updateStatus = orderId => {
-  //   Swal.fire({
-  //     title: 'Are you sure you want to Accept?',
-  //     text: "You won't be able to revert this!",
-  //     icon: 'warning',
-  //     showCancelButton: true,
-  //     confirmButtonColor: '#3085d6',
-  //     cancelButtonColor: '#d33',
-  //     confirmButtonText: 'Yes, Accept it!'
-  //   }).then(result => {
-  //     if (result.isConfirmed) {
-  //       axios
-  //         .patch(`https://esthetic-serverside-teal.vercel.app/api/update/${orderId}`)
-  //         .then(res => {})
-  //         .catch(err => {
-  //           console.error('Error aceepting order:', err)
-  //           // If error occurs, revert the local state update
-  //           setBookings(bookings)
-  //         })
+ const cancelStatus = orderId => {
+    Swal.fire({
+      title: 'Are you want to Cancel?',
+      text: "You won't be able to revert this!",
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Yes, Cancel it!'
+    }).then(result => {
+      if (result.isConfirmed) {
+        // Update the bookings state locally before making the API call
+        const updatedBookings = bookings.filter(order => order._id !== orderId)
+        setBookings(updatedBookings)
 
-  //       Swal.fire({
-  //         title: 'Accept!',
-  //         text: 'Your file has been Accept.',
-  //         icon: 'success'
-  //       })
-  //     }
-  //   })
-  // }
+        axios
+          .patch(
+            `https://esthetic-serverside-teal.vercel.app/api/cancel/${orderId}`
+          )
+          .then(res => {
+            if (res.status === 200) {
+              Swal.fire({
+                title: 'Cencel!',
+                text: 'Your Appointment has been Cancel.',
+                icon: 'success'
+              })
+            } else {
+              Swal.fire({
+                title: 'Error!',
+                text: 'Your Appointment not Cencel.',
+                icon: 'warning'
+              })
+            }
+          })
+          .catch(err => {
+            console.error('Error canceling order:', err)
+            // If error occurs, revert the local state update
+            setBookings(bookings)
+          })
+      }
+    })
+  }
 
   return (
     <div className='mt-[30%] md:mt-[20%] lg:mt-[15%] xl:mt-[10%] '>
       <div className='e__section__gap  '>
-        <div className='flex items-center gap-5'>
+        <div className='flex items-center flex-wrap xl:gap-5 gap-x-5'>
           <Link href='/adminDashboard'>
             <button className='text-sm font-medium p-3 border rounded-lg my-2 lg:my-5 flex items-center gap-2 cursor-pointer'>
               {' '}
@@ -151,35 +164,38 @@ function AdminAccepted () {
         ) : bookings?.length === 0 ? (
           <p className='text-gray-600 text-center'>No bookings found.</p>
         ) : (
-          <div className='grid lg:grid-cols-2 xl:grid-cols-3 gap-6 mb-28 lg:mb-20'>
+          <div className='grid lg:grid-cols-2 xl:grid-cols-3 gap-6 mt-5 lg:mt-10 mb-28 lg:mb-20'>
             {bookings?.map((order, i) => (
               <div
                 key={i}
                 className='bg-white border border-green-600 p-6 relative'
               >
-                <div className='pb-5 border-b '>
-                  <h3>
-                    {order?.customerName}{' '}
-                    <span className='text-green-600 text-sm'>" Accepted "</span>{' '}
-                  </h3>
-                  <p>{order?.phone}</p>
-                  <p>{order?.email}</p>
+                <div className='grid xl:grid-cols-2   border-b py-5'>
+                  <div className='  '>
+                    <h3>{order?.customerName}</h3>
+                    <p>{order?.phone}</p>
+                    <p>{order?.email}</p>
+                  </div>
+
+                  <div className=' flex  xl:justify-end pt-4 xl:pt-0'>
+                    <div className='space-x-2 text-sm'>
+                      {/* Delete Button */}
+                      <button
+                        onClick={() => deleteOrder(order._id)}
+                        className=' py-1 px-4  border rounded  hover:text-red-500 border-red-500 '
+                      >
+                        Delete
+                      </button>
+
+                      <button
+                        onClick={() => cancelStatus(order._id)}
+                        className=' py-1 px-4   border border-red-500 rounded  text-gray-800'
+                      >
+                        Cancel
+                      </button>
+                    </div>
+                  </div>
                 </div>
-
-                {/* Delete Button */}
-                <button
-                  onClick={() => deleteOrder(order._id)}
-                  className='absolute top-5 right-8 text-red-500 hover:text-red-700'
-                >
-                  <FaTrash size={18} />
-                </button>
-
-                <button
-                  // onClick={() => updateStatus(order._id)}
-                  className='absolute top-16 right-8  text-gray-800'
-                >
-                  <PiChecksBold size={18} />
-                </button>
 
                 {/* Booking Details */}
                 <div className='border-b py-4 mb-4'>
