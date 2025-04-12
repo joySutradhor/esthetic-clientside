@@ -12,6 +12,7 @@ import { VscCheckAll } from 'react-icons/vsc'
 import { ImRadioChecked } from 'react-icons/im'
 import { useRouter } from 'next/navigation'
 import { FaUndoAlt } from "react-icons/fa";
+import { MdOutlineRateReview } from 'react-icons/md'
 
 
 function AdminDashboard () {
@@ -195,6 +196,16 @@ function AdminDashboard () {
                 <FaUndoAlt />
               </span>{' '}
               Cancel List
+            </button>
+          </Link>
+
+          <Link href='/adminReviews'>
+            <button className='text-sm font-medium p-3   border  rounded-lg my-2 lg:my-5 flex items-center gap-2 cursor-pointer'>
+              {' '}
+              <span>
+                <MdOutlineRateReview />
+              </span>{' '}
+              Review List
             </button>
           </Link>
         </div>

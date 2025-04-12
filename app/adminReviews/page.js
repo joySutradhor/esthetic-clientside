@@ -14,8 +14,8 @@ import { useRouter } from 'next/navigation'
 import { FaInfoCircle } from 'react-icons/fa'
 import { MdOutlineRateReview } from 'react-icons/md'
 
-function AdminCancel () {
-  const [bookings, setBookings] = useState([])
+function AdminReviews () {
+  const [reviews, setReviews] = useState([])
   const [loading, setLoading] = useState(false)
 
   const router = useRouter()
@@ -30,9 +30,9 @@ function AdminCancel () {
   useEffect(() => {
     setLoading(true)
     axios
-      .get(`https://esthetic-serverside-teal.vercel.app/api/orders/cancel`)
+      .get(`https://esthetic-serverside-teal.vercel.app/api/reviews`)
       .then(res => {
-        setBookings(res.data)
+        setReviews(res.data)
         setLoading(false)
       })
       .catch(err => {
@@ -55,17 +55,17 @@ function AdminCancel () {
       if (result.isConfirmed) {
         // Update the bookings state locally before making the API call
         const updatedBookings = bookings.filter(order => order._id !== orderId)
-        setBookings(updatedBookings)
+        setReviews(updatedBookings)
 
         axios
           .delete(
-            `https://esthetic-serverside-teal.vercel.app/api/deleteOrder/${orderId}`
+            `https://esthetic-serverside-teal.vercel.app/api/deleteReview/${orderId}`
           )
           .then(res => {})
           .catch(err => {
             console.error('Error deleting order:', err)
             // If error occurs, revert the local state update
-            setBookings(bookings)
+            setReviews(bookings)
           })
 
         Swal.fire({
@@ -76,6 +76,10 @@ function AdminCancel () {
       }
     })
   }
+
+
+
+  
 
   return (
     <div className='mt-[30%] md:mt-[20%] lg:mt-[15%] xl:mt-[10%] '>
@@ -102,7 +106,7 @@ function AdminCancel () {
           </Link>
 
           <Link href='/adminCancel'>
-            <button className='text-sm font-medium p-3   border bg-gray-100  rounded-lg my-2 lg:my-5 flex items-center gap-2 cursor-pointer'>
+            <button className='text-sm font-medium p-3   border  rounded-lg my-2 lg:my-5 flex items-center gap-2 cursor-pointer'>
               {' '}
               <span>
                 <FaUndoAlt />
@@ -112,7 +116,7 @@ function AdminCancel () {
           </Link>
 
           <Link href='/adminReviews'>
-            <button className='text-sm font-medium p-3   border  rounded-lg my-2 lg:my-5 flex items-center gap-2 cursor-pointer'>
+            <button className='text-sm font-medium p-3  bg-gray-100  border  rounded-lg my-2 lg:my-5 flex items-center gap-2 cursor-pointer'>
               {' '}
               <span>
                 <MdOutlineRateReview />
@@ -129,101 +133,31 @@ function AdminCancel () {
               Loading your bookings...
             </p>
           </div>
-        ) : bookings?.length === 0 ? (
+        ) : reviews?.length === 0 ? (
           <p className='text-gray-600 text-center'>No bookings found.</p>
         ) : (
           <div className='grid lg:grid-cols-2 xl:grid-cols-3 gap-6 mb-28 lg:mb-20 mt-5 lg:mt-10'>
-            {bookings?.map((order, i) => (
+            {reviews?.map((review, i) => (
               <div
                 key={i}
                 className='bg-white border border-yellow-600 p-6 relative'
               >
                 <div className='pb-5 border-b '>
-                  <h3>
-                    {order?.customerName} -
-                    <span className='text-yellow-600 text-sm'>
-                      " {order?.status} "
-                    </span>{' '}
-                  </h3>
-                  <p>{order?.phone}</p>
-                  <p>{order?.email}</p>
+                  <p className='text-lg font-semibold pb-2 '>{review?.name}</p>
+                  <p className='mt-5'>{review?.message}</p>
+                  <p className='bg-gray-100 my-3 text-lg font-semibold'>Review : {review?.rating}</p>
                 </div>
 
                 {/* Delete Button */}
                 <button
                   onClick={() => deleteOrder(order._id)}
-                  className='absolute top-5 right-8 text-red-500 hover:text-red-700'
+                  className='absolute top-5 right-8  hover:text-red-700 bg-red-600 py-2 px-6 text-white rounded'
                 >
-                  <FaTrash size={18} />
+                  DELETE
                 </button>
 
-                <button
-                  // onClick={() => updateStatus(order._id)}
-                  className='absolute top-16 right-8  text-gray-800'
-                >
-                  <PiChecksBold size={18} />
-                </button>
 
-                {/* Booking Details */}
-                <div className='border-b py-4 mb-4'>
-                  <p className='text-gray-700 flex items-center gap-2'>
-                    <span>
-                      <SlCalender />
-                    </span>{' '}
-                    Date: {new Date(order.date).toLocaleDateString()}
-                  </p>
-                  <p className='text-gray-700 flex items-center gap-2'>
-                    <span>
-                      <LuAlarmClock />
-                    </span>{' '}
-                    Time: {order?.time}
-                  </p>
-                </div>
-
-                {/* Services */}
-                <div>
-                  <h4 className='text-lg font-semibold mb-2 text-gray-600'>
-                    Selected Services:
-                  </h4>
-                  <div className='space-y-4'>
-                    {order?.selectedServices?.map(service => (
-                      <div
-                        key={service?.id}
-                        className='flex items-center gap-4 p-3 border rounded-lg bg-gray-50'
-                      >
-                        <div>
-                          <p className='text-gray-600 font-medium'>
-                            {service?.serviceName}
-                          </p>
-                          <div className='flex gap-x-5'>
-                            <p className='text-gray-600 text-sm flex items-center gap-2'>
-                              <span>
-                                <LuAlarmClock />
-                              </span>{' '}
-                              {service?.time}
-                            </p>
-                            <p className='text-gray-700'>
-                              <span className='line-through text-gray-500'>
-                                ${service?.originalPrice}
-                              </span>{' '}
-                              <span className='text-green-600 font-bold'>
-                                ${service?.discountedPrice}
-                              </span>
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-
-                {/* Total */}
-                <div className='mt-4 text-right'>
-                  <p className='text-lg font-semibold text-gray-600'>
-                    Total:{' '}
-                    <span className='text-green-600'>${order?.subtotal}</span>
-                  </p>
-                </div>
+             
               </div>
             ))}
           </div>
@@ -233,4 +167,4 @@ function AdminCancel () {
   )
 }
 
-export default AdminCancel
+export default AdminReviews ;

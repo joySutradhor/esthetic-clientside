@@ -37,8 +37,8 @@ export const metadata = {
 
 export default function RootLayout ({ children }) {
   return (
-    <html lang='en'>
-      <body className=''>
+    <html lang='en'  data-arp="">
+      <body className='' cz-shortcut-listen="true">
         <Header />
         {children}
 

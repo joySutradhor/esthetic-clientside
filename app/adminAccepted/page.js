@@ -12,6 +12,7 @@ import { VscCheckAll } from 'react-icons/vsc'
 import { PiChecksBold } from 'react-icons/pi'
 import { useRouter } from 'next/navigation'
 import { FaInfoCircle } from 'react-icons/fa'
+import { MdOutlineRateReview } from 'react-icons/md'
 
 function AdminAccepted () {
   const [bookings, setBookings] = useState([])
@@ -150,6 +151,16 @@ function AdminAccepted () {
                 <FaUndoAlt />
               </span>{' '}
               Cancel List
+            </button>
+          </Link>
+
+          <Link href='/adminReviews'>
+            <button className='text-sm font-medium p-3   border  rounded-lg my-2 lg:my-5 flex items-center gap-2 cursor-pointer'>
+              {' '}
+              <span>
+                <MdOutlineRateReview />
+              </span>{' '}
+              Review List
             </button>
           </Link>
         </div>
