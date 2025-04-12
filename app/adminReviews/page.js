@@ -150,8 +150,8 @@ function AdminReviews () {
 
                 {/* Delete Button */}
                 <button
-                  onClick={() => deleteOrder(order._id)}
-                  className='absolute top-5 right-8  hover:text-red-700 bg-red-600 py-2 px-6 text-white rounded'
+                  onClick={() => deleteOrder(review._id)}
+                  className='absolute top-5 right-8   bg-red-600 py-2 px-6 text-white rounded'
                 >
                   DELETE
                 </button>
