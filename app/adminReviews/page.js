@@ -54,7 +54,7 @@ function AdminReviews () {
     }).then(result => {
       if (result.isConfirmed) {
         // Update the bookings state locally before making the API call
-        const updatedBookings = bookings.filter(order => order._id !== orderId)
+        const updatedBookings = reviews.filter(order => order._id !== orderId)
         setReviews(updatedBookings)
 
         axios
