@@ -504,7 +504,7 @@ function Book () {
 
               <div className='grid grid-cols-3 gap-3'>
                 {['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'].includes(
-                  new Date(date).toLocaleString('en-us', { weekday: 'short' })
+                  new Date(date + 'T00:00:00z').toLocaleString('en-us', { weekday: 'short' , timeZone: 'UTC'  })
                 )
                   ? [
                       '7:00 AM',
@@ -602,7 +602,14 @@ function Book () {
                     <h4 className='text-base font-medium e__primary__color'>
                       Booking Date
                     </h4>
-                    <p className='text-sm text-gray-500'>{new Date(date).toLocaleDateString('en-US')}</p>
+                    <p className='text-sm text-gray-500'>
+                      {new Date(date + 'T00:00:00z').toLocaleDateString(
+                        'en-US',
+                        {
+                          timeZone: 'UTC'
+                        }
+                      )}
+                    </p>
                   </div>
                   <div>
                     <h4 className='text-base font-medium e__primary__color'>
