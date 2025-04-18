@@ -34,7 +34,6 @@ function Review () {
 
   const handleReviewPost = () => {
     setPostOpen(true)
-
   }
 
   const handleReviewToogle = () => {
@@ -72,6 +71,10 @@ function Review () {
       setLoading(false)
     }
   }
+
+  const avgReview = reviews.reduce(((acc , review) => acc + parseInt(review?.rating)), 0) /reviews.length ;
+  console.log(avgReview)
+
 
   return (
     <section className='e__section__gap relative'>
@@ -142,9 +145,17 @@ function Review () {
       )}
 
       <div className='e__review__container'>
-        <div>
-          <button className='e__tooltip__btn'>Revisar</button>
-          <h2 className='e__review__heading'>Opiniones de nuestras clientes</h2>
+        <div className='flex justify-between items-center'>
+          <div>
+            <button className='e__tooltip__btn'>Revisar</button>
+            <h2 className='e__review__heading'>
+              Opiniones de nuestras clientes
+            </h2>
+          </div>
+          <div className='text-right'>
+            <h3> <span className='text-3xl font-bold mb-1'> {avgReview} </span> de  <span className='text-3xl font-bold'>5</span> </h3>
+            <p className='underline underline-offset-2'>{'⭐'.repeat(Math.round(avgReview))} {allReviews.length} Reviews</p>
+          </div>
         </div>
         {/* customer reviews */}
         <div className='e__review__card__parent'>
