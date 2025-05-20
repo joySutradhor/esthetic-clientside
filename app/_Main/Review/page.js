@@ -72,9 +72,13 @@ function Review () {
     }
   }
 
-  const avgReview = reviews.reduce(((acc , review) => acc + parseInt(review?.rating)), 0) /reviews.length ;
-  console.log(avgReview)
-
+  const avgReview =
+    reviews.length > 0
+      ? reviews.reduce(
+          (acc, review) => acc + parseInt(review?.rating || 0),
+          0
+        ) / reviews.length
+      : 0
 
   return (
     <section className='e__section__gap relative'>
@@ -153,8 +157,21 @@ function Review () {
             </h2>
           </div>
           <div className='text-right'>
-            <h3> <span className='text-3xl font-bold mb-1'> {avgReview} </span> de  <span className='text-3xl font-bold'>5</span> </h3>
-            <p className='underline underline-offset-2'>{'⭐'.repeat(Math.round(avgReview))} {allReviews.length} Reviews</p>
+            {reviews.length > 0 ? (
+              <>
+                <h3>
+                  <span className='text-3xl font-bold mb-1'>
+                    {avgReview.toFixed(1)}
+                  </span>{' '}
+                  de <span className='text-3xl font-bold'>5</span>
+                </h3>
+                <p className='underline underline-offset-2'>
+                  {'⭐'.repeat(Math.round(avgReview))} {reviews.length} Reviews
+                </p>
+              </>
+            ) : (
+              <p className='text-gray-500'>No reviews yet.</p>
+            )}
           </div>
         </div>
         {/* customer reviews */}

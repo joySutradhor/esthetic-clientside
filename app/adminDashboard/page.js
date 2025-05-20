@@ -11,9 +11,8 @@ import { FaInfoCircle } from 'react-icons/fa'
 import { VscCheckAll } from 'react-icons/vsc'
 import { ImRadioChecked } from 'react-icons/im'
 import { useRouter } from 'next/navigation'
-import { FaUndoAlt } from "react-icons/fa";
+import { FaUndoAlt } from 'react-icons/fa'
 import { MdOutlineRateReview } from 'react-icons/md'
-
 
 function AdminDashboard () {
   const [bookings, setBookings] = useState([])
@@ -120,7 +119,6 @@ function AdminDashboard () {
       }
     })
   }
-
 
   const cancelStatus = orderId => {
     Swal.fire({
@@ -262,7 +260,16 @@ function AdminDashboard () {
                     <span>
                       <SlCalender />
                     </span>{' '}
-                    Date: {new Date(order.date).toLocaleDateString()}
+                    {/* Date: {new Date(order.date).toLocaleDateString()} */}
+                    Date:{' '}
+                    {new Date(order.date).toLocaleString('en-US', {
+                      timeZone: 'UTC',
+                      weekday: 'short',
+                      year: 'numeric',
+                      month: 'short',
+                      day: 'numeric'
+                    })}
+                    {/* new Date(date + 'T00:00:00z').toLocaleString('en-us', { weekday: 'short' , timeZone: 'UTC'  } */}
                   </p>
                   <p className='text-gray-700 flex items-center gap-2'>
                     <span>
